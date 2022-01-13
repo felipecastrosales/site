@@ -65,3 +65,11 @@ site.iml
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Firebase
+/node_modules/
+firebase-debug.log
+package-lock.json
+.firebaserc
+firebase.json
+.firebase
