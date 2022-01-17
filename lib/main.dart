@@ -1,24 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'home/home_page.dart';
+import 'package:url_strategy/url_strategy.dart';
+
+import 'app_widget.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(
-    const MyApp(),
+    const AppWidget(),
   );
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: '@felipecastrosales',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
-    );
-  }
 }
