@@ -9,7 +9,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: '@felipecastrosales',
+      title: 'Felipe Sales | Social Links',
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
