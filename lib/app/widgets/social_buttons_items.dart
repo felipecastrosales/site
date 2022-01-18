@@ -7,47 +7,52 @@ class SocialButtonsItems extends StatelessWidget {
     Key? key,
     required this.socialImage,
     required this.socialTitle,
+    required this.onTap,
   }) : super(key: key);
 
   final String socialImage;
   final String socialTitle;
+  final Function() onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      width: 278,
-      padding: const EdgeInsets.only(left: 58),
-      margin: const EdgeInsets.only(bottom: 14),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: const Color(0xff4361EE),
-      ),
-      child: Row(
-        children: [
-          SizedBox(
-            height: 29,
-            width: 29,
-            child: CircleAvatar(
-              radius: 50,
-              backgroundColor: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(4),
-                child: ClipOval(
-                  child: Image.asset(socialImage),
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(8),
+      child: Container(
+        height: 50,
+        width: 278,
+        padding: const EdgeInsets.only(left: 58),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: const Color(0xff4361EE),
+        ),
+        child: Row(
+          children: [
+            SizedBox(
+              height: 29,
+              width: 29,
+              child: CircleAvatar(
+                radius: 50,
+                backgroundColor: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(4),
+                  child: ClipOval(
+                    child: Image.asset(socialImage),
+                  ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(width: 10),
-          Text(
-            socialTitle,
-            style: GoogleFonts.inter(
-              fontSize: 18,
-              color: Colors.white,
+            const SizedBox(width: 10),
+            Text(
+              socialTitle,
+              style: GoogleFonts.inter(
+                fontSize: 18,
+                color: Colors.white,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
