@@ -8,12 +8,10 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: '@felipecastrosales',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
