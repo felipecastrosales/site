@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class Header extends StatelessWidget {
@@ -27,10 +28,10 @@ class Header extends StatelessWidget {
                 height: 127,
                 width: 127,
                 child: CircleAvatar(
-                  radius: 56,
+                  radius: 50,
                   backgroundColor: const Color(0xff4361EE),
                   child: Padding(
-                    padding: const EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(2),
                     child: ClipOval(
                       child: Image.asset('assets/profile.png'),
                     ),
@@ -53,6 +54,7 @@ class Header extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
+              const SizedBox(height: 50),
             ],
           ),
         ],
