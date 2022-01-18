@@ -37,9 +37,7 @@ class SocialButtonsItems extends StatelessWidget {
                 backgroundColor: Colors.white,
                 child: Padding(
                   padding: const EdgeInsets.all(4),
-                  child: ClipOval(
-                    child: Image.asset(socialImage),
-                  ),
+                  child: Image.asset(socialImage),
                 ),
               ),
             ),
