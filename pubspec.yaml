@@ -1,7 +1,7 @@
 name: site
 description: Felipe Sales | Social Links.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
