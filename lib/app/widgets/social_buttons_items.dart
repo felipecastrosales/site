@@ -29,16 +29,24 @@ class SocialButtonsItems extends StatelessWidget {
         ),
         child: Row(
           children: [
-            SizedBox(
+            Container(
               height: 29,
               width: 29,
-              child: CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(4),
-                  child: Image.asset(socialImage),
-                ),
+              decoration: BoxDecoration(
+                color: const Color(0xffEBE9E9),
+                borderRadius: BorderRadius.circular(50),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    spreadRadius: 4,
+                    blurRadius: 4,
+                    offset: Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(4),
+                child: Image.asset(socialImage),
               ),
             ),
             const SizedBox(width: 10),

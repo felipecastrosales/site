@@ -7,10 +7,10 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Align(
       alignment: Alignment.center,
       child: Stack(
-        alignment: Alignment.center,
+        alignment: Alignment.topCenter,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(16),
@@ -22,6 +22,7 @@ class Header extends StatelessWidget {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 100),
               SizedBox(
@@ -31,7 +32,7 @@ class Header extends StatelessWidget {
                   radius: 50,
                   backgroundColor: const Color(0xff4361EE),
                   child: Padding(
-                    padding: const EdgeInsets.all(2),
+                    padding: const EdgeInsets.all(4),
                     child: ClipOval(
                       child: Image.asset('assets/profile.png'),
                     ),

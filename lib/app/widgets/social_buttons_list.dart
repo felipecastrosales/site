@@ -27,13 +27,13 @@ class SocialButtonsList extends StatelessWidget {
         SocialButtonsItems(
           onTap: () => launchURL('github.com/felipecastrosales'),
           socialImage: 'assets/github.png',
-          socialTitle: 'Github',
+          socialTitle: 'GitHub',
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
           onTap: () => launchURL('linkedin.com/in/felipecastrosales'),
           socialImage: 'assets/linkedin.png',
-          socialTitle: 'Linkedin',
+          socialTitle: 'LinkedIn',
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
@@ -45,8 +45,9 @@ class SocialButtonsList extends StatelessWidget {
         SocialButtonsItems(
           onTap: () => launchURL('stackoverflow.com/users/13096514/felipe-sales'),
           socialImage: 'assets/stackoverflow.png',
-          socialTitle: 'Stackoverflow',
+          socialTitle: 'Stack OverFlow',
         ),
+        const SizedBox(height: 14),
       ],
     );
   }
