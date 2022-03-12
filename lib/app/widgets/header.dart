@@ -32,7 +32,7 @@ class Header extends StatelessWidget {
                 width: 127,
                 child: CircleAvatar(
                   radius: 50,
-                  backgroundColor: AppColors.light,
+                  backgroundColor: AppColors.primary,
                   child: Padding(
                     padding: const EdgeInsets.all(4),
                     child: ClipOval(
@@ -51,7 +51,7 @@ class Header extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                'Developer Instructor',
+                'Flutter Developer Instructor',
                 style: GoogleFonts.montserrat(
                   color: AppColors.light,
                   fontSize: 18,
