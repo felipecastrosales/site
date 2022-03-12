@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:site/app/core/app_colors.dart';
+
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
 
@@ -30,7 +32,7 @@ class Header extends StatelessWidget {
                 width: 127,
                 child: CircleAvatar(
                   radius: 50,
-                  backgroundColor: const Color(0xff4361EE),
+                  backgroundColor: AppColors.light,
                   child: Padding(
                     padding: const EdgeInsets.all(4),
                     child: ClipOval(
@@ -43,7 +45,7 @@ class Header extends StatelessWidget {
               Text(
                 'Felipe Sales',
                 style: GoogleFonts.montserrat(
-                  color: Colors.white,
+                  color: AppColors.light,
                   fontSize: 24,
                 ),
               ),
@@ -51,7 +53,7 @@ class Header extends StatelessWidget {
               Text(
                 'Developer Instructor',
                 style: GoogleFonts.montserrat(
-                  color: Colors.white,
+                  color: AppColors.light,
                   fontSize: 18,
                 ),
               ),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+
+import 'package:site/app/core/app_colors.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
@@ -9,7 +12,7 @@ class Footer extends StatelessWidget {
     return Container(
       height: 32,
       margin: const EdgeInsets.only(top: 4),
-      color: const Color(0xff4361EE),
+      color: AppColors.primary,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -17,7 +20,7 @@ class Footer extends StatelessWidget {
           Text(
             'Criado por @felipecastrosales™',
             style: GoogleFonts.montserrat(
-              color: Colors.white,
+              color: AppColors.light,
               fontSize: 16,
             ),
           ),

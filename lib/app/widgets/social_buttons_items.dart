@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:site/app/core/app_colors.dart';
 
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({
@@ -25,7 +26,7 @@ class SocialButtonsItems extends StatelessWidget {
         padding: const EdgeInsets.only(left: 58),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: const Color(0xff4361EE),
+          color: AppColors.primary,
         ),
         child: Row(
           children: [
@@ -33,14 +34,14 @@ class SocialButtonsItems extends StatelessWidget {
               height: 29,
               width: 29,
               decoration: BoxDecoration(
-                color: const Color(0xffEBE9E9),
+                color: AppColors.light,
                 borderRadius: BorderRadius.circular(50),
-                boxShadow: const [
+                boxShadow: [
                   BoxShadow(
-                    color: Colors.black12,
+                    color: AppColors.shadow.withOpacity(0.2),
                     spreadRadius: 4,
                     blurRadius: 4,
-                    offset: Offset(0, 4),
+                    offset: const Offset(0, 2),
                   ),
                 ],
               ),
@@ -54,7 +55,7 @@ class SocialButtonsItems extends StatelessWidget {
               socialTitle,
               style: GoogleFonts.inter(
                 fontSize: 18,
-                color: Colors.white,
+                color: AppColors.light,
               ),
             ),
           ],
