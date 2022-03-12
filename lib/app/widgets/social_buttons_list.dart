@@ -43,9 +43,22 @@ class SocialButtonsList extends StatelessWidget {
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
-          onTap: () => launchURL('stackoverflow.com/users/13096514/felipe-sales'),
+          onTap: () =>
+              launchURL('stackoverflow.com/users/13096514/felipe-sales'),
           socialImage: 'assets/stackoverflow.png',
           socialTitle: 'Stack OverFlow',
+        ),
+        const SizedBox(height: 14),
+        SocialButtonsItems(
+          onTap: () => launchURL('discordapp.com/users/406074089011281921'),
+          socialImage: 'assets/discord.png',
+          socialTitle: 'Discord',
+        ),
+        const SizedBox(height: 14),
+        SocialButtonsItems(
+          onTap: () => launchURL('udemy.com/user/luis-felipe-de-castro-sales/'),
+          socialImage: 'assets/udemy.png',
+          socialTitle: 'Udemy',
         ),
         const SizedBox(height: 14),
       ],
