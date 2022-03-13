@@ -76,3 +76,4 @@ package-lock.json
 .firebaserc
 firebase.json
 .firebase
+package.json

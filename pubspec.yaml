@@ -8,6 +8,8 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.4
+  firebase_analytics: ^9.1.2
+  firebase_core: ^1.13.1
   flutter:
     sdk: flutter
   google_fonts: ^2.2.0
