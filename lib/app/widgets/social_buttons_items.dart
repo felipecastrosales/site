@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+
 import 'package:site/app/core/app_colors.dart';
 
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({
     Key? key,
-    required this.image,
     required this.title,
+    required this.image,
     required this.onTap,
   }) : super(key: key);
 
-  final String image;
   final String title;
+  final String image;
   final VoidCallback onTap;
 
   @override
@@ -47,7 +48,7 @@ class SocialButtonsItems extends StatelessWidget {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(4),
-                child: Image.asset(image),
+                child: Image.asset('assets/$image'),
               ),
             ),
             const SizedBox(width: 10),
