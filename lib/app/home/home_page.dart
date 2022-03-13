@@ -12,12 +12,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background,
-      body: Center(
-        child: ListView(
-          children: const [
-            Header(),
-            SocialButtonsList(),
-          ],
+      body: Align(
+        alignment: Alignment.topCenter,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 450),
+          child: ListView(
+            children: const [
+              Header(),
+              SocialButtonsList(),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: const Footer(),

@@ -18,7 +18,6 @@ class Header extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             child: Image.asset(
               'assets/header-background.png',
-              height: 250,
               fit: BoxFit.cover,
             ),
           ),
@@ -26,7 +25,7 @@ class Header extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 100),
+              const SizedBox(height: 80),
               SizedBox(
                 height: 127,
                 width: 127,
@@ -41,7 +40,7 @@ class Header extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 25),
               Text(
                 'Felipe Sales',
                 style: GoogleFonts.montserrat(
