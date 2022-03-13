@@ -57,7 +57,7 @@ class Header extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
-              const SizedBox(height: 50),
+              const SizedBox(height: 25),
             ],
           ),
         ],

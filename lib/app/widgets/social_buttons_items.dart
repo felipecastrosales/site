@@ -6,14 +6,14 @@ import 'package:site/app/core/app_colors.dart';
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({
     Key? key,
-    required this.socialImage,
-    required this.socialTitle,
+    required this.image,
+    required this.title,
     required this.onTap,
   }) : super(key: key);
 
-  final String socialImage;
-  final String socialTitle;
-  final Function() onTap;
+  final String image;
+  final String title;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -47,12 +47,12 @@ class SocialButtonsItems extends StatelessWidget {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(4),
-                child: Image.asset(socialImage),
+                child: Image.asset(image),
               ),
             ),
             const SizedBox(width: 10),
             Text(
-              socialTitle,
+              title,
               style: GoogleFonts.inter(
                 fontSize: 18,
                 color: AppColors.light,
