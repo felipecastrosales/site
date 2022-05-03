@@ -6,7 +6,10 @@ import 'package:site/app/widgets/social_buttons_items.dart';
 
 class SocialButtonsList extends StatelessWidget {
   const SocialButtonsList({Key? key}) : super(key: key);
-  void launchURL(String url) => launch('https://$url');
+  void launchURL(String url) async => await launchUrl(
+        Uri.parse('https://$url'),
+        webOnlyWindowName: '_blank',
+      );
 
   @override
   Widget build(BuildContext context) {
