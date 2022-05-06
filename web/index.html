@@ -14,13 +14,22 @@
   <base href="$FLUTTER_BASE_HREF">
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Felipe Sales | Social Links">
+  <meta name="description" content="felipecastrosales | Social Links">
+  <meta property="og:title" content="Felipe Sales | Social Links" />
+  <meta property="og:description" content="felipecastrosales | Social Links">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/59374587?v=4" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://felipecastrosales.com/" />
+
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Felipe Sales | Social Links">
   <link rel="apple-touch-icon" href="profile.png">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="profile.png"/>
+
   <title>Felipe Sales | Social Links</title>
   <link rel="manifest" href="manifest.json">
 </head>
@@ -36,6 +45,9 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
 
   <script>
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
     // Your web app's Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyDyClpcHXG5M7twFoC06y1A0fXUZI4GgLQ",
