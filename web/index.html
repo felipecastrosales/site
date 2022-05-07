@@ -37,32 +37,20 @@
 
 <!--FIREBASE-->
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+  <script src="service-worker/firebasejs/7.13.1/firebase/firebase-worker.js"></script>
+  <script src="./firebase-config.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
-
-  <script>
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "firebase/app";
-    import { getAnalytics } from "firebase/analytics";
+  <script type="module">
     // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyDyClpcHXG5M7twFoC06y1A0fXUZI4GgLQ",
-      authDomain: "site-96dd0.firebaseapp.com",
-      projectId: "site-96dd0",
-      storageBucket: "site-96dd0.appspot.com",
-      messagingSenderId: "884743546828",
-      appId: "1:884743546828:web:60fc5493354bb95aae9f69",
-      measurementId: "G-QNS1WC1Y4B"
-    };
-
+    import { firebaseConfig } from './firebase-config.js';
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    // Initialize Analytics and get a reference to the service
-    const analytics = getAnalytics(app);
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
 
   <script>

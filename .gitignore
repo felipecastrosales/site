@@ -75,5 +75,6 @@ firebase-debug.log
 package-lock.json
 .firebaserc
 firebase.json
+firebase-config.js
 .firebase
 package.json
