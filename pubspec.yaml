@@ -4,20 +4,20 @@ publish_to: 'none'
 version: 1.0.0
 
 environment:
-  sdk: ">=2.16.1 <3.0.0"
+  sdk: ">=2.17.1 <3.0.0"
 
 dependencies:
-  cupertino_icons: ^1.0.4
-  firebase_analytics: ^9.1.7
-  firebase_core: ^1.16.0
+  cupertino_icons: ^1.0.5
+  firebase_analytics: ^9.1.9
+  firebase_core: ^1.17.1
   flutter:
     sdk: flutter
-  google_fonts: ^2.3.2
-  url_launcher: ^6.1.0
+  google_fonts: ^3.0.1
+  url_launcher: ^6.1.2
   url_strategy: ^0.2.0
 
 dev_dependencies:
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   flutter_test:
     sdk: flutter
 
