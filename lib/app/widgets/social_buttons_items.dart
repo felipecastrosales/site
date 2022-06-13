@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:site/app/core/app_colors.dart';
+import 'package:site/app/core/colors/app_colors.dart';
 
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({
@@ -48,7 +49,7 @@ class SocialButtonsItems extends StatelessWidget {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(4),
-                child: Image.asset('assets/$image'),
+                child: SvgPicture.asset('assets/social/$image'),
               ),
             ),
             const SizedBox(width: 10),

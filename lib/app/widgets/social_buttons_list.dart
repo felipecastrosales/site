@@ -17,44 +17,38 @@ class SocialButtonsList extends StatelessWidget {
       children: [
         SocialButtonsItems(
           title: 'GitHub',
-          image: 'github.png',
+          image: 'github.svg',
           onTap: () => launchURL('github.com/felipecastrosales'),
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
           title: 'LinkedIn',
-          image: 'linkedin.png',
+          image: 'linkedin.svg',
           onTap: () => launchURL('linkedin.com/in/felipecastrosales'),
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
           title: 'Stack OverFlow',
-          image: 'stackoverflow.png',
+          image: 'stack-overflow.svg',
           onTap: () =>
               launchURL('stackoverflow.com/users/13096514/felipe-sales'),
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
           title: 'Discord',
-          image: 'discord.png',
+          image: 'discord.svg',
           onTap: () => launchURL('discordapp.com/users/406074089011281921'),
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
-          title: 'Rocketseat',
-          image: 'rocketseat.png',
-          onTap: () => launchURL('app.rocketseat.com.br/me/felipecastrosales'),
-        ),
-        const SizedBox(height: 14),
-        SocialButtonsItems(
           title: 'Udemy',
-          image: 'udemy.png',
+          image: 'udemy.svg',
           onTap: () => launchURL('udemy.com/user/luis-felipe-de-castro-sales/'),
         ),
         const SizedBox(height: 14),
         SocialButtonsItems(
           title: 'Instagram',
-          image: 'instagram.png',
+          image: 'instagram.svg',
           onTap: () => launchURL('instagram.com/felipecastrosales'),
         ),
         const SizedBox(height: 14),
