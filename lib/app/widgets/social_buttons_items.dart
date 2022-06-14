@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:glassmorphism/glassmorphism.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:site/app/core/colors/app_colors.dart';
@@ -22,40 +23,35 @@ class SocialButtonsItems extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(8),
-      child: Container(
+      child: GlassmorphicContainer(
+        alignment: Alignment.center,
         height: 50,
         width: 278,
-        padding: const EdgeInsets.only(left: 58),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          color: AppColors.primary,
+        blur: 20,
+        borderRadius: 16,
+        border: 0,
+        linearGradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          stops: const [.1, .7],
+          colors: [
+            AppColors.shadowLightSocial.withOpacity(.1),
+            AppColors.shadowLightSocial.withOpacity(.25),
+          ],
         ),
+        borderGradient: const LinearGradient(colors: []),
         child: Row(
           children: [
-            Container(
-              height: 29,
-              width: 29,
-              decoration: BoxDecoration(
-                color: AppColors.light,
-                borderRadius: BorderRadius.circular(50),
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.shadow.withOpacity(0.2),
-                    spreadRadius: 4,
-                    blurRadius: 4,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(4),
-                child: SvgPicture.asset('assets/social/$image'),
-              ),
+            const SizedBox(width: 23),
+            SizedBox(
+              height: 30,
+              width: 30,
+              child: SvgPicture.asset('assets/social/$image'),
             ),
             const SizedBox(width: 10),
             Text(
               title,
-              style: GoogleFonts.inter(
+              style: GoogleFonts.poppins(
                 fontSize: 18,
                 color: AppColors.light,
               ),

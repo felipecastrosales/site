@@ -5,7 +5,7 @@ class AppColors {
   static const primaryDark = Color(0xff991229);
   static const orange = Color(0xfffa642f);
   static const shadow = Color(0xff323232);
-  static const background = Color(0xff072227);
+  static const background = Color(0xff1B0408);
   static const shadowLightSocial = Color(0xffc4c4c4);
   static const shadowDarkContact = Color(0xff121212);
   static const light = Color(0xffEBE9E9);

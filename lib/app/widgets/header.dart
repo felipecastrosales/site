@@ -14,13 +14,6 @@ class Header extends StatelessWidget {
       child: Stack(
         alignment: Alignment.topCenter,
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(16),
-            child: Image.asset(
-              'assets/header-background.png',
-              fit: BoxFit.cover,
-            ),
-          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
