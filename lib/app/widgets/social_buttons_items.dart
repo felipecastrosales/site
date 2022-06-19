@@ -39,7 +39,12 @@ class SocialButtonsItems extends StatelessWidget {
             AppColors.shadowLightSocial.withOpacity(.25),
           ],
         ),
-        borderGradient: const LinearGradient(colors: []),
+        borderGradient: LinearGradient(
+          colors: [
+            AppColors.shadowLightSocial.withOpacity(.1),
+            AppColors.shadowLightSocial.withOpacity(.25),
+          ],
+        ),
         child: Row(
           children: [
             const SizedBox(width: 23),
