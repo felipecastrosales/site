@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:site/app/core/colors/app_colors.dart';
+import 'package:site/app/core/app_colors.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);

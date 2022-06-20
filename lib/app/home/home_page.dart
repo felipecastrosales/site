@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/colors/app_colors.dart';
+import 'package:site/app/core/app_colors.dart';
 import 'package:site/app/utils/breakpoints.dart';
 import 'package:site/app/widgets/appbar/mobile_app_bar.dart';
 import 'package:site/app/widgets/appbar/web_app_bar.dart';

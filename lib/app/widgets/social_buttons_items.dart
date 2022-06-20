@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:site/app/core/colors/app_colors.dart';
+import 'package:site/app/core/app_colors.dart';
 
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({

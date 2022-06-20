@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/colors/app_colors.dart';
+import 'package:site/app/core/app_colors.dart';
 
 class AppBarDivider extends StatelessWidget {
   const AppBarDivider({super.key});
