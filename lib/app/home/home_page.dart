@@ -21,7 +21,8 @@ class HomePage extends StatelessWidget {
           appBar: constraints.maxWidth < Breakpoints.mobileAppBar
               ? const PreferredSize(
                   preferredSize: Size(double.infinity, 50),
-                  child: MobileAppBar())
+                  child: MobileAppBar(),
+                )
               : const PreferredSize(
                   preferredSize: Size(double.infinity, 50),
                   child: WebAppBar(),

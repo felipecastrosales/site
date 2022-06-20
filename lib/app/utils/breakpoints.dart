@@ -1,3 +1,3 @@
 class Breakpoints {
-  static const mobileAppBar = 450;
+  static const mobileAppBar = 520;
 }
