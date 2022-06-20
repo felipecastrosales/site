@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
+import 'package:site/app/core/app_texts.dart';
 import 'package:site/app/core/colors/app_colors.dart';
+import 'components/app_bar_divider.dart';
 
 class WebAppBar extends StatelessWidget {
   const WebAppBar({super.key});
@@ -11,65 +14,15 @@ class WebAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Text(
-            'Home',
-            style: TextStyle(
-              fontSize: 16,
-              color: AppColors.white,
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            height: 12,
-            width: 1,
-            color: AppColors.primary,
-          ),
-          const Text(
-            'Projects',
-            style: TextStyle(
-              fontSize: 16,
-              color: AppColors.white,
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            height: 12,
-            width: 1,
-            color: AppColors.primary,
-          ),
-          const Text(
-            'Experience',
-            style: TextStyle(
-              fontSize: 16,
-              color: AppColors.white,
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            height: 12,
-            width: 1,
-            color: AppColors.primary,
-          ),
-          const Text(
-            'Social Links',
-            style: TextStyle(
-              fontSize: 16,
-              color: AppColors.white,
-            ),
-          ),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16),
-            height: 12,
-            width: 1,
-            color: AppColors.primary,
-          ),
-          const Text(
-            'Contact Me',
-            style: TextStyle(
-              fontSize: 16,
-              color: AppColors.white,
-            ),
-          ),
+          AppTexts.appBar('Home'),
+          const AppBarDivider(),
+          AppTexts.appBar('Projects'),
+          const AppBarDivider(),
+          AppTexts.appBar('Experience'),
+          const AppBarDivider(),
+          AppTexts.appBar('Social Links'),
+          const AppBarDivider(),
+          AppTexts.appBar('Contact Me'),
         ],
       ),
       backgroundColor: AppColors.black,
