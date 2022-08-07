@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:glassmorphism/glassmorphism.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import 'package:site/app/core/app_colors.dart';
+import 'package:site/app/core/app_gradients.dart';
+import 'package:site/app/core/app_images.dart';
+import 'package:site/app/core/app_texts.dart';
 
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({
@@ -34,16 +35,10 @@ class SocialButtonsItems extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           stops: const [.1, .7],
-          colors: [
-            AppColors.shadowLightSocial.withOpacity(.1),
-            AppColors.shadowLightSocial.withOpacity(.25),
-          ],
+          colors: AppGradients.glassmorphic,
         ),
         borderGradient: LinearGradient(
-          colors: [
-            AppColors.shadowLightSocial.withOpacity(.1),
-            AppColors.shadowLightSocial.withOpacity(.25),
-          ],
+          colors: AppGradients.glassmorphic,
         ),
         child: Row(
           children: [
@@ -51,15 +46,12 @@ class SocialButtonsItems extends StatelessWidget {
             SizedBox(
               height: 30,
               width: 30,
-              child: SvgPicture.asset('assets/social/$image'),
+              child: SvgPicture.asset('${AppImages.socialLogo(image)}'),
             ),
             const SizedBox(width: 10),
             Text(
               title,
-              style: GoogleFonts.poppins(
-                fontSize: 18,
-                color: AppColors.light,
-              ),
+              style: AppTexts.socialTitle,
             ),
           ],
         ),

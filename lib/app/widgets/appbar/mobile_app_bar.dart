@@ -9,6 +9,7 @@ class MobileAppBar extends StatelessWidget {
     return PreferredSize(
       preferredSize: const Size(double.infinity, 50),
       child: Scaffold(
+        drawer: const Drawer(),
         appBar: AppBar(
           iconTheme: const IconThemeData(color: AppColors.primary),
           backgroundColor: AppColors.black,
@@ -27,7 +28,6 @@ class MobileAppBar extends StatelessWidget {
             ),
           ],
         ),
-        drawer: const Drawer(),
       ),
     );
   }

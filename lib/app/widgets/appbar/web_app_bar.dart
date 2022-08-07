@@ -10,6 +10,7 @@ class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: AppColors.black,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,7 +26,6 @@ class WebAppBar extends StatelessWidget {
           AppTexts.appBar('Contact Me'),
         ],
       ),
-      backgroundColor: AppColors.black,
     );
   }
 }

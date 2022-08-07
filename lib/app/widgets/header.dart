@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:google_fonts/google_fonts.dart';
-
 import 'package:site/app/core/app_colors.dart';
+import 'package:site/app/core/app_images.dart';
+import 'package:site/app/core/app_texts.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class Header extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(4),
                     child: ClipOval(
-                      child: Image.asset('assets/profile.png'),
+                      child: Image.asset(AppImages.profile),
                     ),
                   ),
                 ),
@@ -36,18 +36,12 @@ class Header extends StatelessWidget {
               const SizedBox(height: 25),
               Text(
                 'Felipe Sales',
-                style: GoogleFonts.montserrat(
-                  color: AppColors.light,
-                  fontSize: 24,
-                ),
+                style: AppTexts.name,
               ),
               const SizedBox(height: 4),
               Text(
                 'Flutter Developer Instructor',
-                style: GoogleFonts.montserrat(
-                  color: AppColors.light,
-                  fontSize: 18,
-                ),
+                style: AppTexts.office,
               ),
               const SizedBox(height: 25),
             ],
