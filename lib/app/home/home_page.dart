@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/app_colors.dart';
+import 'package:site/app/core/app_customs/app_colors.dart';
 import 'package:site/app/utils/breakpoints.dart';
-import 'package:site/app/widgets/appbar/mobile_app_bar.dart';
-import 'package:site/app/widgets/appbar/web_app_bar.dart';
+import 'package:site/app/widgets/appbar/appbar.dart';
 import 'package:site/app/widgets/footer.dart';
-import 'package:site/app/widgets/header.dart';
-import 'package:site/app/widgets/social_buttons_list.dart';
+import 'components/components.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

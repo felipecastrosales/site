@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:site/app/widgets/social_buttons_items.dart';
+import 'components.dart';
 
 class SocialButtonsList extends StatelessWidget {
   const SocialButtonsList({Key? key}) : super(key: key);

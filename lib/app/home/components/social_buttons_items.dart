@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 
-import 'package:site/app/core/app_gradients.dart';
-import 'package:site/app/core/app_images.dart';
-import 'package:site/app/core/app_texts.dart';
+import 'package:site/app/core/app_customs/app_customs.dart';
 
 class SocialButtonsItems extends StatelessWidget {
   const SocialButtonsItems({

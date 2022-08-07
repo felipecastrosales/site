@@ -1,4 +1,4 @@
-import 'app_colors.dart';
+import 'app_customs.dart';
 
 class AppGradients {
   static final glassmorphic = [
