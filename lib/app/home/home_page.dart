@@ -8,7 +8,7 @@ import 'package:site/app/widgets/drawer/drawer.dart';
 
 import 'package:site/app/widgets/footer.dart';
 
-import 'components/components.dart';
+import 'components/headers/headers.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

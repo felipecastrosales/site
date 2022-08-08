@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
-import 'components.dart';
+import 'headers.dart';
 
 class SocialButtonsList extends StatelessWidget {
-  const SocialButtonsList({Key? key}) : super(key: key);
+  const SocialButtonsList({super.key});
+
   void launchURL(String url) async => await launchUrl(
         Uri.parse('https://$url'),
         webOnlyWindowName: '_blank',
