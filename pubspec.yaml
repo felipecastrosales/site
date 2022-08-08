@@ -27,4 +27,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
-    - assets/social/
+    - assets/components/
+    - assets/components/profile/
+    - assets/components/social/

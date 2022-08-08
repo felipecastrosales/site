@@ -9,6 +9,7 @@ import 'package:site/app/widgets/drawer/drawer.dart';
 import 'package:site/app/widgets/footer.dart';
 
 import 'components/headers/headers.dart';
+import 'components/presentation/presentation.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,33 +32,10 @@ class HomePage extends StatelessWidget {
             child: ListView(
               children: [
                 const CustomAppBar(),
+                const Presentation(),
                 const Header(),
                 const SocialButtonsList(),
-                const Center(
-                  child: Text(
-                    'Section Random',
-                  ),
-                ),
-                Container(
-                  height: 2024,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 2024,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 2024,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 2024,
-                  color: Colors.orange,
-                ),
-                Container(
-                  height: 2024,
-                  color: Colors.pink,
-                ),
+                Container(height: 2024, color: Colors.red),
               ],
             ),
             // ),

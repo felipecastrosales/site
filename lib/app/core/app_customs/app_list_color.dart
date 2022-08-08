@@ -16,4 +16,9 @@ class AppListColor {
     AppColors.primary,
     AppColors.primaryDark,
   ];
+
+  static const divider = [
+    AppColors.orange,
+    AppColors.primary,
+  ];
 }

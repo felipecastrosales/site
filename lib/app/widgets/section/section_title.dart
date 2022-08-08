@@ -1,10 +1,28 @@
 import 'package:flutter/material.dart';
 
 class SectionTitle extends StatelessWidget {
-  const SectionTitle({super.key});
+  const SectionTitle({
+    super.key,
+    required this.title,
+    required this.paddingTop,
+    required this.paddingBottom,
+  });
+
+  final String title;
+  final double paddingTop;
+  final double paddingBottom;
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
+      child: Text(
+        title,
+        style: const TextStyle(
+          fontSize: 24,
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }

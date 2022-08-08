@@ -14,7 +14,11 @@ class DrawerFooter extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(AppImages.developer, height: 24),
+            Image.asset(
+              AppImages.developer,
+              height: 24,
+              filterQuality: FilterQuality.high,
+            ),
             const SizedBox(width: 16),
             Text(
               'Deep Code.',

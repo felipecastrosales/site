@@ -23,6 +23,7 @@ class Footer extends StatelessWidget {
           Image.asset(
             AppImages.developer,
             height: 16,
+            filterQuality: FilterQuality.high,
           ),
         ],
       ),

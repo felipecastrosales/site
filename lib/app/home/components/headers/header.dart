@@ -26,7 +26,10 @@ class Header extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(4),
                     child: ClipOval(
-                      child: Image.asset(AppImages.profile),
+                      child: Image.asset(
+                        AppImages.profile,
+                        filterQuality: FilterQuality.high,
+                      ),
                     ),
                   ),
                 ),

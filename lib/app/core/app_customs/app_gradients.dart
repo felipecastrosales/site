@@ -14,4 +14,8 @@ class AppGradients {
     stops: [.0, .5, .9],
     colors: AppListColor.stories,
   );
+
+  static const divider = LinearGradient(
+    colors: AppListColor.divider,
+  );
 }
