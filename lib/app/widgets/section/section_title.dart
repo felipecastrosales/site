@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/app_customs/app_customs.dart';
+
+import 'components/gradient_text.dart';
 
 class SectionTitle extends StatelessWidget {
   const SectionTitle({
@@ -16,12 +19,9 @@ class SectionTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
-      child: Text(
-        title,
-        style: const TextStyle(
-          fontSize: 24,
-          color: Colors.white,
-        ),
+      child: GradientText(
+        title: title,
+        gradient: AppGradients.divider,
       ),
     );
   }
