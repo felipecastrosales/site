@@ -16,12 +16,12 @@ class Projects extends StatelessWidget {
           children: [
             const SectionTitle(
               paddingTop: 50,
-              paddingBottom: 16,
+              paddingBottom: 20,
               title: 'Projects',
             ),
             const Center(
               child: SectionText(
-                paddingTop: 24,
+                paddingTop: 0,
                 paddingBottom: 24,
                 title:
                     'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',

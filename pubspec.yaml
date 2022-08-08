@@ -29,6 +29,7 @@ flutter:
   assets:
     - assets/
     - assets/components/
+    - assets/components/experience/
     - assets/components/profile/
     - assets/components/projects/
     - assets/components/social/

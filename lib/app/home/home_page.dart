@@ -7,6 +7,7 @@ import 'package:site/app/widgets/appbar/appbar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 import 'package:site/app/widgets/footer.dart';
 
+import 'components/experience/experience.dart';
 import 'components/headers/headers.dart';
 import 'components/presentation/presentation.dart';
 import 'components/projects/projects.dart';
@@ -34,6 +35,7 @@ class HomePage extends StatelessWidget {
                 const CustomAppBar(),
                 const Presentation(),
                 const Projects(),
+                const Experience(),
                 const Header(),
                 const SocialButtonsList(),
                 Container(height: 2024, color: Colors.red),
