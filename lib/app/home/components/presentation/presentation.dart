@@ -40,8 +40,10 @@ class Presentation extends StatelessWidget {
               title:
                   'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.',
             ),
-            const Center(
-              child: Text(
+            Container(
+              padding: const EdgeInsets.only(top: 8, bottom: 35),
+              alignment: Alignment.center,
+              child: const Text(
                 'Deep Code. Way Code.',
                 style: TextStyle(
                   fontSize: 16,
@@ -49,15 +51,6 @@ class Presentation extends StatelessWidget {
                 ),
               ),
             ),
-            // ),
-            //   ),
-            //   Expanded(
-            //     child: Container(
-            //       height: 2024,
-            //       color: Colors.green,
-            //     ),
-            //   ),
-            // ],
           ],
         ),
         const PresentationDivider(),
