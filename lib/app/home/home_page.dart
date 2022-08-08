@@ -11,6 +11,7 @@ import 'components/experience/experience.dart';
 import 'components/headers/headers.dart';
 import 'components/presentation/presentation.dart';
 import 'components/projects/projects.dart';
+import 'components/social/social.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -36,6 +37,7 @@ class HomePage extends StatelessWidget {
                 const Presentation(),
                 const Projects(),
                 const Experience(),
+                const Social(),
                 const Header(),
                 const SocialButtonsList(),
                 Container(height: 2024, color: Colors.red),
