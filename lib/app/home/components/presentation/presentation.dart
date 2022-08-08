@@ -33,12 +33,14 @@ class Presentation extends StatelessWidget {
                 filterQuality: FilterQuality.high,
               ),
             ),
-            const SectionText(
-              paddingTop: 24,
-              paddingBottom: 8,
-              isCentered: true,
-              title:
-                  'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.',
+            const Center(
+              child: SectionText(
+                paddingTop: 24,
+                paddingBottom: 8,
+                isCentered: true,
+                title:
+                    'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.',
+              ),
             ),
             Container(
               padding: const EdgeInsets.only(top: 8, bottom: 35),
