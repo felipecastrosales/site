@@ -52,6 +52,12 @@ class AppTexts {
     fontWeight: FontWeight.w600,
   );
 
+  static final seeProjects = GoogleFonts.montserrat(
+    fontSize: 16,
+    color: AppColors.white,
+    fontWeight: FontWeight.w600,
+  );
+
   static final socialTitle = GoogleFonts.poppins(
     fontSize: 18,
     color: AppColors.light,

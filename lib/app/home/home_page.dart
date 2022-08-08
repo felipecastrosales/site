@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/app_customs/app_colors.dart';
 import 'package:site/app/widgets/appbar/appbar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
-
 import 'package:site/app/widgets/footer.dart';
 
 import 'components/headers/headers.dart';
 import 'components/presentation/presentation.dart';
+import 'components/projects/projects.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -33,6 +33,7 @@ class HomePage extends StatelessWidget {
               children: [
                 const CustomAppBar(),
                 const Presentation(),
+                const Projects(),
                 const Header(),
                 const SocialButtonsList(),
                 Container(height: 2024, color: Colors.red),
