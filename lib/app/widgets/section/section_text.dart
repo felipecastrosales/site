@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/app_customs/app_customs.dart';
 
 class SectionText extends StatelessWidget {
   const SectionText({
@@ -21,10 +22,7 @@ class SectionText extends StatelessWidget {
       child: Text(
         title,
         textAlign: isCentered ? TextAlign.center : TextAlign.start,
-        style: const TextStyle(
-          fontSize: 16,
-          color: Colors.white,
-        ),
+        style: AppTexts.presentationText,
       ),
     );
   }

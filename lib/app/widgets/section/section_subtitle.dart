@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/app_customs/app_customs.dart';
 
 class SectionSubtitle extends StatelessWidget {
   const SectionSubtitle({
@@ -18,10 +19,7 @@ class SectionSubtitle extends StatelessWidget {
       padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
       child: Text(
         title,
-        style: const TextStyle(
-          fontSize: 16,
-          color: Colors.white,
-        ),
+        style: AppTexts.presentationSubtitle,
       ),
     );
   }

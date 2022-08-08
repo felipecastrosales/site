@@ -17,7 +17,7 @@ class Presentation extends StatelessWidget {
             const SectionTitle(
               paddingTop: 50,
               paddingBottom: 16,
-              title: 'Hi I\'m Felipe Sales',
+              title: 'Hi, I\'m Felipe Sales',
             ),
             const SectionSubtitle(
               paddingTop: 8,
@@ -43,22 +43,31 @@ class Presentation extends StatelessWidget {
             Container(
               padding: const EdgeInsets.only(top: 8, bottom: 35),
               alignment: Alignment.center,
-              child: const Text(
-                'Deep Code. Way Code.',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                ),
+              child: Stack(
+                children: [
+                  Text('Deep Code. Way Code.', style: AppTexts.phrase),
+                  RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(text: 'Deep ', style: AppTexts.phrasePrimary),
+                        TextSpan(text: 'Code. ', style: AppTexts.phraseWhite),
+                        TextSpan(text: 'Way ', style: AppTexts.phrasePrimary),
+                        TextSpan(text: 'Code.', style: AppTexts.phraseWhite),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
         ),
-        // Image.asset(
-        //   AppImages.circle,
-        //   filterQuality: FilterQuality.high,
-        // ),
         const PresentationDivider(),
       ],
     );
   }
 }
+
+            // Image.asset(
+            //   AppImages.circle,
+            //   filterQuality: FilterQuality.high,
+            // ),
