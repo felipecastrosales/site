@@ -29,10 +29,35 @@ class HomePage extends StatelessWidget {
             // child: ConstrainedBox(
             // constraints: const BoxConstraints(maxWidth: 450),
             child: ListView(
-              children: const [
-                CustomAppBar(),
-                Header(),
-                SocialButtonsList(),
+              children: [
+                const CustomAppBar(),
+                const Header(),
+                const SocialButtonsList(),
+                const Center(
+                  child: Text(
+                    'Section Random',
+                  ),
+                ),
+                Container(
+                  height: 2024,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 2024,
+                  color: Colors.yellow,
+                ),
+                Container(
+                  height: 2024,
+                  color: Colors.green,
+                ),
+                Container(
+                  height: 2024,
+                  color: Colors.orange,
+                ),
+                Container(
+                  height: 2024,
+                  color: Colors.pink,
+                ),
               ],
             ),
             // ),

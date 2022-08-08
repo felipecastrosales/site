@@ -6,11 +6,12 @@ import 'package:site/app/widgets/dividers/dividers.dart';
 import 'drawer.dart';
 
 class CustomDrawer extends StatelessWidget {
-  final PageController pageController;
   const CustomDrawer(
     this.pageController, {
     Key? key,
   }) : super(key: key);
+
+  final PageController pageController;
 
   @override
   Widget build(BuildContext context) {
