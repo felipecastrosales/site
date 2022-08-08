@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+import 'package:site/app/core/app_customs/app_customs.dart';
+
+class DrawerTile extends StatelessWidget {
+  const DrawerTile({
+    Key? key,
+    required this.title,
+    required this.leading,
+    required this.page,
+    required this.controller,
+  }) : super(key: key);
+
+  final String title;
+  final IconData leading;
+  final int page;
+  final PageController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.background,
+      child: InkWell(
+        onTap: () {
+          controller.animateToPage(
+            page,
+            duration: const Duration(seconds: 1),
+            curve: Curves.fastOutSlowIn,
+          );
+        },
+        child: Padding(
+          padding: const EdgeInsets.only(left: 8),
+          child: ListTile(
+            title: Transform.translate(
+              offset: const Offset(-12, 0),
+              child: Text(
+                title,
+                style: AppTexts.socialTitle,
+              ),
+            ),
+            leading: Icon(
+              leading,
+              color: AppColors.primary,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

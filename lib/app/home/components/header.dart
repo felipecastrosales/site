@@ -16,7 +16,7 @@ class Header extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 80),
+              const SizedBox(height: 50),
               SizedBox(
                 height: 127,
                 width: 127,
