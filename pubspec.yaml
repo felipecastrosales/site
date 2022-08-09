@@ -15,6 +15,7 @@ dependencies:
   flutter_svg: ^1.1.0
   glassmorphism: ^3.0.0
   google_fonts: ^3.0.1
+  http: ^0.13.5
   lottie: ^1.4.1
   url_launcher: ^6.1.2
   url_strategy: ^0.2.0

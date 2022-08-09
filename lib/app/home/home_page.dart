@@ -7,8 +7,8 @@ import 'package:site/app/widgets/appbar/appbar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 import 'package:site/app/widgets/footer.dart';
 
+import 'components/contact/contact.dart';
 import 'components/experience/experience.dart';
-import 'components/headers/headers.dart';
 import 'components/presentation/presentation.dart';
 import 'components/projects/projects.dart';
 import 'components/social/social.dart';
@@ -32,15 +32,13 @@ class HomePage extends StatelessWidget {
             // child: ConstrainedBox(
             // constraints: const BoxConstraints(maxWidth: 450),
             child: ListView(
-              children: [
-                const CustomAppBar(),
-                const Presentation(),
-                const Projects(),
-                const Experience(),
-                const Social(),
-                const Header(),
-                const SocialButtonsList(),
-                Container(height: 2024, color: Colors.red),
+              children: const [
+                CustomAppBar(),
+                Presentation(),
+                Projects(),
+                Experience(),
+                Social(),
+                Contact(),
               ],
             ),
             // ),

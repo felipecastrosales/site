@@ -52,7 +52,7 @@ class AppTexts {
     fontWeight: FontWeight.w600,
   );
 
-  static final seeProjects = GoogleFonts.montserrat(
+  static final buttonTitle = GoogleFonts.montserrat(
     fontSize: 16,
     color: AppColors.white,
     fontWeight: FontWeight.w600,

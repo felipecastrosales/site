@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/app_customs/app_customs.dart';
 
 import 'package:site/app/widgets/body/body.dart';
+import 'package:site/app/widgets/custom_text_button.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 
@@ -27,22 +28,9 @@ class Projects extends StatelessWidget {
                     'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',
               ),
             ),
-            TextButton(
+            CustomTextButton(
+              text: 'VER PROJETOS',
               onPressed: () {},
-              style: TextButton.styleFrom(
-                minimumSize: Size.zero,
-                padding: EdgeInsets.zero,
-                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              ),
-              child: Container(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                decoration: BoxDecoration(
-                  gradient: AppGradients.divider,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text('VER PROJETOS', style: AppTexts.seeProjects),
-              ),
             ),
             Container(
               alignment: Alignment.center,
