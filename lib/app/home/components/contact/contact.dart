@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:site/app/utils/contact_valitadors.dart';
 
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/custom_text_button.dart';
@@ -47,8 +48,8 @@ class Contact extends StatelessWidget {
                       width: 250,
                       controller: nameController,
                       hintText: 'Nome',
-                      validator: validator,
-                      prefixIcon: Icons.person,
+                      prefixIcon: Icons.account_circle,
+                      validator: (value) => ContactValitadors.name(value),
                       onChanged: (value) {},
                     ),
                     const SizedBox(height: 16),
@@ -56,9 +57,9 @@ class Contact extends StatelessWidget {
                       width: 250,
                       controller: emailController,
                       hintText: 'E-mail',
-                      validator: validator,
-                      prefixIcon: Icons.person,
+                      validator: (value) => ContactValitadors.email(value),
                       onChanged: (value) {},
+                      prefixIcon: Icons.mail,
                       keyboardType: TextInputType.emailAddress,
                     ),
                     const SizedBox(height: 16),
@@ -66,8 +67,8 @@ class Contact extends StatelessWidget {
                       width: 300,
                       controller: subjectController,
                       hintText: 'Título',
-                      validator: validator,
-                      prefixIcon: Icons.person,
+                      prefixIcon: Icons.subject,
+                      validator: (value) => ContactValitadors.subject(value),
                       onChanged: (value) {},
                     ),
                     const SizedBox(height: 16),
@@ -75,8 +76,8 @@ class Contact extends StatelessWidget {
                       width: 300,
                       controller: messageController,
                       hintText: 'Texto',
-                      validator: validator,
-                      prefixIcon: Icons.person,
+                      prefixIcon: Icons.comment,
+                      validator: (value) => ContactValitadors.message(value),
                       onChanged: (value) {},
                       maxLines: 2,
                     ),
@@ -144,12 +145,5 @@ class Contact extends StatelessWidget {
       ),
     );
     return response;
-  }
-
-  static String? validator(String? value) {
-    if (value!.isEmpty) {
-      return 'Invalid.';
-    }
-    return null;
   }
 }
