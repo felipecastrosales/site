@@ -52,6 +52,24 @@ class AppTexts {
     fontWeight: FontWeight.w600,
   );
 
+  static final hint = GoogleFonts.montserrat(
+    fontSize: 16,
+    color: AppColors.black,
+    fontWeight: FontWeight.w500,
+  );
+
+  static final textForm = GoogleFonts.montserrat(
+    fontSize: 14,
+    color: AppColors.background,
+    fontWeight: FontWeight.w500,
+  );
+
+  static final errorForm = GoogleFonts.montserrat(
+    fontSize: 14,
+    color: AppColors.white,
+    fontWeight: FontWeight.w300,
+  );
+
   static final buttonTitle = GoogleFonts.montserrat(
     fontSize: 16,
     color: AppColors.white,

@@ -29,14 +29,13 @@ class Contact extends StatelessWidget {
             const SectionTitle(
               paddingTop: 50,
               paddingBottom: 20,
-              title: 'Experience',
+              title: 'Contato',
             ),
             const SectionText(
               paddingTop: 0,
               paddingBottom: 20,
               title: 'Vamos bater um papo, me chame:',
             ),
-            const SizedBox(height: 20),
             Form(
               key: formKey,
               child: SingleChildScrollView(
@@ -49,6 +48,8 @@ class Contact extends StatelessWidget {
                       controller: nameController,
                       hintText: 'Nome',
                       validator: validator,
+                      prefixIcon: Icons.person,
+                      onChanged: (value) {},
                     ),
                     const SizedBox(height: 16),
                     CustomTextFormField(
@@ -56,6 +57,9 @@ class Contact extends StatelessWidget {
                       controller: emailController,
                       hintText: 'E-mail',
                       validator: validator,
+                      prefixIcon: Icons.person,
+                      onChanged: (value) {},
+                      keyboardType: TextInputType.emailAddress,
                     ),
                     const SizedBox(height: 16),
                     CustomTextFormField(
@@ -63,6 +67,8 @@ class Contact extends StatelessWidget {
                       controller: subjectController,
                       hintText: 'Título',
                       validator: validator,
+                      prefixIcon: Icons.person,
+                      onChanged: (value) {},
                     ),
                     const SizedBox(height: 16),
                     CustomTextFormField(
@@ -70,6 +76,9 @@ class Contact extends StatelessWidget {
                       controller: messageController,
                       hintText: 'Texto',
                       validator: validator,
+                      prefixIcon: Icons.person,
+                      onChanged: (value) {},
+                      maxLines: 2,
                     ),
                     const Center(
                       child: ContactDivider(),
