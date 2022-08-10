@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:site/app/utils/contact_valitadors.dart';
 
+import 'package:site/app/utils/contact_valitadors.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/custom_text_button.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
