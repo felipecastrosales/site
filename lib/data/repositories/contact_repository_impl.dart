@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+import 'package:site/data/constants/constants_api.dart';
 import 'package:site/data/keys/keys.dart';
 
 import 'contact_repository.dart';
@@ -14,18 +15,17 @@ class ContactRepositoryImpl implements ContactRepository {
     required String message,
     required String subject,
   }) async {
-    final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
-    // as this project is very simple and I wanted to make it available to the community, these private keys are simply in a 'keys' file and I added it to .gitignore.
+    final baseUrl = Uri.parse(ConstantsAPI.baseUrl);
+    // as this project is very simple and I wanted to make it available to the community, 
+    // these private keys are simply in a 'keys' file and I added it to .gitignore.
     // ! you can and should work it out better, because it's about security. !
     const serviceId = Keys.serviceId;
     const templateId = Keys.templateId;
     const userId = Keys.userId;
+
     final response = await http.post(
-      url,
-      headers: {
-        'origin': 'http://localhost',
-        'Content-Type': 'application/json',
-      },
+      baseUrl,
+      headers: ConstantsAPI.headers,
       body: json.encode(
         {
           'service_id': serviceId,
