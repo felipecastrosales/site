@@ -41,11 +41,10 @@ class Contact extends StatelessWidget {
               key: formKey,
               child: SingleChildScrollView(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CustomTextFormField(
-                      width: 250,
                       controller: nameController,
                       hintText: 'Nome',
                       prefixIcon: Icons.account_circle,
@@ -54,7 +53,6 @@ class Contact extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     CustomTextFormField(
-                      width: 250,
                       controller: emailController,
                       hintText: 'E-mail',
                       validator: (value) => ContactValitadors.email(value),
@@ -64,7 +62,6 @@ class Contact extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     CustomTextFormField(
-                      width: 300,
                       controller: subjectController,
                       hintText: 'Título',
                       prefixIcon: Icons.subject,
@@ -73,7 +70,6 @@ class Contact extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     CustomTextFormField(
-                      width: 300,
                       controller: messageController,
                       hintText: 'Texto',
                       prefixIcon: Icons.comment,

@@ -13,7 +13,6 @@ class CustomTextFormField extends StatelessWidget {
     this.keyboardType = TextInputType.text,
     required this.onChanged,
     this.maxLines = 1,
-    required this.width,
   });
 
   final String hintText;
@@ -23,14 +22,17 @@ class CustomTextFormField extends StatelessWidget {
   final TextInputType? keyboardType;
   final Function(String)? onChanged;
   final int maxLines;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
     const customBorder = CustomBorders.primaryBorder;
 
-    return SizedBox(
-      width: width,
+    return Container(
+      width: 300,
+      decoration: BoxDecoration(
+        color: AppColors.white,
+        borderRadius: BorderRadius.circular(16),
+      ),
       child: TextFormField(
         controller: controller,
         validator: validator,
@@ -40,13 +42,11 @@ class CustomTextFormField extends StatelessWidget {
         maxLines: maxLines,
         style: AppTexts.textForm,
         decoration: InputDecoration(
-          fillColor: AppColors.white,
-          filled: true,
-          isDense: true,
           prefixIcon: Icon(prefixIcon, color: AppColors.primary),
           hintText: hintText,
           hintStyle: AppTexts.hint,
           errorStyle: AppTexts.errorForm,
+          contentPadding: EdgeInsets.zero,
           border: customBorder(AppColors.primary),
           errorBorder: customBorder(AppColors.red),
           enabledBorder: customBorder(AppColors.background),
