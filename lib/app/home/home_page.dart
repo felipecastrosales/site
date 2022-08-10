@@ -2,7 +2,6 @@ import 'dart:developer' as developer;
 
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/app_customs/app_colors.dart';
 import 'package:site/app/widgets/appbar/appbar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 
@@ -24,7 +23,6 @@ class HomePage extends StatelessWidget {
       builder: (context, constraints) {
         developer.log(constraints.maxWidth.toString());
         return Scaffold(
-          backgroundColor: AppColors.background,
           drawer:
               constraints.maxWidth < 600 ? CustomDrawer(pageController) : null,
           body: Align(

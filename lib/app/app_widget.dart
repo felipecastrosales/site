@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'core/theme.dart';
 import 'home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -7,10 +8,11 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Felipe Sales | Social Links',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: SiteTheme.theme,
+      home: const HomePage(),
     );
   }
 }

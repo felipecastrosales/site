@@ -27,12 +27,8 @@ class CustomTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     const customBorder = CustomBorders.primaryBorder;
 
-    return Container(
+    return SizedBox(
       width: 300,
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        borderRadius: BorderRadius.circular(16),
-      ),
       child: TextFormField(
         controller: controller,
         validator: validator,
@@ -42,11 +38,14 @@ class CustomTextFormField extends StatelessWidget {
         maxLines: maxLines,
         style: AppTexts.textForm,
         decoration: InputDecoration(
+          fillColor: AppColors.white,
+          filled: true,
+          isDense: true,
           prefixIcon: Icon(prefixIcon, color: AppColors.primary),
           hintText: hintText,
           hintStyle: AppTexts.hint,
           errorStyle: AppTexts.errorForm,
-          contentPadding: EdgeInsets.zero,
+          contentPadding: const EdgeInsets.symmetric(vertical: 16),
           border: customBorder(AppColors.primary),
           errorBorder: customBorder(AppColors.red),
           enabledBorder: customBorder(AppColors.background),
