@@ -93,6 +93,6 @@ class AppTexts {
 
   static final footer = GoogleFonts.montserrat(
     color: AppColors.light,
-    fontSize: 16,
+    fontSize: 12,
   );
 }
