@@ -13,35 +13,51 @@ class Projects extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        MobileBody(
+        Stack(
           children: [
-            const SectionTitle(
-              paddingTop: 50,
-              paddingBottom: 20,
-              title: 'Projects',
-            ),
-            const Center(
-              child: SectionText(
-                paddingTop: 0,
-                paddingBottom: 24,
-                title:
-                    'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',
+            Positioned(
+              bottom: 4,
+              child: Stack(
+                children: [
+                  Image.asset(
+                    AppImages.mockupAbstractStack,
+                    filterQuality: FilterQuality.high,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                ],
               ),
             ),
-            CustomTextButton(
-              text: 'VER PROJETOS',
-              onPressed: () {},
+            MobileBody(
+              children: [
+                const SectionTitle(
+                  paddingTop: 50,
+                  paddingBottom: 20,
+                  title: 'Projects',
+                ),
+                const Center(
+                  child: SectionText(
+                    paddingTop: 0,
+                    paddingBottom: 24,
+                    title:
+                        'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',
+                  ),
+                ),
+                CustomTextButton(
+                  text: 'VER PROJETOS',
+                  onPressed: () {},
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.only(top: 24),
+                  child: Image.asset(
+                    AppImages.mockup,
+                    filterQuality: FilterQuality.high,
+                    width: 324,
+                  ),
+                ),
+              ],
             ),
-            Container(
-              alignment: Alignment.center,
-              padding: const EdgeInsets.only(top: 24),
-              child: Image.asset(
-                AppImages.mockup,
-                filterQuality: FilterQuality.high,
-                width: 324,
-              ),
-            ),
-            const SizedBox(height: 16),
           ],
         ),
         const SectionDivider(),

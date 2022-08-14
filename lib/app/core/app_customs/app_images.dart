@@ -8,6 +8,8 @@ class AppImages {
   static const circle = 'assets/components/profile/circle-gradient.png';
 
   static const mockup = 'assets/components/projects/mockup.png';
+  static const mockupAbstractStack = 'assets/components/projects/abstract.png';
+
   static const champ = 'assets/components/experience/champ.png';
 
   static const mouse = 'assets/components/mouse-down.json';
