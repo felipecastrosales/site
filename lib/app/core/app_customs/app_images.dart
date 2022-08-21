@@ -11,6 +11,11 @@ class AppImages {
   static const mockupAbstractStack = 'assets/components/projects/abstract.png';
 
   static const champ = 'assets/components/experience/champ.png';
+  static const abstractRight =
+      'assets/components/experience/abstract-right.png';
+
+  static const champGradient =
+      'assets/components/experience/champ-gradient.png';
 
   static const mouse = 'assets/components/mouse-down.json';
 }

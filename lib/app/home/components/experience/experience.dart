@@ -12,35 +12,54 @@ class Experience extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        MobileBody(
+        Stack(
           children: [
-            const SectionTitle(
-              paddingTop: 50,
-              paddingBottom: 20,
-              title: 'Experience',
-            ),
-            const SectionText(
-              paddingTop: 0,
-              paddingBottom: 24,
-              title: '''
-                  • Rocketseat | 2021 - Currently
-                    — Developer Instructor
-                  • Udemy | 2020 - 2021
-                    — Teaching Assistent
-                  • Personal Projects | 2020 - Ever
-                    — Payng price everyday
-                ''',
-            ),
-            Container(
-              alignment: Alignment.center,
-              padding: const EdgeInsets.only(top: 24),
+            Positioned(
+              top: -25,
+              right: 0,
               child: Image.asset(
-                AppImages.champ,
-                filterQuality: FilterQuality.high,
-                height: 185,
+                AppImages.abstractRight,
               ),
             ),
-            const SizedBox(height: 16),
+            Positioned(
+              bottom: 0,
+              child: Image.asset(
+                AppImages.champGradient,
+                filterQuality: FilterQuality.high,
+                width: MediaQuery.of(context).size.width,
+              ),
+            ),
+            MobileBody(
+              children: [
+                const SectionTitle(
+                  paddingTop: 50,
+                  paddingBottom: 20,
+                  title: 'Experience',
+                ),
+                const SectionText(
+                  paddingTop: 0,
+                  paddingBottom: 24,
+                  title: '''
+  • Rocketseat | 2021 - Currently
+    — Developer Instructor
+  • Udemy | 2020 - 2021
+    — Teaching Assistent
+  • Personal Projects | 2020 - Ever
+    — Payng price everyday
+                    ''',
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.only(top: 24),
+                  child: Image.asset(
+                    AppImages.champ,
+                    filterQuality: FilterQuality.high,
+                    height: 185,
+                  ),
+                ),
+                const SizedBox(height: 16),
+              ],
+            ),
           ],
         ),
         const SectionDivider(),
