@@ -18,4 +18,7 @@ class AppImages {
       'assets/components/experience/champ-gradient.png';
 
   static const mouse = 'assets/components/mouse-down.json';
+
+  static const socialAbstract = 'assets/components/social/abstract.png';
+  static const socialGradient = 'assets/components/social/gradient.png';
 }
