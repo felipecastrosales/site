@@ -25,6 +25,10 @@ class CustomFooter extends StatelessWidget {
                   text: '@felipecastrosales',
                   style: AppTexts.phrasePrimary,
                 ),
+                TextSpan(
+                  text: '.',
+                  style: AppTexts.phraseWhite,
+                ),
               ],
             ),
           ),

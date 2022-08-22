@@ -21,6 +21,7 @@ class Projects extends StatelessWidget {
                 children: [
                   Image.asset(
                     AppImages.mockupAbstractStack,
+                    fit: BoxFit.cover,
                     filterQuality: FilterQuality.high,
                     width: MediaQuery.of(context).size.width,
                   ),

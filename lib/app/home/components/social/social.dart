@@ -14,7 +14,7 @@ class Social extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          bottom: 4,
+          bottom: 0,
           child: Image.asset(
             AppImages.socialAbstract,
             fit: BoxFit.cover,
@@ -22,11 +22,15 @@ class Social extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
           ),
         ),
-        Center(
-          child: Image.asset(
-            AppImages.socialGradient,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
+        Positioned.fill(
+          bottom: 0,
+          child: Align(
+            child: Image.asset(
+              AppImages.socialGradient,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              width: MediaQuery.of(context).size.width,
+            ),
           ),
         ),
         Column(
