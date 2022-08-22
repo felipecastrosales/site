@@ -21,4 +21,7 @@ class AppImages {
 
   static const socialAbstract = 'assets/components/social/abstract.png';
   static const socialGradient = 'assets/components/social/gradient.png';
+
+  static const contactBottomGradient = 'assets/components/contact/bottom-gradient.png';
+  static const contactVerticalTexture = 'assets/components/contact/vertical-texture.png';
 }
