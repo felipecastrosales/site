@@ -13,7 +13,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^1.1.4
-  glassmorphism: ^3.0.0
   google_fonts: ^3.0.1
   http: ^0.13.5
   lottie: ^1.4.1
