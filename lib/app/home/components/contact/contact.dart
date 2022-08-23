@@ -55,7 +55,7 @@ class Contact extends StatelessWidget {
                 ),
                 const SectionText(
                   paddingTop: 0,
-                  paddingBottom: 20,
+                  paddingBottom: 45,
                   title: 'Vamos bater um papo, me chame:',
                 ),
                 Form(
