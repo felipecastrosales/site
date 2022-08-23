@@ -16,8 +16,9 @@ class PresentationDivider extends StatelessWidget {
       children: [
         const Expanded(
           child: CustomDivider(
-            height: 2,
-            color: AppColors.primary,
+            2,
+            AppColors.primary,
+            margin: EdgeInsets.zero,
           ),
         ),
         Padding(
@@ -26,8 +27,9 @@ class PresentationDivider extends StatelessWidget {
         ),
         const Expanded(
           child: CustomDivider(
-            height: 2,
-            color: AppColors.primary,
+            2,
+            AppColors.primary,
+            margin: EdgeInsets.zero,
           ),
         ),
       ],

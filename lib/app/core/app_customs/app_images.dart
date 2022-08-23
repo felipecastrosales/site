@@ -6,6 +6,12 @@ class AppImages {
   static const profileMobile = 'assets/components/profile/profile-mobile.png';
   static const profileWeb = 'assets/components/profile/profile-web.png';
   static const circle = 'assets/components/profile/circle-gradient.png';
+  static const profileGradientBottom =
+      'assets/components/profile/gradient-bottom.png';
+  static const profileGradientImage =
+      'assets/components/profile/gradient-image.png';
+  static const profileTextureBackground =
+      'assets/components/profile/texture-background.png';
 
   static const mockup = 'assets/components/projects/mockup.png';
   static const mockupAbstractStack = 'assets/components/projects/abstract.png';
@@ -22,6 +28,8 @@ class AppImages {
   static const socialAbstract = 'assets/components/social/abstract.png';
   static const socialGradient = 'assets/components/social/gradient.png';
 
-  static const contactBottomGradient = 'assets/components/contact/bottom-gradient.png';
-  static const contactVerticalTexture = 'assets/components/contact/vertical-texture.png';
+  static const contactBottomGradient =
+      'assets/components/contact/bottom-gradient.png';
+  static const contactVerticalTexture =
+      'assets/components/contact/vertical-texture.png';
 }

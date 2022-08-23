@@ -3,17 +3,19 @@ import 'package:flutter/material.dart';
 class CustomDivider extends StatelessWidget {
   final double height;
   final Color color;
+  final EdgeInsets margin;
 
-  const CustomDivider({
+  const CustomDivider(
+    this.height,
+    this.color, {
     super.key,
-    required this.height,
-    required this.color,
+    this.margin = const EdgeInsets.symmetric(vertical: 8),
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8),
+      margin: margin,
       height: height,
       color: color,
     );

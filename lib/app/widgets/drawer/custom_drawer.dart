@@ -27,7 +27,7 @@ class CustomDrawer extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             children: [
               const CustomDrawerHeader(),
-              const CustomDivider(height: .5, color: AppColors.primaryDark),
+              const CustomDivider(.5, AppColors.primaryDark),
               DrawerItems(pageController: pageController),
               const Spacer(),
               const DrawerFooter(),
