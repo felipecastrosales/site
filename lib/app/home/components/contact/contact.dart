@@ -1,15 +1,15 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:site/app/core/app_customs/app_customs.dart';
 
+import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/home/components/contact/controller/contact_controller.dart';
 import 'package:site/app/utils/contact_validators.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/custom_text_button.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
-import 'package:site/data/keys/keys.dart';
+import 'package:site/data/repositories/contact/contact_repository_impl.dart';
+import 'package:site/data/services/contact/contact_service_impl.dart';
 
 import 'components/custom_text_form_field.dart';
 
@@ -18,6 +18,11 @@ class Contact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final contactController = ContactController(
+      contactService: ContactServiceImpl(
+        contactRepository: ContactRepositoryImpl(),
+      ),
+    );
     final formKey = GlobalKey<FormState>();
     final nameController = TextEditingController();
     final emailController = TextEditingController();
@@ -108,12 +113,16 @@ class Contact extends StatelessWidget {
                             text: 'ENVIAR E-MAIL',
                             onPressed: () {
                               if (formKey.currentState!.validate()) {
-                                sendEmail(
+                                contactController.sendMail(
                                   name: nameController.text,
                                   email: emailController.text,
                                   message: messageController.text,
                                   subject: subjectController.text,
                                 );
+                                nameController.clear();
+                                emailController.clear();
+                                messageController.clear();
+                                subjectController.clear();
                               }
                             },
                           ),
@@ -130,41 +139,5 @@ class Contact extends StatelessWidget {
         ),
       ],
     );
-  }
-
-  Future sendEmail({
-    required String name,
-    required String email,
-    required String message,
-    required String subject,
-  }) async {
-    final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
-    // as this project is very simple and I wanted to make it available to the community, these private keys are simply in a 'keys' file and I added it to .gitignore.
-    // ! you can and should work it out better, because it's about security. !
-    const serviceId = Keys.serviceId;
-    const templateId = Keys.templateId;
-    const userId = Keys.userId;
-    final response = await http.post(
-      url,
-      headers: {
-        'origin': 'http://localhost',
-        'Content-Type': 'application/json',
-      },
-      body: json.encode(
-        {
-          'service_id': serviceId,
-          'template_id': templateId,
-          'user_id': userId,
-          'template_params': {
-            'user_name': name,
-            'user_email': email,
-            'user_subject': email,
-            'user_message': message,
-            'to_email': 'soufeliposales@gmail.com',
-          }
-        },
-      ),
-    );
-    return response;
   }
 }
