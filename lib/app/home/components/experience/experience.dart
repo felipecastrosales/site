@@ -34,7 +34,7 @@ class Experience extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: 'Experience',
+                  title: 'Experiência',
                 ),
                 const SectionText(
                   paddingTop: 0,

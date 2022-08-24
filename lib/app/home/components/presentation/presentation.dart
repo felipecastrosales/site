@@ -48,12 +48,12 @@ class Presentation extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 16,
-                  title: 'Hi, I\'m Felipe Sales',
+                  title: 'Olá, sou Felipe Sales',
                 ),
                 const SectionSubtitle(
                   paddingTop: 8,
                   paddingBottom: 8,
-                  title: '> Mobile Developer',
+                  title: '> Desenvolvedor de Aplicativos',
                 ),
                 const GradientDivider(),
                 Container(

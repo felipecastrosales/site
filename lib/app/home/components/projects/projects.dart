@@ -33,7 +33,7 @@ class Projects extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: 'Projects',
+                  title: 'Projetos',
                 ),
                 const Center(
                   child: SectionText(
