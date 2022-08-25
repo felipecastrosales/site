@@ -12,7 +12,7 @@ class AppWidget extends StatelessWidget {
       title: 'Felipe Sales | Social Links',
       debugShowCheckedModeBanner: false,
       theme: SiteTheme.theme,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
