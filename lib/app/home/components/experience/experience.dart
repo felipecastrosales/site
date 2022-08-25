@@ -5,6 +5,8 @@ import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 
+import 'components/components.dart';
+
 class Experience extends StatelessWidget {
   const Experience({Key? key}) : super(key: key);
 
@@ -36,17 +38,8 @@ class Experience extends StatelessWidget {
                   paddingBottom: 20,
                   title: 'Experiência',
                 ),
-                const SectionText(
-                  paddingTop: 0,
-                  paddingBottom: 24,
-                  title: '''
-  • Rocketseat | 2021 - Currently
-    — Developer Instructor
-  • Udemy | 2020 - 2021
-    — Teaching Assistent
-  • Personal Projects | 2020 - Ever
-    — Payng price everyday
-                    ''',
+                const Center(
+                  child: SectionCustomTexts(),
                 ),
                 Container(
                   alignment: Alignment.center,

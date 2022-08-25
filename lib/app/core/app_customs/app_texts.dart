@@ -95,4 +95,16 @@ class AppTexts {
     color: AppColors.light,
     fontSize: 12,
   );
+
+  static final experienceTitle = GoogleFonts.montserrat(
+    color: AppColors.light,
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+  );
+
+  static final experienceDescription = GoogleFonts.montserrat(
+    color: AppColors.light,
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  );
 }
