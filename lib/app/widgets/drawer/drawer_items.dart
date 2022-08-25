@@ -20,13 +20,13 @@ class DrawerItems extends StatelessWidget {
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Projects',
+          title: 'Projetos',
           leading: Icons.tips_and_updates,
           page: 1,
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Experience',
+          title: 'Experiência',
           leading: Icons.receipt_long,
           page: 2,
           controller: pageController,
@@ -38,7 +38,7 @@ class DrawerItems extends StatelessWidget {
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Contact Me',
+          title: 'Contato',
           leading: Icons.contact_mail,
           page: 4,
           controller: pageController,

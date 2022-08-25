@@ -4,9 +4,7 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 import 'components/components.dart';
 
 class WebAppBar extends StatelessWidget {
-  const WebAppBar({
-    super.key,
-  });
+  const WebAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,18 +14,15 @@ class WebAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: const [
-          WebAppBarTitle(
-            'Home',
-            0,
-          ),
+          WebAppBarTitle('Home', 0),
           AppBarDivider(),
-          WebAppBarTitle('Projects', 1),
+          WebAppBarTitle('Projetos', 1),
           AppBarDivider(),
-          WebAppBarTitle('Experience', 2),
+          WebAppBarTitle('Experiência', 2),
           AppBarDivider(),
           WebAppBarTitle('Social Links', 3),
           AppBarDivider(),
-          WebAppBarTitle('Contact Me', 4),
+          WebAppBarTitle('Contato', 4),
         ],
       ),
     );

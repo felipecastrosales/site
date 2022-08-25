@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
           body: Align(
             alignment: Alignment.topCenter,
             // child: ConstrainedBox(
-            // constraints: const BoxConstraints(maxWidth: 450),
+            // constraints: const BoxConstraints(maxWidth: 600),
             child: ListView(
               children: const [
                 CustomAppBar(),
@@ -40,9 +40,8 @@ class HomePage extends StatelessWidget {
                 CustomFooter(),
               ],
             ),
+            // ),
           ),
-          // ),
-          // bottomNavigationBar: const Footer(),
         );
       },
     );

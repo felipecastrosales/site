@@ -23,7 +23,7 @@ class TitleDescriptionShort extends StatelessWidget {
           style: AppTexts.experienceTitle,
         ),
         Text(
-          '    - $description',
+          '    — $description',
           style: AppTexts.experienceDescription,
         ),
         const SizedBox(height: 2),
