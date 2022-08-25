@@ -24,7 +24,7 @@ class DrawerTile extends StatelessWidget {
         onTap: () {
           controller.animateToPage(
             page,
-            duration: const Duration(seconds: 1),
+            duration: const Duration(seconds: 2),
             curve: Curves.fastOutSlowIn,
           );
         },
