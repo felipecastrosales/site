@@ -13,12 +13,11 @@ import 'components/social/social.dart';
 import 'components/experience/experience.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
+  final pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
-    final pageController = PageController();
-
     return LayoutBuilder(
       builder: (context, constraints) {
         developer.log(constraints.maxWidth.toString());
@@ -29,7 +28,11 @@ class HomePage extends StatelessWidget {
             alignment: Alignment.topCenter,
             // child: ConstrainedBox(
             // constraints: const BoxConstraints(maxWidth: 600),
-            child: ListView(
+            child: PageView(
+              controller: pageController,
+              pageSnapping: false,
+              scrollDirection: Axis.vertical,
+              physics: const AlwaysScrollableScrollPhysics(),
               children: const [
                 CustomAppBar(),
                 Presentation(),
