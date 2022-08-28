@@ -1,6 +1,7 @@
 import 'dart:developer' as developer;
 
 import 'package:flutter/material.dart';
+import 'package:site/app/core/responsive/breakpoints.dart';
 
 import 'package:site/app/widgets/drawer/drawer.dart';
 import 'package:site/app/widgets/appbar/appbar.dart';
@@ -22,16 +23,14 @@ class HomePage extends StatelessWidget {
       builder: (context, constraints) {
         developer.log(constraints.maxWidth.toString());
         return Scaffold(
-          drawer:
-              constraints.maxWidth < 600 ? CustomDrawer(pageController) : null,
+          drawer: constraints.maxWidth < Breakpoints.appBar
+              ? CustomDrawer(pageController)
+              : null,
           body: Align(
             alignment: Alignment.topCenter,
             // child: ConstrainedBox(
             // constraints: const BoxConstraints(maxWidth: 600),
-            child: PageView(
-              scrollDirection: Axis.vertical,
-              controller: pageController,
-              pageSnapping: false,
+            child: ListView(
               children: const [
                 CustomAppBar(),
                 Presentation(),

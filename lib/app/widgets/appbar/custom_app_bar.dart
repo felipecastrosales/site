@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/responsive/breakpoints.dart';
 
 import 'appbar.dart';
 
@@ -9,7 +10,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
+        if (constraints.maxWidth < Breakpoints.appBar) {
           return const MobileAppBar();
         } else {
           return const WebAppBar();
