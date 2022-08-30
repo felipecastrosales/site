@@ -20,19 +20,34 @@ class ContactWeb extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: Image.asset(
-            AppImages.contactVerticalTexture,
+            AppImages.contactHorizontalTexture,
             fit: BoxFit.cover,
             filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
           ),
         ),
-        Positioned(
-          bottom: 0,
-          child: Image.asset(
-            AppImages.contactBottomGradient,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
+        Positioned.fill(
+          left: 0,
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Image.asset(
+              AppImages.contactGradientLeft,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              height: 600,
+            ),
+          ),
+        ),
+        Positioned.fill(
+          right: 0,
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: Image.asset(
+              AppImages.contactGradientRight,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              height: 600,
+            ),
           ),
         ),
         Column(
