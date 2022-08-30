@@ -106,8 +106,3 @@ class Presentation extends StatelessWidget {
     );
   }
 }
-
-            // Image.asset(
-            //   AppImages.circle,
-            //   filterQuality: FilterQuality.high,
-            // ),

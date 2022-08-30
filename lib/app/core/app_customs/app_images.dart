@@ -5,7 +5,6 @@ class AppImages {
 
   static const profileMobile = 'assets/components/profile/profile-mobile.png';
   static const profileWeb = 'assets/components/profile/profile-web.png';
-  static const circle = 'assets/components/profile/circle-gradient.png';
   static const profileGradientBottom =
       'assets/components/profile/gradient-bottom.png';
   static const profileGradientImage =
