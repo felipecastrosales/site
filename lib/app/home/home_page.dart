@@ -10,8 +10,8 @@ import 'package:site/app/widgets/drawer/drawer.dart';
 // import 'components/footer/custom_footer.dart';
 // import 'components/presentation/presentation.dart';
 // import 'components/projects/projects.dart';
-import 'components/social/social.dart';
-// import 'components/experience/experience.dart';
+// import 'components/social/social.dart';
+import 'components/experience/experience.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -35,8 +35,8 @@ class HomePage extends StatelessWidget {
                 // CustomAppBar(),
                 // Presentation(),
                 // Projects(),
-                // Experience(),
-                Social(),
+                Experience(),
+                // Social(),
                 // Contact(),
                 // CustomFooter(),
               ],

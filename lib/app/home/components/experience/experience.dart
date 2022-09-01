@@ -23,12 +23,15 @@ class Experience extends StatelessWidget {
                 AppImages.abstractRight,
               ),
             ),
-            Positioned(
-              bottom: 0,
-              child: Image.asset(
-                AppImages.champGradient,
-                filterQuality: FilterQuality.high,
-                width: MediaQuery.of(context).size.width,
+            Positioned.fill(
+              child: Align(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  AppImages.champGradient,
+                  fit: BoxFit.cover,
+                  filterQuality: FilterQuality.high,
+                  width: MediaQuery.of(context).size.width,
+                ),
               ),
             ),
             MobileBody(
@@ -38,9 +41,7 @@ class Experience extends StatelessWidget {
                   paddingBottom: 20,
                   title: 'Experiência',
                 ),
-                const Center(
-                  child: SectionCustomTexts(),
-                ),
+                const SectionCustomTexts(),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),
