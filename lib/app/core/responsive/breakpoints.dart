@@ -3,4 +3,5 @@ class Breakpoints {
   static const appBar = 600;
   static const footer = 560;
   static const contact = 650;
+  static const social = 550;
 }

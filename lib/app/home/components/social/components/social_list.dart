@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
-import 'headers.dart';
+import 'components.dart';
 
-class SocialButtonsList extends StatelessWidget {
-  const SocialButtonsList({super.key});
+class SocialList extends StatelessWidget {
+  const SocialList({super.key});
 
   void launchURL(String url) async => await launchUrl(
         Uri.parse('https://$url'),
@@ -16,38 +16,38 @@ class SocialButtonsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SocialButtonsItems(
+        SocialItem(
           title: 'GitHub',
           image: 'github.svg',
           onTap: () => launchURL('github.com/felipecastrosales'),
         ),
         const SizedBox(height: 14),
-        SocialButtonsItems(
+        SocialItem(
           title: 'LinkedIn',
           image: 'linkedin.svg',
           onTap: () => launchURL('linkedin.com/in/felipecastrosales'),
         ),
         const SizedBox(height: 14),
-        SocialButtonsItems(
+        SocialItem(
           title: 'Stack OverFlow',
           image: 'stack-overflow.svg',
           onTap: () =>
               launchURL('stackoverflow.com/users/13096514/felipe-sales'),
         ),
         const SizedBox(height: 14),
-        SocialButtonsItems(
+        SocialItem(
           title: 'Discord',
           image: 'discord.svg',
           onTap: () => launchURL('discordapp.com/users/406074089011281921'),
         ),
         const SizedBox(height: 14),
-        SocialButtonsItems(
+        SocialItem(
           title: 'Udemy',
           image: 'udemy.svg',
           onTap: () => launchURL('udemy.com/user/luis-felipe-de-castro-sales/'),
         ),
         const SizedBox(height: 14),
-        SocialButtonsItems(
+        SocialItem(
           title: 'Instagram',
           image: 'instagram.svg',
           onTap: () => launchURL('instagram.com/felipecastrosales'),

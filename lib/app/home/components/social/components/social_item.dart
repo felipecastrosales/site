@@ -6,8 +6,8 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 
 import 'card_glassmorphism.dart';
 
-class SocialButtonsItems extends StatelessWidget {
-  const SocialButtonsItems({
+class SocialItem extends StatelessWidget {
+  const SocialItem({
     Key? key,
     required this.title,
     required this.image,

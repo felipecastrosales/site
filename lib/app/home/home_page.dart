@@ -1,16 +1,16 @@
 import 'dart:developer' as developer;
 
 import 'package:flutter/material.dart';
-import 'package:site/app/core/responsive/breakpoints.dart';
 
+import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 // import 'package:site/app/widgets/appbar/appbar.dart';
 
-import 'components/contact/contact.dart';
+// import 'components/contact/contact.dart';
 // import 'components/footer/custom_footer.dart';
 // import 'components/presentation/presentation.dart';
 // import 'components/projects/projects.dart';
-// import 'components/social/social.dart';
+import 'components/social/social.dart';
 // import 'components/experience/experience.dart';
 
 class HomePage extends StatelessWidget {
@@ -36,8 +36,8 @@ class HomePage extends StatelessWidget {
                 // Presentation(),
                 // Projects(),
                 // Experience(),
-                // Social(),
-                Contact(),
+                Social(),
+                // Contact(),
                 // CustomFooter(),
               ],
             ),

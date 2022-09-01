@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
-import 'package:site/app/home/components/headers/headers.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
+
+import 'components/components.dart';
 
 class Social extends StatelessWidget {
   const Social({Key? key}) : super(key: key);
@@ -48,7 +49,7 @@ class Social extends StatelessWidget {
                   title: 'Me acompanhe nas minhas redes:',
                 ),
                 Center(
-                  child: SocialButtonsList(),
+                  child: SocialList(),
                 ),
               ],
             ),
