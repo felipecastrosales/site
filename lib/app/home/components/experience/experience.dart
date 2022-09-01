@@ -1,63 +1,23 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/app_customs/app_customs.dart';
-import 'package:site/app/widgets/body/body.dart';
-import 'package:site/app/widgets/dividers/dividers.dart';
-import 'package:site/app/widgets/section/section.dart';
+import 'package:site/app/core/responsive/breakpoints.dart';
 
-import 'components/components.dart';
+import 'experience_mobile.dart';
+import 'experience_web.dart';
 
 class Experience extends StatelessWidget {
   const Experience({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Stack(
-          children: [
-            Positioned(
-              top: -25,
-              right: 0,
-              child: Image.asset(
-                AppImages.abstractRight,
-              ),
-            ),
-            Positioned.fill(
-              child: Align(
-                alignment: Alignment.center,
-                child: Image.asset(
-                  AppImages.champGradient,
-                  fit: BoxFit.cover,
-                  filterQuality: FilterQuality.high,
-                  width: MediaQuery.of(context).size.width,
-                ),
-              ),
-            ),
-            MobileBody(
-              children: [
-                const SectionTitle(
-                  paddingTop: 50,
-                  paddingBottom: 20,
-                  title: 'Experiência',
-                ),
-                const SectionCustomTexts(),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.only(top: 24),
-                  child: Image.asset(
-                    AppImages.champ,
-                    filterQuality: FilterQuality.high,
-                    height: 185,
-                  ),
-                ),
-                const SizedBox(height: 16),
-              ],
-            ),
-          ],
-        ),
-        const SectionDivider(),
-      ],
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < Breakpoints.experience) {
+          return const ExperienceMobile();
+        } else {
+          return const ExperienceWeb();
+        }
+      },
     );
   }
 }
