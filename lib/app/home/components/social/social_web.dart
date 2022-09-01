@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
-import 'package:site/app/widgets/body/body.dart';
-import 'package:site/app/widgets/dividers/dividers.dart';
-import 'package:site/app/widgets/section/section.dart';
 
 import 'components/components.dart';
 
@@ -17,46 +14,26 @@ class SocialWeb extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: Image.asset(
-            AppImages.socialAbstract,
+            AppImages.socialAbstractLarge,
             fit: BoxFit.cover,
             filterQuality: FilterQuality.high,
             width: MediaQuery.of(context).size.width,
+            height: 495,
           ),
         ),
         Positioned.fill(
-          bottom: 0,
           child: Align(
+            alignment: Alignment.center,
             child: Image.asset(
-              AppImages.socialGradient,
+              AppImages.socialGradientCenter,
               fit: BoxFit.cover,
               filterQuality: FilterQuality.high,
               width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 0.8,
             ),
           ),
         ),
-        Column(
-          children: const [
-            MobileBody(
-              children: [
-                SectionTitle(
-                  paddingTop: 50,
-                  paddingBottom: 20,
-                  title: 'Social Links',
-                ),
-                SectionText(
-                  paddingTop: 0,
-                  paddingBottom: 24,
-                  title: 'Me acompanhe nas minhas redes:',
-                ),
-                Center(
-                  child: SocialList(),
-                ),
-              ],
-            ),
-            SizedBox(height: 60),
-            SectionDivider(),
-          ],
-        ),
+        const SocialAllCards(),
       ],
     );
   }

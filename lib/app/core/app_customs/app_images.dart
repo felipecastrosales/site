@@ -24,8 +24,12 @@ class AppImages {
 
   static const mouse = 'assets/components/mouse-down.json';
 
+  // Social
   static const socialAbstract = 'assets/components/social/abstract.png';
-  static const socialGradient = 'assets/components/social/gradient.png';
+  static const socialAbstractLarge =
+      'assets/components/social/abstract-large.png';
+  static const socialGradientCenter =
+      'assets/components/social/gradient-center.png';
 
   // Contact
   static const contactBottomGradient =
