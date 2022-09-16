@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/app_customs/app_customs.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/home/components/contact/controller/contact_controller.dart';
+import 'package:site/app/widgets/custom_snackbar.dart';
 import 'package:site/data/repositories/contact/contact_repository_impl.dart';
 import 'package:site/data/services/contact/contact_service_impl.dart';
 
@@ -35,6 +37,12 @@ class Contact extends StatelessWidget {
         messageController: messageController,
         onPressed: () {
           if (formKey.currentState!.validate()) {
+            CustomSnackbar.showSnackBar(
+              context,
+              text: 'E-mail enviado com sucesso!',
+              icon: Icons.check,
+              color: AppColors.primaryDark,
+            );
             contactController.sendMail(
               name: nameController.text,
               email: emailController.text,
