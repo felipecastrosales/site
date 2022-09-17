@@ -1,21 +1,19 @@
 class AppImages {
   static const developer = 'assets/developer.png';
   static const profile = 'assets/profile.png';
-  static socialLogo(image) => 'assets/components/social/$image';
 
-  static const profileMobile = 'assets/components/profile/profile-mobile.png';
-  static const profileWeb = 'assets/components/profile/profile-web.png';
-  static const profileGradientBottom =
-      'assets/components/profile/gradient-bottom.png';
-  static const profileGradientImage =
-      'assets/components/profile/gradient-image.png';
-  static const profileTextureBackground =
-      'assets/components/profile/texture-background.png';
-
-  static const abstractRight =
-      'assets/components/experience/abstract-right.png';
-
+  //Presentation
   static const mouse = 'assets/components/mouse-down.json';
+  static const presentationMobile =
+      'assets/components/presentation/presentation-mobile.png';
+  static const presentationWeb =
+      'assets/components/presentation/presentation-web.png';
+  static const presentationGradientBottom =
+      'assets/components/presentation/gradient-bottom.png';
+  static const presentationGradientImage =
+      'assets/components/presentation/gradient-image.png';
+  static const presentationTextureBackground =
+      'assets/components/presentation/texture-background.png';
 
   //Projects
   static const mockup = 'assets/components/projects/mockup.png';
@@ -27,8 +25,11 @@ class AppImages {
   static const champGradient =
       'assets/components/experience/champ-gradient.png';
   static const champCircle = 'assets/components/experience/champ-circle.png';
+  static const abstractRight =
+      'assets/components/experience/abstract-right.png';
 
   // Social
+  static socialLogo(image) => 'assets/components/social/$image';
   static const socialAbstract = 'assets/components/social/abstract.png';
   static const socialAbstractLarge =
       'assets/components/social/abstract-large.png';

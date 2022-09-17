@@ -32,6 +32,6 @@ flutter:
     - assets/components/
     - assets/components/contact/
     - assets/components/experience/
-    - assets/components/profile/
+    - assets/components/presentation/
     - assets/components/projects/
     - assets/components/social/
