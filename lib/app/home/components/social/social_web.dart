@@ -33,7 +33,7 @@ class SocialWeb extends StatelessWidget {
             ),
           ),
         ),
-        const SocialAllCards(),
+        const SocialAllCardsWeb(),
       ],
     );
   }

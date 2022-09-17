@@ -33,7 +33,7 @@ class ExperienceWeb extends StatelessWidget {
                 height: MediaQuery.of(context).size.height,
               ),
             ),
-            MobileBody(
+            WebBody(
               children: [
                 const SectionTitle(
                   paddingTop: 50,

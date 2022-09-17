@@ -26,22 +26,20 @@ class PresentationWeb extends StatelessWidget {
           ),
         ),
         Positioned.fill(
-          child: Align(
-            alignment: Alignment.center,
-            child: Image.asset(
-              AppImages.presentationTextureLarge,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
-            ),
+          child: Image.asset(
+            AppImages.presentationTextureLarge,
+            fit: BoxFit.cover,
+            filterQuality: FilterQuality.high,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
           ),
         ),
         Column(
           children: [
-            MobileBody(
+            WebBody(
               children: [
                 const SectionTitle(
+                  isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 12,
                   title: 'Olá, sou Felipe Sales',

@@ -19,6 +19,11 @@ class AppTexts {
     fontWeight: FontWeight.w700,
   );
 
+  static final presentationTitleWeb = GoogleFonts.montserrat(
+    fontSize: 50,
+    fontWeight: FontWeight.w700,
+  );
+
   static final presentationSubtitle = GoogleFonts.montserrat(
     fontSize: 24,
     color: AppColors.white,

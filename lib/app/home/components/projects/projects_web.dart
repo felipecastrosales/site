@@ -30,7 +30,7 @@ class ProjectsWeb extends StatelessWidget {
                 ],
               ),
             ),
-            MobileBody(
+            WebBody(
               children: [
                 const SectionTitle(
                   paddingTop: 50,

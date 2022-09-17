@@ -30,7 +30,7 @@ class SocialMobile extends StatelessWidget {
           ),
         ),
       ),
-      const SocialAllCards(),
+      const SocialAllCardsMobile(),
     ]);
   }
 }

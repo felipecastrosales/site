@@ -52,7 +52,7 @@ class ContactWeb extends StatelessWidget {
         ),
         Column(
           children: [
-            const MobileBody(
+            const WebBody(
               children: [
                 SectionTitle(
                   paddingTop: 50,

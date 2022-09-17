@@ -5,10 +5,12 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 class GradientText extends StatelessWidget {
   const GradientText({
     super.key,
+    this.isWeb = false,
     required this.title,
     required this.gradient,
   });
 
+  final bool isWeb;
   final String title;
   final Gradient gradient;
 
@@ -22,7 +24,8 @@ class GradientText extends StatelessWidget {
       child: Text(
         title,
         textAlign: TextAlign.start,
-        style: AppTexts.presentationTitle,
+        style:
+            isWeb ? AppTexts.presentationTitleWeb : AppTexts.presentationTitle,
       ),
     );
   }
