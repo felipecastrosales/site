@@ -14,45 +14,39 @@ class PresentationWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Positioned.fill(
-        //   child: Align(
-        //     alignment: Alignment.center,
-        //     child: Image.asset(
-        //       AppImages.profileGradientImage,
-        //       fit: BoxFit.cover,
-        //       filterQuality: FilterQuality.high,
-        //       width: MediaQuery.of(context).size.width,
-        //     ),
-        //   ),
-        // ),
-        // Positioned(
-        //   bottom: 0,
-        //   child: Image.asset(
-        //     AppImages.profileGradientBottom,
-        //     fit: BoxFit.cover,
-        //     filterQuality: FilterQuality.high,
-        //     width: MediaQuery.of(context).size.width,
-        //   ),
-        // ),
-        // Positioned(
-        //   bottom: 0,
-        //   child: Image.asset(
-        //     AppImages.profileTextureBackground,
-        //     fit: BoxFit.cover,
-        //     filterQuality: FilterQuality.high,
-        //     width: MediaQuery.of(context).size.width,
-        //   ),
-        // ),
+        Positioned.fill(
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: Image.asset(
+              AppImages.presentationGradientWeb,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              height: MediaQuery.of(context).size.height,
+            ),
+          ),
+        ),
+        Positioned.fill(
+          child: Align(
+            alignment: Alignment.center,
+            child: Image.asset(
+              AppImages.presentationTextureLarge,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+            ),
+          ),
+        ),
         Column(
           children: [
             MobileBody(
               children: [
                 const SectionTitle(
                   paddingTop: 50,
-                  paddingBottom: 0,
+                  paddingBottom: 12,
                   title: 'Olá, sou Felipe Sales',
                 ),
-              Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Expanded(
@@ -64,12 +58,15 @@ class PresentationWeb extends StatelessWidget {
                             paddingBottom: 32,
                             title: '> Desenvolvedor de Apps',
                           ),
-                          GradientDivider(),
+                          SizedBox(
+                            width: 400,
+                            child: GradientDivider(),
+                          ),
                           SizedBox(
                             child: Center(
                               child: SectionText(
                                 paddingTop: 32,
-                                paddingBottom: 16,
+                                paddingBottom: 32,
                                 title:
                                     'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.',
                               ),
@@ -81,26 +78,19 @@ class PresentationWeb extends StatelessWidget {
                     ),
                     const SizedBox(width: 24),
                     Expanded(
-                      child: Column(
-                        children: [
-                          Container(
-                            alignment: Alignment.center,
-                            child: Container(
-                              alignment: Alignment.center,
-                              padding: const EdgeInsets.only(top: 24),
-                              child: Image.asset(
-                                AppImages.presentationWeb,
-                                fit: BoxFit.cover,
-                                filterQuality: FilterQuality.high,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 60),
-                        ],
+                      child: Container(
+                        alignment: Alignment.center,
+                        padding: const EdgeInsets.only(top: 24),
+                        child: Image.asset(
+                          AppImages.presentationWeb,
+                          fit: BoxFit.cover,
+                          filterQuality: FilterQuality.high,
+                        ),
                       ),
                     ),
                   ],
                 ),
+                const SizedBox(height: 60),
               ],
             ),
             const PresentationDivider(),

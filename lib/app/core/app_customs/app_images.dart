@@ -1,19 +1,23 @@
 class AppImages {
   static const developer = 'assets/developer.png';
   static const profile = 'assets/profile.png';
+  static const mouse = 'assets/components/mouse-down.json';
 
   //Presentation
-  static const mouse = 'assets/components/mouse-down.json';
-  static const presentationMobile =
-      'assets/components/presentation/presentation-mobile.png';
-  static const presentationWeb =
-      'assets/components/presentation/presentation-web.png';
   static const presentationGradientBottom =
       'assets/components/presentation/gradient-bottom.png';
   static const presentationGradientImage =
       'assets/components/presentation/gradient-image.png';
+  static const presentationGradientWeb =
+      'assets/components/presentation/gradient-web.png';
+  static const presentationMobile =
+      'assets/components/presentation/presentation-mobile.png';
+  static const presentationWeb =
+      'assets/components/presentation/presentation-web.png';
   static const presentationTextureBackground =
       'assets/components/presentation/texture-background.png';
+  static const presentationTextureLarge =
+      'assets/components/presentation/texture-large.png';
 
   //Projects
   static const mockup = 'assets/components/projects/mockup.png';
