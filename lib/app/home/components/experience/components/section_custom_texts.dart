@@ -8,11 +8,14 @@ class SectionCustomTexts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         TitleDescriptionShort(
-          'Rocketseat | 2021 - Currently',
+          'Sua Música | 2022 - Currently',
+          'Flutter Developer',
+        ),
+        TitleDescriptionShort(
+          'Rocketseat | 2021 - 2022',
           'Developer Instructor',
         ),
         TitleDescriptionShort(

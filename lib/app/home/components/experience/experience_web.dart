@@ -8,7 +8,7 @@ import 'package:site/app/widgets/section/section.dart';
 import 'components/components.dart';
 
 class ExperienceWeb extends StatelessWidget {
-  const ExperienceWeb({Key? key}) : super(key: key);
+  const ExperienceWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,14 +24,13 @@ class ExperienceWeb extends StatelessWidget {
               ),
             ),
             Positioned.fill(
-              child: Align(
-                alignment: Alignment.center,
-                child: Image.asset(
-                  AppImages.champGradient,
-                  fit: BoxFit.cover,
-                  filterQuality: FilterQuality.high,
-                  width: MediaQuery.of(context).size.width,
-                ),
+              left: 10,
+              bottom: 0,
+              child: Image.asset(
+                AppImages.champCircle,
+                fit: BoxFit.cover,
+                filterQuality: FilterQuality.high,
+                height: MediaQuery.of(context).size.height,
               ),
             ),
             MobileBody(
@@ -41,17 +40,32 @@ class ExperienceWeb extends StatelessWidget {
                   paddingBottom: 20,
                   title: 'Experiência',
                 ),
-                const SectionCustomTexts(),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.only(top: 24),
-                  child: Image.asset(
-                    AppImages.champ,
-                    filterQuality: FilterQuality.high,
-                    height: 185,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      child: Stack(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            padding: const EdgeInsets.only(top: 24),
+                            child: Image.asset(
+                              AppImages.champ,
+                              filterQuality: FilterQuality.high,
+                              height: 361,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        SectionCustomTexts(),
+                      ],
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 16),
               ],
             ),
           ],

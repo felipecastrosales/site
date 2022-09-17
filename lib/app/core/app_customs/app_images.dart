@@ -12,12 +12,8 @@ class AppImages {
   static const profileTextureBackground =
       'assets/components/profile/texture-background.png';
 
-  static const champ = 'assets/components/experience/champ.png';
   static const abstractRight =
       'assets/components/experience/abstract-right.png';
-
-  static const champGradient =
-      'assets/components/experience/champ-gradient.png';
 
   static const mouse = 'assets/components/mouse-down.json';
 
@@ -25,6 +21,12 @@ class AppImages {
   static const mockup = 'assets/components/projects/mockup.png';
   static const abstractFit = 'assets/components/projects/abstract.png';
   static const abstractLarge = 'assets/components/projects/large-abstract.png';
+
+  //Experience
+  static const champ = 'assets/components/experience/champ.png';
+  static const champGradient =
+      'assets/components/experience/champ-gradient.png';
+  static const champCircle = 'assets/components/experience/champ-circle.png';
 
   // Social
   static const socialAbstract = 'assets/components/social/abstract.png';
