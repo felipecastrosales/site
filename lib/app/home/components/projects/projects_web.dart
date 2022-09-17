@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:site/app/core/app_customs/app_customs.dart';
 
+import 'package:site/app/core/app_customs/app_customs.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 
-import 'components/custom_text_button.dart';
+import 'components/custom_text_button_widget.dart';
 
 class ProjectsWeb extends StatelessWidget {
   const ProjectsWeb({super.key});
@@ -34,7 +34,7 @@ class ProjectsWeb extends StatelessWidget {
               children: [
                 const SectionTitle(
                   paddingTop: 50,
-                  paddingBottom: 20,
+                  paddingBottom: 8,
                   title: 'Projetos',
                 ),
                 Row(
@@ -48,14 +48,13 @@ class ProjectsWeb extends StatelessWidget {
                           SizedBox(
                             width: 400,
                             child: SectionText(
-                              paddingTop: 30,
+                              paddingTop: 42,
                               paddingBottom: 36,
                               title:
                                   'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',
                             ),
                           ),
                           CustomTextButtonWidget(),
-                          SizedBox(height: 16),
                         ],
                       ),
                     ),
@@ -70,7 +69,7 @@ class ProjectsWeb extends StatelessWidget {
                               width: 460,
                             ),
                           ),
-                          const SizedBox(height: 50),
+                          const SizedBox(height: 60),
                         ],
                       ),
                     ),

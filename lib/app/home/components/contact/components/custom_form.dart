@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/utils/contact_validators.dart';
-import 'package:site/app/widgets/custom_text_button.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 import 'components.dart';
 

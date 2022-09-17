@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:site/app/core/app_customs/app_customs.dart';
 
+import 'package:site/app/core/app_customs/app_customs.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 
-import 'components/custom_text_button.dart';
+import 'components/custom_text_button_widget.dart';
 
 class ProjectsMobile extends StatelessWidget {
   const ProjectsMobile({super.key});
@@ -45,7 +45,6 @@ class ProjectsMobile extends StatelessWidget {
                   ),
                 ),
                 const CustomTextButtonWidget(),
-                const SizedBox(height: 16),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),

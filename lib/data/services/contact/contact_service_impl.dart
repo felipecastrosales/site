@@ -1,6 +1,6 @@
-import 'package:site/data/repositories/contact/contact_repository.dart';
+import 'package:site/data/repositories/contact/contact.dart';
 
-import 'contact_service.dart';
+import 'contact.dart';
 
 class ContactServiceImpl implements ContactService {
   final ContactRepository _contactRepository;

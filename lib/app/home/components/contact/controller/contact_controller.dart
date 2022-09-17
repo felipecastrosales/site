@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/data/services/contact/contact_service_impl.dart';
+import 'package:site/data/services/contact/contact.dart';
 
 class ContactController extends ChangeNotifier {
   final ContactServiceImpl _contactService;

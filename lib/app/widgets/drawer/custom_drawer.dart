@@ -4,7 +4,6 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 
 import 'drawer.dart';
-import 'footer.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer(

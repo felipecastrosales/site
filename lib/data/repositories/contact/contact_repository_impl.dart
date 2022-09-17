@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:site/data/constants/constants_api.dart';
 import 'package:site/data/keys/keys.dart';
 
-import 'contact_repository.dart';
+import 'contact.dart';
 
 class ContactRepositoryImpl implements ContactRepository {
   @override
