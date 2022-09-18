@@ -12,24 +12,32 @@ class ProjectsWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
       children: [
-        Stack(
-          children: [
-            Positioned(
-              bottom: 4,
-              child: Stack(
-                children: [
-                  Image.asset(
-                    AppImages.abstractLarge,
-                    fit: BoxFit.cover,
-                    filterQuality: FilterQuality.high,
-                    height: 305.7,
-                    width: MediaQuery.of(context).size.width,
-                  ),
-                ],
-              ),
+        Positioned.fill(
+          child: Image.asset(
+            AppImages.presentationTextureLarge,
+            fit: BoxFit.cover,
+            filterQuality: FilterQuality.high,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+          ),
+        ),
+        Positioned.fill(
+          bottom: 4,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Image.asset(
+              AppImages.abstractLarge,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              height: 305.7,
+              width: MediaQuery.of(context).size.width,
             ),
+          ),
+        ),
+        Column(
+          children: [
             WebBody(
               children: [
                 const SectionTitle(
@@ -78,9 +86,9 @@ class ProjectsWeb extends StatelessWidget {
                 ),
               ],
             ),
+            const SectionDivider(),
           ],
         ),
-        const SectionDivider(),
       ],
     );
   }

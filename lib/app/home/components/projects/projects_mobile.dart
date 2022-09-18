@@ -47,7 +47,7 @@ class ProjectsMobile extends StatelessWidget {
                 const CustomTextButtonWidget(),
                 Container(
                   alignment: Alignment.center,
-                  padding: const EdgeInsets.only(top: 24),
+                  padding: const EdgeInsets.only(top: 24, bottom: 16),
                   child: Image.asset(
                     AppImages.mockup,
                     filterQuality: FilterQuality.high,
