@@ -36,6 +36,7 @@ class ExperienceWeb extends StatelessWidget {
             WebBody(
               children: [
                 const SectionTitle(
+                  isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 20,
                   title: 'Experiência',

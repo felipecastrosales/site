@@ -55,6 +55,7 @@ class ContactWeb extends StatelessWidget {
             const WebBody(
               children: [
                 SectionTitle(
+                  isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 20,
                   title: 'Contato',

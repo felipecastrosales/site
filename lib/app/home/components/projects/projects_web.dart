@@ -33,6 +33,7 @@ class ProjectsWeb extends StatelessWidget {
             WebBody(
               children: [
                 const SectionTitle(
+                  isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 8,
                   title: 'Projetos',
