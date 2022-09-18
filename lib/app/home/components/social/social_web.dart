@@ -16,6 +16,7 @@ class SocialWeb extends StatelessWidget {
           child: Image.asset(
             AppImages.socialAbstractLarge,
             fit: BoxFit.cover,
+            alignment: Alignment.topCenter,
             filterQuality: FilterQuality.high,
             width: MediaQuery.of(context).size.width,
             height: 495,

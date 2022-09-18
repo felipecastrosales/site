@@ -19,9 +19,7 @@ class ExperienceMobile extends StatelessWidget {
             Positioned(
               top: -25,
               right: 0,
-              child: Image.asset(
-                AppImages.abstractRight,
-              ),
+              child: Image.asset(AppImages.abstractRight),
             ),
             Positioned.fill(
               child: Align(
@@ -31,6 +29,7 @@ class ExperienceMobile extends StatelessWidget {
                   fit: BoxFit.cover,
                   filterQuality: FilterQuality.high,
                   width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height,
                 ),
               ),
             ),

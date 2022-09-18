@@ -45,7 +45,7 @@ class PresentationWeb extends StatelessWidget {
                   title: 'Olá, sou Felipe Sales',
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
                       child: Column(

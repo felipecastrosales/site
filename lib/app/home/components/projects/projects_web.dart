@@ -15,21 +15,13 @@ class ProjectsWeb extends StatelessWidget {
     return Stack(
       children: [
         Positioned.fill(
-          child: Image.asset(
-            AppImages.presentationTextureLarge,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-          ),
-        ),
-        Positioned.fill(
           bottom: 4,
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Image.asset(
               AppImages.abstractLarge,
               fit: BoxFit.cover,
+              alignment: Alignment.topCenter,
               filterQuality: FilterQuality.high,
               height: 305.7,
               width: MediaQuery.of(context).size.width,
@@ -47,7 +39,7 @@ class ProjectsWeb extends StatelessWidget {
                   title: 'Projetos',
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(

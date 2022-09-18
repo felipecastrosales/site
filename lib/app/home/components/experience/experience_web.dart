@@ -12,32 +12,42 @@ class ExperienceWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
       children: [
-        Stack(
+        Positioned.fill(
+          right: 0,
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: Image.asset(
+              AppImages.abstractRight,
+              fit: BoxFit.cover,
+              filterQuality: FilterQuality.high,
+              height: MediaQuery.of(context).size.height,
+            ),
+          ),
+        ),
+        Positioned.fill(
+          left: 10,
+          bottom: 0,
+          child: Image.asset(
+            AppImages.champCircle,
+            fit: BoxFit.cover,
+            filterQuality: FilterQuality.high,
+            height: MediaQuery.of(context).size.height,
+          ),
+        ),
+        Positioned.fill(
+          child: Image.asset(
+            AppImages.presentationTextureLarge,
+            fit: BoxFit.cover,
+            alignment: Alignment.topCenter,
+            filterQuality: FilterQuality.high,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+          ),
+        ),
+        Column(
           children: [
-            Positioned.fill(
-              right: 0,
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Image.asset(
-                  AppImages.abstractRight,
-                  fit: BoxFit.cover,
-                  filterQuality: FilterQuality.high,
-                  height: MediaQuery.of(context).size.height,
-                ),
-              ),
-            ),
-            Positioned.fill(
-              left: 10,
-              bottom: 0,
-              child: Image.asset(
-                AppImages.champCircle,
-                fit: BoxFit.cover,
-                filterQuality: FilterQuality.high,
-                height: MediaQuery.of(context).size.height,
-              ),
-            ),
             WebBody(
               children: [
                 const SectionTitle(
@@ -47,23 +57,26 @@ class ExperienceWeb extends StatelessWidget {
                   title: 'Experiência',
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
-                      child: Stack(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            alignment: Alignment.center,
-                            padding: const EdgeInsets.only(top: 24),
+                            padding: const EdgeInsets.only(top: 24, left: 40),
                             child: Image.asset(
                               AppImages.champ,
                               filterQuality: FilterQuality.high,
-                              height: 361,
+                              width: 300,
                             ),
                           ),
+                          const SizedBox(height: 87),
                         ],
                       ),
                     ),
+                    const SizedBox(height: 24),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
@@ -74,9 +87,9 @@ class ExperienceWeb extends StatelessWidget {
                 ),
               ],
             ),
+            const SectionDivider(),
           ],
         ),
-        const SectionDivider(),
       ],
     );
   }
