@@ -8,8 +8,8 @@ import 'drawer.dart';
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer(
     this.pageController, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final PageController pageController;
 

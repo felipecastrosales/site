@@ -4,9 +4,10 @@ import 'drawer.dart';
 
 class DrawerItems extends StatelessWidget {
   const DrawerItems({
-    Key? key,
+    super.key,
     required this.pageController,
-  }) : super(key: key);
+  });
+
   final PageController pageController;
 
   @override

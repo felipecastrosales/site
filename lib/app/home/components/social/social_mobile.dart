@@ -5,7 +5,7 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 import 'components/components.dart';
 
 class SocialMobile extends StatelessWidget {
-  const SocialMobile({Key? key}) : super(key: key);
+  const SocialMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

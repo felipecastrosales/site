@@ -5,7 +5,7 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 import 'components/components.dart';
 
 class SocialWeb extends StatelessWidget {
-  const SocialWeb({Key? key}) : super(key: key);
+  const SocialWeb({super.key});
 
   @override
   Widget build(BuildContext context) {

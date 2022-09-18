@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/app_customs/app_customs.dart';
 
 class CardGlassmorphism extends StatelessWidget {
-  final Widget child;
-
   const CardGlassmorphism({
-    Key? key,
+    super.key,
     required this.child,
-  }) : super(key: key);
+  });
+
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {

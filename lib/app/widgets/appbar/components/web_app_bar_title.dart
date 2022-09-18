@@ -6,8 +6,8 @@ class WebAppBarTitle extends StatelessWidget {
   const WebAppBarTitle(
     this.title,
     this.page, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final String title;
   final int page;

@@ -4,9 +4,9 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 
 class RichTextShort extends StatelessWidget {
   const RichTextShort({
-    Key? key,
+    super.key,
     required this.textAlign,
-  }) : super(key: key);
+  });
 
   final TextAlign textAlign;
 

@@ -6,9 +6,9 @@ class CustomVerticalDivider extends StatelessWidget {
   final double width;
 
   const CustomVerticalDivider({
-    Key? key,
+    super.key,
     required this.width,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CustomVerticalDivider extends StatelessWidget {
       width: width,
       height: 50,
       margin: const EdgeInsets.symmetric(horizontal: 8),
-      color: AppColors.background ,
+      color: AppColors.background,
       alignment: Alignment.bottomCenter,
     );
   }

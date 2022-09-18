@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'components.dart';
 
 class SectionCustomTexts extends StatelessWidget {
-  const SectionCustomTexts({Key? key}) : super(key: key);
+  const SectionCustomTexts({super.key});
 
   @override
   Widget build(BuildContext context) {

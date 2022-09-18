@@ -8,11 +8,11 @@ import 'card_glassmorphism.dart';
 
 class SocialItem extends StatelessWidget {
   const SocialItem({
-    Key? key,
+    super.key,
     required this.title,
     required this.image,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String title;
   final String image;

@@ -4,12 +4,12 @@ import 'package:site/app/core/app_customs/app_customs.dart';
 
 class DrawerTile extends StatelessWidget {
   const DrawerTile({
-    Key? key,
+    super.key,
     required this.title,
     required this.leading,
     required this.page,
     required this.controller,
-  }) : super(key: key);
+  });
 
   final String title;
   final IconData leading;

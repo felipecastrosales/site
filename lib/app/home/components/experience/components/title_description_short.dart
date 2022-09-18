@@ -6,8 +6,8 @@ class TitleDescriptionShort extends StatelessWidget {
   const TitleDescriptionShort(
     this.title,
     this.description, {
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   final String title;
   final String description;

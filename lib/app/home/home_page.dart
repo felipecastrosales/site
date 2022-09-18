@@ -14,7 +14,7 @@ import 'components/social/social.dart';
 import 'components/experience/experience.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
+  HomePage({super.key});
   final pageController = PageController();
 
   @override

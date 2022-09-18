@@ -6,7 +6,7 @@ import 'social_mobile.dart';
 import 'social_web.dart';
 
 class Social extends StatelessWidget {
-  const Social({Key? key}) : super(key: key);
+  const Social({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ import 'package:site/app/core/responsive/breakpoints.dart';
 import 'appbar.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {

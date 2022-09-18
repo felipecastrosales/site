@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/app_customs/app_customs.dart';
 
 class DrawerFooter extends StatelessWidget {
-  const DrawerFooter({Key? key}) : super(key: key);
+  const DrawerFooter({super.key});
 
   @override
   Widget build(BuildContext context) {

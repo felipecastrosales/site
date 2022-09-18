@@ -8,14 +8,14 @@ import 'components.dart';
 
 class CustomForm extends StatelessWidget {
   const CustomForm({
-    Key? key,
+    super.key,
     required this.formKey,
     required this.nameController,
     required this.emailController,
     required this.subjectController,
     required this.messageController,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final GlobalKey<FormState> formKey;
   final TextEditingController nameController;

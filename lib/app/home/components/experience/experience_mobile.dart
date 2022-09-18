@@ -8,7 +8,7 @@ import 'package:site/app/widgets/section/section.dart';
 import 'components/components.dart';
 
 class ExperienceMobile extends StatelessWidget {
-  const ExperienceMobile({Key? key}) : super(key: key);
+  const ExperienceMobile({super.key});
 
   @override
   Widget build(BuildContext context) {

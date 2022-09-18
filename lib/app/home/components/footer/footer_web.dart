@@ -7,7 +7,7 @@ import 'package:site/app/widgets/body/body.dart';
 import 'components/rich_text_short.dart';
 
 class FooterWeb extends StatelessWidget {
-  const FooterWeb({Key? key}) : super(key: key);
+  const FooterWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
