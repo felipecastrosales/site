@@ -12,7 +12,7 @@ class SocialAllCardsWeb extends StatelessWidget {
       children: const [
         WebBody(
           children: [
-            TitleTextList(),
+            TitleTextList(isWeb: true),
           ],
         ),
         SizedBox(height: 60),

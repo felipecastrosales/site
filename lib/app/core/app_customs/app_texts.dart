@@ -16,11 +16,13 @@ class AppTexts {
 
   static final presentationTitle = GoogleFonts.montserrat(
     fontSize: 32,
+    color: AppColors.primary,
     fontWeight: FontWeight.w700,
   );
 
   static final presentationTitleWeb = GoogleFonts.montserrat(
     fontSize: 50,
+    color: AppColors.primary,
     fontWeight: FontWeight.w700,
   );
 
