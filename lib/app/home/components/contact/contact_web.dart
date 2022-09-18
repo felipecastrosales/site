@@ -52,22 +52,21 @@ class ContactWeb extends StatelessWidget {
         ),
         Column(
           children: [
-            const WebBody(
+            WebBody(
               children: [
-                SectionTitle(
-                  isWeb: true,
+                const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
                   title: 'Contato',
                 ),
-                SectionText(
+                const SectionText(
                   paddingTop: 0,
                   paddingBottom: 45,
                   title: 'Vamos bater um papo, me chame:',
                 ),
+                widget,
               ],
             ),
-            widget,
             const SectionDivider(),
           ],
         ),
