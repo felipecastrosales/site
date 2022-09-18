@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 
 import 'components/rich_text_short.dart';
@@ -37,13 +38,21 @@ class FooterWeb extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    'Veja no GitHub.',
-                    style: AppTexts.footerLink,
+                  InkWell(
+                    onTap: () => launchURL('github.com/felipecastrosales/site'),
+                    child: Text(
+                      'Veja no GitHub.',
+                      style: AppTexts.footerLink,
+                    ),
                   ),
-                  Text(
-                    'Veja no Figma.',
-                    style: AppTexts.footerLink,
+                  InkWell(
+                    onTap: () => launchURL(
+                      'figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade',
+                    ),
+                    child: Text(
+                      'Veja no Figma.',
+                      style: AppTexts.footerLink,
+                    ),
                   ),
                 ],
               ),

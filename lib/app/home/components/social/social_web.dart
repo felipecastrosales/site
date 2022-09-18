@@ -12,7 +12,7 @@ class SocialWeb extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          bottom: 0,
+          bottom: 4,
           child: Image.asset(
             AppImages.socialAbstractLarge,
             fit: BoxFit.cover,
@@ -29,7 +29,7 @@ class SocialWeb extends StatelessWidget {
               fit: BoxFit.cover,
               filterQuality: FilterQuality.high,
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * 0.8,
+              height: MediaQuery.of(context).size.height,
             ),
           ),
         ),

@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:url_launcher/url_launcher.dart';
+import 'package:site/app/utils/utils.dart';
 
 import 'components.dart';
 
 class SocialList extends StatelessWidget {
   const SocialList({super.key});
-
-  void launchURL(String url) async => await launchUrl(
-        Uri.parse('https://$url'),
-        webOnlyWindowName: '_blank',
-      );
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +26,9 @@ class SocialList extends StatelessWidget {
         SocialItem(
           title: 'Stack OverFlow',
           image: 'stack-overflow.svg',
-          onTap: () =>
-              launchURL('stackoverflow.com/users/13096514/felipe-sales'),
+          onTap: () => launchURL(
+            'stackoverflow.com/users/13096514/felipe-sales',
+          ),
         ),
         const SizedBox(height: 14),
         SocialItem(

@@ -16,11 +16,16 @@ class ExperienceWeb extends StatelessWidget {
       children: [
         Stack(
           children: [
-            Positioned(
-              top: -25,
+            Positioned.fill(
               right: 0,
-              child: Image.asset(
-                AppImages.abstractRight,
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: Image.asset(
+                  AppImages.abstractRight,
+                  fit: BoxFit.cover,
+                  filterQuality: FilterQuality.high,
+                  height: MediaQuery.of(context).size.height,
+                ),
               ),
             ),
             Positioned.fill(
