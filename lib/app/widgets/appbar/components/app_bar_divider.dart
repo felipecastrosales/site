@@ -8,7 +8,7 @@ class AppBarDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 12,
+      height: 16,
       width: 1,
       color: AppColors.primary,
     );

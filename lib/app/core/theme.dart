@@ -12,5 +12,10 @@ class SiteTheme {
         colorScheme: ThemeData().colorScheme.copyWith(
               primary: AppColors.primary,
             ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.black,
+          elevation: 0,
+          iconTheme: IconThemeData(color: AppColors.primary),
+        ),
       );
 }

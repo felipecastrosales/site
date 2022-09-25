@@ -8,8 +8,6 @@ class MobileAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      iconTheme: const IconThemeData(color: AppColors.primary),
-      backgroundColor: AppColors.black,
       actions: [
         Container(
           alignment: Alignment.center,

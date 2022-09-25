@@ -14,17 +14,27 @@ class WebAppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        // controller.animateToPage(
-        //   page,
-        //   duration: const Duration(milliseconds: 1000),
-        //   curve: Curves.ease,
-        // );
-      },
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: AppTexts.appBar(title),
+    return Flexible(
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(8),
+        child: InkWell(
+          splashColor: AppColors.primary,
+          overlayColor: MaterialStateProperty.all(
+            AppColors.primary.withOpacity(0.16),
+          ),
+          onTap: () {
+            // controller.animateToPage(
+            //   page,
+            //   duration: const Duration(milliseconds: 1000),
+            //   curve: Curves.ease,
+            // );
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: AppTexts.appBar(title),
+          ),
+        ),
       ),
     );
   }

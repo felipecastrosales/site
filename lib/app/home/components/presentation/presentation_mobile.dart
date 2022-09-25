@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -22,6 +23,7 @@ class PresentationMobile extends StatelessWidget {
               fit: BoxFit.cover,
               filterQuality: FilterQuality.high,
               width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
             ),
           ),
         ),
@@ -32,6 +34,7 @@ class PresentationMobile extends StatelessWidget {
             fit: BoxFit.cover,
             filterQuality: FilterQuality.high,
             width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
           ),
         ),
         Positioned(
@@ -41,6 +44,7 @@ class PresentationMobile extends StatelessWidget {
             fit: BoxFit.cover,
             filterQuality: FilterQuality.high,
             width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
           ),
         ),
         Column(
@@ -52,10 +56,19 @@ class PresentationMobile extends StatelessWidget {
                   paddingBottom: 16,
                   title: 'Olá, sou Felipe Sales',
                 ),
-                const SectionSubtitle(
-                  paddingTop: 8,
-                  paddingBottom: 8,
-                  title: '> Desenvolvedor de Aplicativos',
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    if (constraints.maxWidth <
+                        Breakpoints.presentationMobileSubtitle) {
+                      return const SizedBox.shrink();
+                    } else {
+                      return const SectionSubtitle(
+                        paddingTop: 8,
+                        paddingBottom: 8,
+                        title: '> Desenvolvedor de Aplicativos',
+                      );
+                    }
+                  },
                 ),
                 const GradientDivider(),
                 Container(
