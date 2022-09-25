@@ -31,7 +31,7 @@ class WebAppBarTitle extends StatelessWidget {
             // );
           },
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            padding: const EdgeInsets.all(16),
             child: AppTexts.appBar(title),
           ),
         ),
