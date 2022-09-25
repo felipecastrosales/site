@@ -6,6 +6,34 @@ void main() {
   testWidgets('Should renders HomePage', (tester) async {
     await _createWidget(tester: tester);
     expect(find.byType(HomePage), findsOneWidget);
+
+    expect(
+      find.byWidgetPredicate(
+        (widget) => widget is LayoutBuilder,
+      ),
+      findsNWidgets(3),
+    );
+
+    expect(
+      find.byWidgetPredicate(
+        (widget) => widget is Scaffold && widget.body is Align,
+      ),
+      findsOneWidget,
+    );
+
+    expect(
+      find.byWidgetPredicate(
+        (widget) => widget is Align && widget.child is ListView,
+      ),
+      findsOneWidget,
+    );
+
+    expect(
+      find.byWidgetPredicate(
+        (widget) => widget is ListView,
+      ),
+      findsOneWidget,
+    );
   });
 }
 
