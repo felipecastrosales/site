@@ -1,5 +1,4 @@
 class Breakpoints {
-  Breakpoints._();
   static const appBar = 700;
   static const presentation = 660;
   static const presentationMobileSubtitle = 420;
