@@ -16,7 +16,7 @@ class ContactRepositoryImpl implements ContactRepository {
     required String subject,
   }) async {
     final baseUrl = Uri.parse(ConstantsAPI.baseUrl);
-    // as this project is very simple and I wanted to make it available to the community, 
+    // as this project is very simple and I wanted to make it available to the community,
     // these private keys are simply in a 'keys' file and I added it to .gitignore.
     // ! you can and should work it out better, because it's about security. !
     const serviceId = Keys.serviceId;
