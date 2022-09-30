@@ -18,12 +18,12 @@ class TitleDescriptionShort extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        SelectableText(
           '• $title',
           style: AppTexts.experienceTitle,
         ),
         const SizedBox(height: 8),
-        Text(
+        SelectableText(
           '    — $description',
           style: AppTexts.experienceDescription,
         ),

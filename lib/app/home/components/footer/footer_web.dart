@@ -28,7 +28,7 @@ class FooterWeb extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const RichTextShort(textAlign: TextAlign.start),
-                  Text(
+                  SelectableText(
                     'Um projeto Flutter OpenSource.',
                     style: AppTexts.phraseWhite,
                   ),
@@ -40,7 +40,7 @@ class FooterWeb extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () => launchURL('github.com/felipecastrosales/site'),
-                    child: Text(
+                    child: SelectableText(
                       'Veja no GitHub.',
                       style: AppTexts.footerLink,
                     ),
@@ -49,7 +49,7 @@ class FooterWeb extends StatelessWidget {
                     onTap: () => launchURL(
                       'figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade',
                     ),
-                    child: Text(
+                    child: SelectableText(
                       'Veja no Figma.',
                       style: AppTexts.footerLink,
                     ),

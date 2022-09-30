@@ -12,7 +12,7 @@ class MobileAppBar extends StatelessWidget {
         Container(
           alignment: Alignment.center,
           padding: const EdgeInsets.only(right: 16),
-          child: const Text(
+          child: const SelectableText(
             'FS',
             style: TextStyle(
               letterSpacing: 1.5,

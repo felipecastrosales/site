@@ -27,7 +27,7 @@ class CustomTextButton extends StatelessWidget {
           gradient: AppGradients.divider,
           borderRadius: BorderRadius.circular(8),
         ),
-        child: Text(
+        child: SelectableText(
           text,
           style: AppTexts.buttonTitle,
         ),

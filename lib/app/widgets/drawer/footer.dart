@@ -15,7 +15,7 @@ class Footer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
+          SelectableText(
             'Criado por @felipecastrosales™',
             style: AppTexts.footer,
           ),

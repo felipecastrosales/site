@@ -20,7 +20,7 @@ class SectionText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
-      child: Text(
+      child: SelectableText(
         title,
         textAlign: isCentered ? TextAlign.center : TextAlign.start,
         style: AppTexts.presentationText,

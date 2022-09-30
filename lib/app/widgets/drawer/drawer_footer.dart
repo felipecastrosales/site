@@ -20,7 +20,7 @@ class DrawerFooter extends StatelessWidget {
               filterQuality: FilterQuality.high,
             ),
             const SizedBox(width: 16),
-            Text(
+            SelectableText(
               'Deep Code.',
               textAlign: TextAlign.center,
               style: AppTexts.socialTitle,

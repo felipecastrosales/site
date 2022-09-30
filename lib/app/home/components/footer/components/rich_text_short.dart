@@ -17,6 +17,9 @@ class RichTextShort extends StatelessWidget {
       DateTime.now(),
     );
 
+    //   return SelectableText.rich( // bug
+    // textAlign: textAlign,
+    // TextSpan(
     return RichText(
       textAlign: textAlign,
       text: TextSpan(

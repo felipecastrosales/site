@@ -31,7 +31,7 @@ class CustomDrawerHeader extends StatelessWidget {
             ),
           ),
         ),
-        Text(
+        SelectableText(
           'Felipe Sales',
           textAlign: TextAlign.center,
           style: AppTexts.socialTitle,

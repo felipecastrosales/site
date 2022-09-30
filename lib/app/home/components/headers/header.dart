@@ -35,12 +35,12 @@ class Header extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 25),
-              Text(
+              SelectableText(
                 'Felipe Sales',
                 style: AppTexts.name,
               ),
               const SizedBox(height: 4),
-              Text(
+              SelectableText(
                 'Flutter Developer Instructor',
                 style: AppTexts.office,
               ),

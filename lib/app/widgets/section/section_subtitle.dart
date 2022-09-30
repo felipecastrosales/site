@@ -18,7 +18,7 @@ class SectionSubtitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
-      child: Text(
+      child: SelectableText(
         title,
         style: AppTexts.presentationSubtitle,
       ),

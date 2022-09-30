@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'app_customs.dart';
 
 class AppTexts {
-  static appBar(text) => Text(
+  static appBar(text) => SelectableText(
         text,
         style: GoogleFonts.montserrat(
           fontSize: 16,

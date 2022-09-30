@@ -33,7 +33,7 @@ class SocialItem extends StatelessWidget {
               child: SvgPicture.asset('${AppImages.socialLogo(image)}'),
             ),
             const SizedBox(width: 10),
-            Text(
+            SelectableText(
               title,
               style: AppTexts.socialTitle,
             ),

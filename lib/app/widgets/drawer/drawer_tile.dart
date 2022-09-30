@@ -33,7 +33,7 @@ class DrawerTile extends StatelessWidget {
           child: ListTile(
             title: Transform.translate(
               offset: const Offset(-12, 0),
-              child: Text(
+              child: SelectableText(
                 title,
                 style: AppTexts.socialTitle,
               ),
