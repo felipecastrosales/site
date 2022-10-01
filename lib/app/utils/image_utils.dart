@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/utils/context_ext.dart';
+
 class ImageUtils extends StatelessWidget {
   const ImageUtils(
     this.image, {
@@ -24,8 +26,8 @@ class ImageUtils extends StatelessWidget {
       fit: fit,
       alignment: alignment,
       filterQuality: filterQuality,
-      height: height ?? MediaQuery.of(context).size.height,
-      width: width ?? MediaQuery.of(context).size.width,
+      height: height ?? context.height,
+      width: width ?? context.width,
     );
   }
 }
