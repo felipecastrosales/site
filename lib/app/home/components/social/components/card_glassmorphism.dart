@@ -15,6 +15,7 @@ class CardGlassmorphism extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
         child: Container(

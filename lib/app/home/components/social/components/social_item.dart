@@ -22,6 +22,9 @@ class SocialItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
+      customBorder: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
       borderRadius: BorderRadius.circular(16),
       child: CardGlassmorphism(
         child: Row(
