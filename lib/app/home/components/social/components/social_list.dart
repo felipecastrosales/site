@@ -9,24 +9,26 @@ class SocialList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const launch = LaunchUrls.launchURL;
+
     return Column(
       children: [
         SocialItem(
           title: 'GitHub',
           image: 'github.svg',
-          onTap: () => launchURL('github.com/felipecastrosales'),
+          onTap: () => launch('github.com/felipecastrosales'),
         ),
         const SizedBox(height: 14),
         SocialItem(
           title: 'LinkedIn',
           image: 'linkedin.svg',
-          onTap: () => launchURL('linkedin.com/in/felipecastrosales'),
+          onTap: () => launch('linkedin.com/in/felipecastrosales'),
         ),
         const SizedBox(height: 14),
         SocialItem(
           title: 'Stack OverFlow',
           image: 'stack-overflow.svg',
-          onTap: () => launchURL(
+          onTap: () => launch(
             'stackoverflow.com/users/13096514/felipe-sales',
           ),
         ),
@@ -34,19 +36,19 @@ class SocialList extends StatelessWidget {
         SocialItem(
           title: 'Discord',
           image: 'discord.svg',
-          onTap: () => launchURL('discordapp.com/users/406074089011281921'),
+          onTap: () => launch('discordapp.com/users/406074089011281921'),
         ),
         const SizedBox(height: 14),
         SocialItem(
           title: 'Udemy',
           image: 'udemy.svg',
-          onTap: () => launchURL('udemy.com/user/luis-felipe-de-castro-sales/'),
+          onTap: () => launch('udemy.com/user/luis-felipe-de-castro-sales/'),
         ),
         const SizedBox(height: 14),
         SocialItem(
           title: 'Instagram',
           image: 'instagram.svg',
-          onTap: () => launchURL('instagram.com/felipecastrosales'),
+          onTap: () => launch('instagram.com/felipecastrosales'),
         ),
         const SizedBox(height: 14),
       ],

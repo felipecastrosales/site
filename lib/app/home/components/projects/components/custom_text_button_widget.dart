@@ -11,7 +11,7 @@ class CustomTextButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomTextButton(
       text: 'VER PROJETOS',
-      onPressed: () async => launchURL('github.com/felipecastrosales'),
+      onPressed: () async => LaunchUrls.launchURL('github.com/felipecastrosales'),
     );
   }
 }

@@ -11,6 +11,8 @@ class FooterWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const launch = LaunchUrls.launchURL;
+
     return Container(
       height: 100,
       color: AppColors.black,
@@ -39,14 +41,14 @@ class FooterWeb extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   InkWell(
-                    onTap: () => launchURL('github.com/felipecastrosales/site'),
+                    onTap: () => launch('github.com/felipecastrosales/site'),
                     child: SelectableText(
                       'Veja no GitHub.',
                       style: AppTexts.footerLink,
                     ),
                   ),
                   InkWell(
-                    onTap: () => launchURL(
+                    onTap: () => launch(
                       'figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade',
                     ),
                     child: SelectableText(
