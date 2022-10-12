@@ -5,7 +5,7 @@ import 'package:site/app/home/home_page.dart';
 void main() {
   testWidgets('Should renders HomePage', (tester) async {
     await _createWidget(tester: tester);
-    expect(find.byType(HomePage), findsOneWidget);
+    expect(find.byType(HomePage), findsOneWidget,);
 
     expect(
       find.byWidgetPredicate(
