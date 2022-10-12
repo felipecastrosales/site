@@ -3,7 +3,7 @@ import 'package:site/data/repositories/contact/contact.dart';
 import 'package:site/data/services/contact/contact.dart';
 
 void main() {
-  testWidgets('ContactServiceImpl', (tester) async {
+  test('ContactServiceImpl', () async {
     var contactRepository = ContactRepositoryImpl();
     var contactServiceImpl = ContactServiceImpl(
       contactRepository: contactRepository,

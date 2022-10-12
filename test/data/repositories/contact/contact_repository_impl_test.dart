@@ -2,7 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:site/data/repositories/contact/contact.dart';
 
 void main() {
-  testWidgets('ContactRepositoryImpl', (tester) async {
+  test('ContactRepositoryImpl', () async {
     var contactRepositoryImpl = ContactRepositoryImpl();
 
     expect(
