@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -18,32 +20,26 @@ class ExperienceWeb extends StatelessWidget {
           right: 0,
           child: Align(
             alignment: Alignment.centerRight,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.abstractRight,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              height: MediaQuery.of(context).size.height,
+              height: context.height,
             ),
           ),
         ),
         Positioned.fill(
           left: 10,
           bottom: 0,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.champCircle,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            height: MediaQuery.of(context).size.height,
+            height: context.height,
           ),
         ),
         Positioned.fill(
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.presentationTextureLarge,
-            fit: BoxFit.cover,
             alignment: Alignment.topCenter,
-            filterQuality: FilterQuality.high,
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
+            height: context.height,
+            width: context.width,
           ),
         ),
         Column(
@@ -66,9 +62,8 @@ class ExperienceWeb extends StatelessWidget {
                         children: [
                           Container(
                             padding: const EdgeInsets.only(top: 24, left: 40),
-                            child: Image.asset(
+                            child: const ImageAssetUtil(
                               AppImages.champ,
-                              filterQuality: FilterQuality.high,
                               width: 300,
                             ),
                           ),

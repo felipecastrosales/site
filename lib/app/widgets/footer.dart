@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/utils.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -20,10 +21,9 @@ class Footer extends StatelessWidget {
             style: AppTexts.footer,
           ),
           const SizedBox(width: 2),
-          Image.asset(
+          const ImageAssetUtil(
             AppImages.developer,
             height: 16,
-            filterQuality: FilterQuality.high,
           ),
         ],
       ),

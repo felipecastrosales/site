@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -16,20 +18,20 @@ class ExperienceMobile extends StatelessWidget {
       children: [
         Stack(
           children: [
-            Positioned(
+            const Positioned(
               top: -25,
               right: 0,
-              child: Image.asset(AppImages.abstractRight),
+              child: ImageAssetUtil(
+                AppImages.abstractRight,
+              ),
             ),
             Positioned.fill(
               child: Align(
                 alignment: Alignment.center,
-                child: Image.asset(
+                child: ImageAssetUtil(
                   AppImages.champGradient,
-                  fit: BoxFit.cover,
-                  filterQuality: FilterQuality.high,
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height,
+                  width: context.width,
+                  height: context.height,
                 ),
               ),
             ),
@@ -44,9 +46,8 @@ class ExperienceMobile extends StatelessWidget {
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),
-                  child: Image.asset(
+                  child: const ImageAssetUtil(
                     AppImages.champ,
-                    filterQuality: FilterQuality.high,
                     height: 185,
                   ),
                 ),

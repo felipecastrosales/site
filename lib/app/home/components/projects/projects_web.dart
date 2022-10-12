@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -18,13 +20,11 @@ class ProjectsWeb extends StatelessWidget {
           bottom: 4,
           child: Align(
             alignment: Alignment.bottomCenter,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.abstractLarge,
-              fit: BoxFit.cover,
               alignment: Alignment.topCenter,
-              filterQuality: FilterQuality.high,
               height: 305.7,
-              width: MediaQuery.of(context).size.width,
+              width: context.width,
             ),
           ),
         ),
@@ -64,9 +64,8 @@ class ProjectsWeb extends StatelessWidget {
                         children: [
                           Container(
                             alignment: Alignment.center,
-                            child: Image.asset(
+                            child: const ImageAssetUtil(
                               AppImages.mockup,
-                              filterQuality: FilterQuality.high,
                               width: 460,
                             ),
                           ),

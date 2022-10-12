@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 
 import 'components/components.dart';
 
@@ -12,21 +14,17 @@ class SocialMobile extends StatelessWidget {
     return Stack(children: [
       Positioned(
         bottom: 0,
-        child: Image.asset(
+        child: ImageAssetUtil(
           AppImages.socialAbstract,
-          fit: BoxFit.cover,
-          filterQuality: FilterQuality.high,
-          width: MediaQuery.of(context).size.width,
+          width: context.width,
         ),
       ),
       Positioned.fill(
         bottom: 0,
         child: Align(
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.socialGradientCenter,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            height: MediaQuery.of(context).size.height,
+            height: context.height,
           ),
         ),
       ),

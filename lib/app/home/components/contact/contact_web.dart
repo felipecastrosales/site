@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -19,22 +21,18 @@ class ContactWeb extends StatelessWidget {
       children: [
         Positioned(
           bottom: 0,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.contactHorizontalTexture,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            height: MediaQuery.of(context).size.height,
+            height: context.height,
           ),
         ),
         Positioned.fill(
           left: 0,
           child: Align(
             alignment: Alignment.centerLeft,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.contactGradientLeft,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              height: MediaQuery.of(context).size.height,
+              height: context.height,
             ),
           ),
         ),
@@ -42,11 +40,9 @@ class ContactWeb extends StatelessWidget {
           right: 0,
           child: Align(
             alignment: Alignment.centerRight,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.contactGradientRight,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              height: MediaQuery.of(context).size.height,
+              height: context.height,
             ),
           ),
         ),

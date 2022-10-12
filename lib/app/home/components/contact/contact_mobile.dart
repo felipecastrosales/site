@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -19,20 +21,16 @@ class ContactMobile extends StatelessWidget {
       children: [
         Positioned(
           bottom: 0,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.contactVerticalTexture,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
+            width: context.width,
           ),
         ),
         Positioned(
           bottom: 0,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.contactBottomGradient,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
+            width: context.width,
           ),
         ),
         Column(

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -18,33 +20,27 @@ class PresentationMobile extends StatelessWidget {
         Positioned.fill(
           child: Align(
             alignment: Alignment.center,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.presentationGradientImage,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
+              width: context.width,
+              height: context.height,
             ),
           ),
         ),
         Positioned(
           bottom: 0,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.presentationGradientBottom,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
+            width: context.width,
+            height: context.height,
           ),
         ),
         Positioned(
           bottom: 0,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.presentationTextureBackground,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
+            width: context.width,
+            height: context.height,
           ),
         ),
         Column(
@@ -74,10 +70,8 @@ class PresentationMobile extends StatelessWidget {
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),
-                  child: Image.asset(
+                  child: const ImageAssetUtil(
                     AppImages.presentationMobile,
-                    fit: BoxFit.cover,
-                    filterQuality: FilterQuality.high,
                   ),
                 ),
                 const Center(

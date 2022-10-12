@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/utils.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -17,18 +18,17 @@ class Header extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 50),
-              SizedBox(
+              const SizedBox(
                 height: 127,
                 width: 127,
                 child: CircleAvatar(
                   radius: 50,
                   backgroundColor: AppColors.primary,
                   child: Padding(
-                    padding: const EdgeInsets.all(4),
+                    padding: EdgeInsets.all(4),
                     child: ClipOval(
-                      child: Image.asset(
+                      child: ImageAssetUtil(
                         AppImages.profile,
-                        filterQuality: FilterQuality.high,
                       ),
                     ),
                   ),

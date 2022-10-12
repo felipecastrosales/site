@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/utils/context_ext.dart';
-
-class ImageUtils extends StatelessWidget {
-  const ImageUtils(
+class ImageAssetUtil extends StatelessWidget {
+  const ImageAssetUtil(
     this.image, {
     super.key,
     this.fit = BoxFit.cover,
@@ -26,8 +24,8 @@ class ImageUtils extends StatelessWidget {
       fit: fit,
       alignment: alignment,
       filterQuality: filterQuality,
-      height: height ?? context.height,
-      width: width ?? context.width,
+      height: height,
+      width: width,
     );
   }
 }

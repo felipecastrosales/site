@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -14,24 +16,19 @@ class PresentationWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Positioned.fill(
+        const Positioned.fill(
           child: Align(
             alignment: Alignment.centerRight,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.presentationGradientWeb,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              height: MediaQuery.of(context).size.height,
             ),
           ),
         ),
         Positioned.fill(
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.presentationTextureLarge,
-            fit: BoxFit.cover,
-            filterQuality: FilterQuality.high,
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
+            height: context.height,
+            width: context.width,
           ),
         ),
         Column(
@@ -79,10 +76,8 @@ class PresentationWeb extends StatelessWidget {
                       child: Container(
                         alignment: Alignment.center,
                         padding: const EdgeInsets.only(top: 24),
-                        child: Image.asset(
+                        child: const ImageAssetUtil(
                           AppImages.presentationWeb,
-                          fit: BoxFit.cover,
-                          filterQuality: FilterQuality.high,
                         ),
                       ),
                     ),

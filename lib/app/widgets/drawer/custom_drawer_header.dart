@@ -26,7 +26,6 @@ class CustomDrawerHeader extends StatelessWidget {
               shape: BoxShape.circle,
               image: DecorationImage(
                 image: AssetImage(AppImages.profile),
-                fit: BoxFit.cover,
               ),
             ),
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/utils.dart';
 
 class DrawerFooter extends StatelessWidget {
   const DrawerFooter({super.key});
@@ -14,10 +15,9 @@ class DrawerFooter extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(
+            const ImageAssetUtil(
               AppImages.developer,
               height: 24,
-              filterQuality: FilterQuality.high,
             ),
             const SizedBox(width: 16),
             SelectableText(

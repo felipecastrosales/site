@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/utils.dart';
 
 import 'components/components.dart';
 
@@ -13,24 +15,20 @@ class SocialWeb extends StatelessWidget {
       children: [
         Positioned(
           bottom: 4,
-          child: Image.asset(
+          child: ImageAssetUtil(
             AppImages.socialAbstractLarge,
-            fit: BoxFit.cover,
             alignment: Alignment.topCenter,
-            filterQuality: FilterQuality.high,
-            width: MediaQuery.of(context).size.width,
+            width: context.width,
             height: 495,
           ),
         ),
         Positioned.fill(
           child: Align(
             alignment: Alignment.center,
-            child: Image.asset(
+            child: ImageAssetUtil(
               AppImages.socialGradientCenter,
-              fit: BoxFit.cover,
-              filterQuality: FilterQuality.high,
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
+              width: context.width,
+              height: context.height,
             ),
           ),
         ),
