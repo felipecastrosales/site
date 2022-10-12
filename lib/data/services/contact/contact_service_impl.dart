@@ -3,9 +3,10 @@ import 'package:site/data/repositories/contact/contact.dart';
 import 'contact.dart';
 
 class ContactServiceImpl implements ContactService {
-  final ContactRepository _contactRepository;
+  final ContactRepositoryImpl _contactRepository;
+
   const ContactServiceImpl({
-    required ContactRepository contactRepository,
+    required ContactRepositoryImpl contactRepository,
   }) : _contactRepository = contactRepository;
 
   @override

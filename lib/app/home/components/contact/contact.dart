@@ -42,6 +42,7 @@ class Contact extends StatelessWidget {
               text: 'E-mail enviado com sucesso!',
               icon: Icons.check,
               color: AppColors.primaryDark,
+              width: 300,
             );
             contactController.sendMail(
               name: nameController.text,

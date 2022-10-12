@@ -3,7 +3,11 @@ class ContactValitadors {
     if (value!.isEmpty) {
       return 'Insira um nome válido.';
     }
-    final regex = RegExp(r'^[a-zA-ZÀ-ú ]+$');
+    final regexLenght = RegExp(r'^.{3,}$');
+    if (!regexLenght.hasMatch(value)) {
+      return 'Insira um nome maior.';
+    }
+    final regex = RegExp('[a-zA-Z]');
     if (regex.hasMatch(value)) {
       return null;
     }
@@ -27,7 +31,11 @@ class ContactValitadors {
     if (value!.isEmpty) {
       return 'Insira uma mensagem válida.';
     }
-    final regex = RegExp(r'^[a-zA-ZÀ-ú ]+$');
+    final regexLenght = RegExp(r'^.{10,}$');
+    if (!regexLenght.hasMatch(value)) {
+      return 'Insira uma mensagem maior.';
+    }
+    final regex = RegExp('[a-zA-Z]');
     if (regex.hasMatch(value)) {
       return null;
     }
@@ -37,6 +45,10 @@ class ContactValitadors {
   static String? subject(String? value) {
     if (value!.isEmpty) {
       return 'Insira um assunto válido.';
+    }
+    final regexLenght = RegExp(r'^.{5,}$');
+    if (!regexLenght.hasMatch(value)) {
+      return 'Insira um assunto maior.';
     }
     final regex = RegExp(r'^[a-zA-ZÀ-ú ]+$');
     if (regex.hasMatch(value)) {

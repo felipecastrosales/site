@@ -7,11 +7,13 @@ class CustomSnackbar {
   final String text;
   final IconData icon;
   final Color color;
+  final double width;
 
   const CustomSnackbar({
     required this.text,
     required this.icon,
     required this.color,
+    required this.width,
   });
 
   static showSnackBar(
@@ -19,10 +21,12 @@ class CustomSnackbar {
     required String text,
     required IconData icon,
     required Color color,
+    required double width,
   }) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         elevation: 8,
+        width: width,
         duration: const Duration(seconds: 3),
         backgroundColor: color,
         behavior: SnackBarBehavior.floating,
