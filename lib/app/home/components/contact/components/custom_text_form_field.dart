@@ -10,8 +10,8 @@ class CustomTextFormField extends StatelessWidget {
     required this.prefixIcon,
     required this.controller,
     required this.validator,
-    this.keyboardType = TextInputType.text,
     required this.onChanged,
+    this.keyboardType = TextInputType.text,
     this.maxLines = 1,
   });
 
@@ -19,8 +19,8 @@ class CustomTextFormField extends StatelessWidget {
   final TextEditingController controller;
   final IconData prefixIcon;
   final FormFieldValidator<String>? validator;
-  final TextInputType? keyboardType;
   final Function(String)? onChanged;
+  final TextInputType? keyboardType;
   final int maxLines;
 
   @override
