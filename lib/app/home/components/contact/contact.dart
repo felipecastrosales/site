@@ -37,7 +37,7 @@ class Contact extends StatelessWidget {
         messageController: messageController,
         onPressed: () {
           if (formKey.currentState!.validate()) {
-            CustomSnackbar.showSnackBar(
+            appShowSnackBar(
               context,
               text: 'E-mail enviado com sucesso!',
               icon: Icons.check,
