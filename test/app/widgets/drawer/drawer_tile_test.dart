@@ -10,11 +10,6 @@ void main() {
       find.byType(DrawerTile),
       findsOneWidget,
     );
-
-    expect(
-      find.byWidget(const Icon(Icons.home)),
-      findsOneWidget,
-    );
   });
 }
 

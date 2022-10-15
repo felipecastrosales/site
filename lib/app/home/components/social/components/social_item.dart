@@ -20,27 +20,33 @@ class SocialItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      customBorder: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+    return Material(
+      color: Colors.transparent,
       borderRadius: BorderRadius.circular(16),
-      child: CardGlassmorphism(
-        child: Row(
-          children: [
-            const SizedBox(width: 23),
-            SizedBox(
-              height: 30,
-              width: 30,
-              child: SvgPicture.asset('${AppImages.socialLogo(image)}'),
-            ),
-            const SizedBox(width: 10),
-            SelectableText(
-              title,
-              style: AppTexts.socialTitle,
-            ),
-          ],
+      child: InkWell(
+        onTap: onTap,
+        customBorder: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        borderRadius: BorderRadius.circular(16),
+        child: CardGlassmorphism(
+          child: Row(
+            children: [
+              const SizedBox(width: 24),
+              SizedBox(
+                height: 30,
+                width: 30,
+                child: SvgPicture.asset('${AppImages.socialLogo(image)}'),
+              ),
+              const SizedBox(width: 10),
+              Flexible(
+                child: SelectableText(
+                  title,
+                  style: AppTexts.socialTitle,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

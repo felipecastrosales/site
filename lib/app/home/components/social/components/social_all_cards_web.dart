@@ -8,16 +8,18 @@ class SocialAllCardsWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        WebBody(
-          children: [
-            TitleTextList(isWeb: true),
-          ],
-        ),
-        SizedBox(height: 60),
-        SectionDivider(),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          WebBody(
+            children: [
+              TitleTextList(isWeb: true),
+            ],
+          ),
+          SizedBox(height: 60),
+          SectionDivider(),
+        ],
+      ),
     );
   }
 }

@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/app_customs/app_customs.dart';
-import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 
-import 'components/rich_text_short.dart';
+import 'components/components.dart';
 
 class FooterWeb extends StatelessWidget {
   const FooterWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const launch = LaunchUrls.launchURL;
-
     return Container(
       height: 100,
       color: AppColors.black,
@@ -25,36 +22,30 @@ class FooterWeb extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const RichTextShort(textAlign: TextAlign.start),
-                  SelectableText(
-                    'Um projeto Flutter OpenSource.',
-                    style: AppTexts.phraseWhite,
-                  ),
-                ],
+              Flexible(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const RichTextShort(textAlign: TextAlign.start),
+                    SelectableText(
+                      'Um projeto Flutter OpenSource.',
+                      style: AppTexts.phraseWhite,
+                    ),
+                  ],
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  InkWell(
-                    onTap: () => launch('github.com/felipecastrosales/site'),
-                    child: SelectableText(
-                      'Veja no GitHub.',
-                      style: AppTexts.footerLink,
-                    ),
+                children: const [
+                  TextWithLink(
+                    'Veja no GitHub.',
+                    'github.com/felipecastrosales/site',
                   ),
-                  InkWell(
-                    onTap: () => launch(
-                      'figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade',
-                    ),
-                    child: SelectableText(
-                      'Veja no Figma.',
-                      style: AppTexts.footerLink,
-                    ),
+                  TextWithLink(
+                    'Veja no Figma.',
+                    'figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade',
                   ),
                 ],
               ),
