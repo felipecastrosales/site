@@ -35,7 +35,7 @@ class DrawerTile extends StatelessWidget {
               offset: const Offset(-12, 0),
               child: SelectableText(
                 title,
-                style: AppTexts.socialTitle,
+                style: AppTextStyles.socialTitle,
               ),
             ),
             leading: Icon(

@@ -32,7 +32,7 @@ class WebAppBarTitle extends StatelessWidget {
           },
           child: Padding(
             padding: const EdgeInsets.all(16),
-            child: AppTexts.appBar(title),
+            child: AppTextStyles.appBar(title),
           ),
         ),
       ),

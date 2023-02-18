@@ -26,15 +26,15 @@ class RichTextShort extends StatelessWidget {
         children: [
           TextSpan(
             text: '$year - ',
-            style: AppTexts.phraseWhite,
+            style: AppTextStyles.phraseWhite,
           ),
           TextSpan(
             text: '@felipecastrosales',
-            style: AppTexts.phrasePrimary,
+            style: AppTextStyles.phrasePrimary,
           ),
           TextSpan(
             text: '.',
-            style: AppTexts.phraseWhite,
+            style: AppTextStyles.phraseWhite,
           ),
         ],
       ),

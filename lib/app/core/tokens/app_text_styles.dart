@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'tokens.dart';
 
-class AppTexts {
+class AppTextStyles {
   static appBar(text) => SelectableText(
         text,
         style: GoogleFonts.montserrat(

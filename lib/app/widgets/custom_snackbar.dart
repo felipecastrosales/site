@@ -34,7 +34,7 @@ appShowSnackBar(
               child: AutoSizeText(
                 text,
                 maxLines: 1,
-                style: AppTexts.buttonTitle,
+                style: AppTextStyles.buttonTitle,
               ),
             ),
           ),

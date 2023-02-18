@@ -21,8 +21,9 @@ class SectionTitle extends StatelessWidget {
       padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
       child: SelectableText(
         title,
-        style:
-            isWeb ? AppTexts.presentationTitleWeb : AppTexts.presentationTitle,
+        style: isWeb
+            ? AppTextStyles.presentationTitleWeb
+            : AppTextStyles.presentationTitle,
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 class CustomDrawerHeader extends StatelessWidget {
@@ -33,7 +33,7 @@ class CustomDrawerHeader extends StatelessWidget {
         SelectableText(
           'Felipe Sales',
           textAlign: TextAlign.center,
-          style: AppTexts.socialTitle,
+          style: AppTextStyles.socialTitle,
         ),
         const SizedBox(height: 8),
       ],

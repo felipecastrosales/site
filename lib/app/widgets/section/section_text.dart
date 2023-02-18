@@ -23,7 +23,7 @@ class SectionText extends StatelessWidget {
       child: SelectableText(
         title,
         textAlign: isCentered ? TextAlign.center : TextAlign.start,
-        style: AppTexts.presentationText,
+        style: AppTextStyles.presentationText,
       ),
     );
   }

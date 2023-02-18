@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/utils/utils.dart';
 
@@ -23,7 +23,7 @@ class DrawerFooter extends StatelessWidget {
             SelectableText(
               'Deep Code.',
               textAlign: TextAlign.center,
-              style: AppTexts.socialTitle,
+              style: AppTextStyles.socialTitle,
             ),
           ],
         ),

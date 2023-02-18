@@ -30,7 +30,7 @@ class FooterWeb extends StatelessWidget {
                     const RichTextShort(textAlign: TextAlign.start),
                     SelectableText(
                       'Um projeto Flutter OpenSource.',
-                      style: AppTexts.phraseWhite,
+                      style: AppTextStyles.phraseWhite,
                     ),
                   ],
                 ),

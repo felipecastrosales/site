@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/utils/utils.dart';
 
@@ -18,7 +18,7 @@ class Footer extends StatelessWidget {
         children: [
           SelectableText(
             'Criado por @felipecastrosales™',
-            style: AppTexts.footer,
+            style: AppTextStyles.footer,
           ),
           const SizedBox(width: 2),
           const ImageAssetUtil(

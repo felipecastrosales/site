@@ -20,7 +20,7 @@ class SectionSubtitle extends StatelessWidget {
       padding: EdgeInsets.only(top: paddingTop, bottom: paddingBottom),
       child: SelectableText(
         title,
-        style: AppTexts.presentationSubtitle,
+        style: AppTextStyles.presentationSubtitle,
       ),
     );
   }

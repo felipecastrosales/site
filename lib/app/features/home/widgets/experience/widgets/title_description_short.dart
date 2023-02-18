@@ -20,12 +20,12 @@ class TitleDescriptionShort extends StatelessWidget {
       children: [
         SelectableText(
           '• $title',
-          style: AppTexts.experienceTitle,
+          style: AppTextStyles.experienceTitle,
         ),
         const SizedBox(height: 8),
         SelectableText(
           '    — $description',
-          style: AppTexts.experienceDescription,
+          style: AppTextStyles.experienceDescription,
         ),
         const SizedBox(height: 8),
       ],

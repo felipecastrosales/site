@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 import 'card_glassmorphism.dart';
@@ -42,7 +41,7 @@ class SocialItem extends StatelessWidget {
               Flexible(
                 child: SelectableText(
                   title,
-                  style: AppTexts.socialTitle,
+                  style: AppTextStyles.socialTitle,
                 ),
               ),
             ],

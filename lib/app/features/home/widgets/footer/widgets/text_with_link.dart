@@ -22,7 +22,7 @@ class TextWithLink extends StatelessWidget {
         onTap: () => launch(link),
         child: Text(
           text,
-          style: AppTexts.footerLink,
+          style: AppTextStyles.footerLink,
         ),
       ),
     );

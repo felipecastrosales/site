@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 import 'dividers.dart';
@@ -23,7 +23,10 @@ class PresentationDivider extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(bottom: 4),
-          child: Lottie.asset(AppAssets.mouse, height: 50),
+          child: Lottie.asset(
+            AppAssets.mouse,
+            height: 50,
+          ),
         ),
         const Expanded(
           child: CustomDivider(

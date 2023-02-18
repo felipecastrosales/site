@@ -29,7 +29,7 @@ class CustomTextButton extends StatelessWidget {
         ),
         child: SelectableText(
           text,
-          style: AppTexts.buttonTitle,
+          style: AppTextStyles.buttonTitle,
         ),
       ),
     );

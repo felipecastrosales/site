@@ -9,14 +9,14 @@ class Phrase extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SelectableText('Deep Code. Way Code.', style: AppTexts.phrase),
+        SelectableText('Deep Code. Way Code.', style: AppTextStyles.phrase),
         SelectableText.rich(
           TextSpan(
             children: [
-              TextSpan(text: 'Deep ', style: AppTexts.phrasePrimary),
-              TextSpan(text: 'Code. ', style: AppTexts.phraseWhite),
-              TextSpan(text: 'Way ', style: AppTexts.phrasePrimary),
-              TextSpan(text: 'Code.', style: AppTexts.phraseWhite),
+              TextSpan(text: 'Deep ', style: AppTextStyles.phrasePrimary),
+              TextSpan(text: 'Code. ', style: AppTextStyles.phraseWhite),
+              TextSpan(text: 'Way ', style: AppTextStyles.phrasePrimary),
+              TextSpan(text: 'Code.', style: AppTextStyles.phraseWhite),
             ],
           ),
         ),
