@@ -11,24 +11,26 @@ class SocialMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [
-      Positioned(
-        bottom: 0,
-        child: ImageAssetUtil(
-          AppImages.socialAbstract,
-          width: context.width,
-        ),
-      ),
-      Positioned.fill(
-        bottom: 0,
-        child: Align(
+    return Stack(
+      children: [
+        Positioned(
+          bottom: 0,
           child: ImageAssetUtil(
-            AppImages.socialGradientCenter,
-            height: context.height,
+            AppImages.socialAbstract,
+            width: context.width,
           ),
         ),
-      ),
-      const SocialAllCardsMobile(),
-    ]);
+        Positioned.fill(
+          bottom: 0,
+          child: Align(
+            child: ImageAssetUtil(
+              AppImages.socialGradientCenter,
+              height: context.height,
+            ),
+          ),
+        ),
+        const SocialAllCardsMobile(),
+      ],
+    );
   }
 }

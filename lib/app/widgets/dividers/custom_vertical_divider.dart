@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 class CustomVerticalDivider extends StatelessWidget {
-  final double width;
-
   const CustomVerticalDivider({
     super.key,
     required this.width,
   });
+
+  final double width;
 
   @override
   Widget build(BuildContext context) {

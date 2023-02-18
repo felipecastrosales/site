@@ -2,3 +2,11 @@ include: package:flutter_lints/flutter.yaml
 
 linter:
   rules:
+    - require_trailing_commas
+    - sort_constructors_first
+    - sort_child_properties_last
+    - prefer_single_quotes
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+    - prefer_const_declarations
+    - prefer_final_fields

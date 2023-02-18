@@ -4,11 +4,11 @@ import 'package:site/data/models/models.dart';
 import 'package:site/data/services/contact/contact.dart';
 
 class ContactController extends ChangeNotifier {
-  final ContactServiceImpl _contactService;
-
   ContactController({
     required ContactServiceImpl contactService,
   }) : _contactService = contactService;
+
+  final ContactServiceImpl _contactService;
 
   void sendMail({
     required Contact contact,

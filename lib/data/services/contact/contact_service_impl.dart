@@ -4,11 +4,11 @@ import 'package:site/data/repositories/contact/contact.dart';
 import 'contact.dart';
 
 class ContactServiceImpl implements ContactService {
-  final ContactRepositoryImpl _contactRepository;
-
   const ContactServiceImpl({
     required ContactRepositoryImpl contactRepository,
   }) : _contactRepository = contactRepository;
+
+  final ContactRepositoryImpl _contactRepository;
 
   @override
   Future sendMail({required Contact contact}) async {
