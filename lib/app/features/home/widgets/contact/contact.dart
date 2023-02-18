@@ -6,6 +6,7 @@ import 'package:site/app/features/home/widgets/contact/controller/contact_contro
 import 'package:site/app/widgets/widgets.dart';
 import 'package:site/data/repositories/contact/contact.dart';
 import 'package:site/data/services/contact/contact.dart';
+import 'package:site/data/models/models.dart' as models;
 
 import 'widgets/widgets.dart';
 import 'contact_mobile.dart';
@@ -45,10 +46,12 @@ class Contact extends StatelessWidget {
               width: 300,
             );
             contactController.sendMail(
-              name: nameController.text,
-              email: emailController.text,
-              message: messageController.text,
-              subject: subjectController.text,
+              contact: models.Contact(
+                name: nameController.text,
+                email: emailController.text,
+                message: messageController.text,
+                subject: subjectController.text,
+              ),
             );
             nameController.clear();
             emailController.clear();

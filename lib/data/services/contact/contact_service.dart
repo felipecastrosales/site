@@ -1,8 +1,5 @@
+import 'package:site/data/models/models.dart';
+
 abstract class ContactService {
-  Future sendMail({
-    required String name,
-    required String email,
-    required String message,
-    required String subject,
-  });
+  Future sendMail({required Contact contact});
 }

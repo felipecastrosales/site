@@ -2,6 +2,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:site/data/repositories/contact/contact.dart';
 import 'package:site/data/services/contact/contact.dart';
 
+import '../../../fixtures/app_fixtures.dart';
+
 void main() {
   test('ContactServiceImpl', () async {
     var contactRepository = ContactRepositoryImpl();
@@ -15,10 +17,7 @@ void main() {
     );
 
     await contactServiceImpl.sendMail(
-      name: 'felipecastrosales',
-      email: 'soufeliposales@gmail.com',
-      message: 'Hello, World!',
-      subject: 'Hello, World!',
+      contact: AppFixtures().tContact,
     );
   });
 }

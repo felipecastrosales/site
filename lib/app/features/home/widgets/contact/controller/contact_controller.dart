@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/data/models/models.dart';
 
 import 'package:site/data/services/contact/contact.dart';
 
@@ -10,16 +11,10 @@ class ContactController extends ChangeNotifier {
   }) : _contactService = contactService;
 
   void sendMail({
-    required String name,
-    required String email,
-    required String message,
-    required String subject,
+    required Contact contact,
   }) async {
     return _contactService.sendMail(
-      name: name,
-      email: email,
-      message: message,
-      subject: subject,
+      contact: contact,
     );
   }
 }

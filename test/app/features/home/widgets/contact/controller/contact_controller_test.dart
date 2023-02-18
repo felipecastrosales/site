@@ -4,6 +4,8 @@ import 'package:site/app/features/home/widgets/contact/controller/contact_contro
 import 'package:site/data/repositories/contact/contact.dart';
 import 'package:site/data/services/contact/contact.dart';
 
+import '../../../../../../fixtures/app_fixtures.dart';
+
 void main() {
   test('ContactController', () async {
     var contactServiceImpl = ContactServiceImpl(
@@ -30,10 +32,7 @@ void main() {
     );
 
     var sendMail = contactController.sendMail(
-      name: 'felipecastrosales',
-      email: 'soufeliposales@gmail.com',
-      message: 'Hello, World!',
-      subject: 'Hello, World!',
+      contact: AppFixtures().tContact,
     );
 
     expect(
