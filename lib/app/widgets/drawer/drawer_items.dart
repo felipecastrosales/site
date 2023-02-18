@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/shared/shared.dart';
 
 import 'drawer.dart';
 
@@ -15,31 +16,31 @@ class DrawerItems extends StatelessWidget {
     return Column(
       children: [
         DrawerTile(
-          title: 'Home',
+          title: AppTexts.home,
           leading: Icons.home,
           page: 1,
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Projetos',
+          title: AppTexts.projects,
           leading: Icons.tips_and_updates,
           page: 2,
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Experiência',
+          title: AppTexts.experience,
           leading: Icons.receipt_long,
           page: 3,
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Social Links',
+          title: AppTexts.socialLinks,
           leading: Icons.link,
           page: 4,
           controller: pageController,
         ),
         DrawerTile(
-          title: 'Contato',
+          title: AppTexts.contact,
           leading: Icons.contact_mail,
           page: 5,
           controller: pageController,

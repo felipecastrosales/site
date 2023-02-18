@@ -50,7 +50,7 @@ class PresentationMobile extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 16,
-                  title: 'Olá, sou Felipe Sales',
+                  title: AppTexts.hiIAmFelipeSales,
                 ),
                 LayoutBuilder(
                   builder: (context, constraints) {
@@ -61,7 +61,7 @@ class PresentationMobile extends StatelessWidget {
                       return const SectionSubtitle(
                         paddingTop: 8,
                         paddingBottom: 8,
-                        title: '> Desenvolvedor de Aplicativos',
+                        title: AppTexts.applicationsDeveloper,
                       );
                     }
                   },
@@ -81,8 +81,7 @@ class PresentationMobile extends StatelessWidget {
                       paddingTop: 24,
                       paddingBottom: 8,
                       isCentered: true,
-                      title:
-                          'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.',
+                      title: AppTexts.developerFocused,
                     ),
                   ),
                 ),

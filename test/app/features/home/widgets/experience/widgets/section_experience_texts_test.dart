@@ -3,11 +3,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
 
 void main() {
-  testWidgets('Should renders SectionCustomTexts', (tester) async {
+  testWidgets('Should renders SectionExperienceTexts', (tester) async {
     await _createWidget(tester: tester);
 
     expect(
-      find.byType(SectionCustomTexts),
+      find.byType(SectionExperienceTexts),
       findsOneWidget,
     );
   });
@@ -18,7 +18,7 @@ Future<void> _createWidget({
 }) async {
   await tester.pumpWidget(
     const MaterialApp(
-      home: SectionCustomTexts(),
+      home: SectionExperienceTexts(),
     ),
   );
 }

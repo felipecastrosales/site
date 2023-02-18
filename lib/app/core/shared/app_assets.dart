@@ -3,7 +3,7 @@ class AppAssets {
   static const profile = 'assets/profile.png';
   static const mouse = 'assets/components/mouse-down.json';
 
-  //Presentation
+  /// Presentation
   static const presentationGradientBottom =
       'assets/components/presentation/gradient-bottom.png';
   static const presentationGradientImage =
@@ -19,12 +19,12 @@ class AppAssets {
   static const presentationTextureLarge =
       'assets/components/presentation/texture-large.png';
 
-  //Projects
+  /// Projects
   static const mockup = 'assets/components/projects/mockup.png';
   static const abstractFit = 'assets/components/projects/abstract.png';
   static const abstractLarge = 'assets/components/projects/large-abstract.png';
 
-  //Experience
+  /// Experience
   static const champ = 'assets/components/experience/champ.png';
   static const champGradient =
       'assets/components/experience/champ-gradient.png';
@@ -32,15 +32,21 @@ class AppAssets {
   static const abstractRight =
       'assets/components/experience/abstract-right.png';
 
-  // Social
+  /// Social
   static socialLogo(image) => 'assets/components/social/$image';
   static const socialAbstract = 'assets/components/social/abstract.png';
   static const socialAbstractLarge =
       'assets/components/social/abstract-large.png';
   static const socialGradientCenter =
       'assets/components/social/gradient-center.png';
+  static const gitHub = 'github.svg';
+  static const linkedIn = 'linkedin.svg';
+  static const stackOverFlow = 'stack-overflow.svg';
+  static const discord = 'discord.svg';
+  static const udemy = 'udemy.svg';
+  static const instagram = 'instagram.svg';
 
-  // Contact
+  /// Contact
   static const contactBottomGradient =
       'assets/components/contact/bottom-gradient.png';
   static const contactVerticalTexture =

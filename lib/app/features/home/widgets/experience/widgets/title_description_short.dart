@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 class TitleDescriptionShort extends StatelessWidget {
-  const TitleDescriptionShort(
-    this.title,
-    this.description, {
+  const TitleDescriptionShort({
+    required this.title,
+    required this.description,
     super.key,
   });
 

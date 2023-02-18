@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/shared/shared.dart';
+
 import 'core/theme.dart';
 import 'features/home/home_page.dart';
 
@@ -9,7 +11,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Felipe Sales | Social Links',
+      title: AppTexts.projectTitle,
       debugShowCheckedModeBanner: false,
       theme: SiteTheme.theme,
       home: HomePage(),

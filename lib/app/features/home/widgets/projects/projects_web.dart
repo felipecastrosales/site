@@ -35,7 +35,7 @@ class ProjectsWeb extends StatelessWidget {
                   isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 8,
-                  title: 'Projetos',
+                  title: AppTexts.projects,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,8 +50,7 @@ class ProjectsWeb extends StatelessWidget {
                             child: SectionText(
                               paddingTop: 42,
                               paddingBottom: 36,
-                              title:
-                                  'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',
+                              title: AppTexts.projectAreInMyGitHub,
                             ),
                           ),
                           CustomTextButtonWidget(),

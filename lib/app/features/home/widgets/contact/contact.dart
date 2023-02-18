@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/shared/shared.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
@@ -37,10 +38,10 @@ class Contact extends StatelessWidget {
         subjectController: subjectController,
         messageController: messageController,
         onPressed: () {
-          if (formKey.currentState!.validate()) {
+          if (formKey.currentState?.validate() ?? false) {
             appShowSnackBar(
               context,
-              text: 'E-mail enviado com sucesso!',
+              text: AppTexts.emailSendedWithSuccess,
               icon: Icons.check,
               color: AppColors.primaryDark,
               width: 300,

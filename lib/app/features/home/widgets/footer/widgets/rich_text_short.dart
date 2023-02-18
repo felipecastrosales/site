@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/shared/shared.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/utils/utils.dart';
@@ -13,9 +14,7 @@ class RichTextShort extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var year = DateTimeUtils.getYear(
-      DateTime.now(),
-    );
+    var year = DateTimeUtils.getYear(DateTime.now());
 
     //   return SelectableText.rich( // bug
     // textAlign: textAlign,
@@ -25,15 +24,15 @@ class RichTextShort extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: '$year - ',
+            text: '$year${AppTexts.hyphen}',
             style: AppTextStyles.phraseWhite,
           ),
           TextSpan(
-            text: '@felipecastrosales',
+            text: AppTexts.username,
             style: AppTextStyles.phrasePrimary,
           ),
           TextSpan(
-            text: '.',
+            text: AppTexts.dot,
             style: AppTextStyles.phraseWhite,
           ),
         ],

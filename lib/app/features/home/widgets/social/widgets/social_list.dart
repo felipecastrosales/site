@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/shared/shared.dart';
 
 import 'package:site/app/utils/utils.dart';
 
@@ -14,41 +15,39 @@ class SocialList extends StatelessWidget {
     return Column(
       children: [
         SocialItem(
-          title: 'GitHub',
-          image: 'github.svg',
-          onTap: () => launch('github.com/felipecastrosales'),
+          title: AppTexts.gitHub,
+          image: AppAssets.gitHub,
+          onTap: () => launch(AppUrls.gitHub),
         ),
         const SizedBox(height: 14),
         SocialItem(
-          title: 'LinkedIn',
-          image: 'linkedin.svg',
-          onTap: () => launch('linkedin.com/in/felipecastrosales'),
+          title: AppTexts.linkedIn,
+          image: AppAssets.linkedIn,
+          onTap: () => launch(AppUrls.linkedIn),
         ),
         const SizedBox(height: 14),
         SocialItem(
-          title: 'Stack OverFlow',
-          image: 'stack-overflow.svg',
-          onTap: () => launch(
-            'stackoverflow.com/users/13096514/felipe-sales',
-          ),
+          title: AppTexts.stackOverFlow,
+          image: AppAssets.stackOverFlow,
+          onTap: () => launch(AppUrls.stackOverFlow),
         ),
         const SizedBox(height: 14),
         SocialItem(
-          title: 'Discord',
-          image: 'discord.svg',
-          onTap: () => launch('discordapp.com/users/406074089011281921'),
+          title: AppTexts.discord,
+          image: AppAssets.discord,
+          onTap: () => launch(AppUrls.discord),
         ),
         const SizedBox(height: 14),
         SocialItem(
-          title: 'Udemy',
-          image: 'udemy.svg',
-          onTap: () => launch('udemy.com/user/luis-felipe-de-castro-sales/'),
+          title: AppTexts.udemy,
+          image: AppAssets.udemy,
+          onTap: () => launch(AppUrls.udemy),
         ),
         const SizedBox(height: 14),
         SocialItem(
-          title: 'Instagram',
-          image: 'instagram.svg',
-          onTap: () => launch('instagram.com/felipecastrosales'),
+          title: AppTexts.instagram,
+          image: AppAssets.instagram,
+          onTap: () => launch(AppUrls.instagram),
         ),
         const SizedBox(height: 14),
       ],

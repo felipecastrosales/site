@@ -35,7 +35,9 @@ class SocialItem extends StatelessWidget {
               SizedBox(
                 height: 30,
                 width: 30,
-                child: SvgPicture.asset('${AppAssets.socialLogo(image)}'),
+                child: SvgPicture.asset(
+                  AppAssets.socialLogo(image),
+                ),
               ),
               const SizedBox(width: 10),
               Flexible(

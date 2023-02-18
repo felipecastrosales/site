@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
 import 'package:site/app/utils/utils.dart';
@@ -40,9 +39,9 @@ class ExperienceMobile extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: 'Experiência',
+                  title: AppTexts.experience,
                 ),
-                const SectionCustomTexts(),
+                const SectionExperienceTexts(),
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),

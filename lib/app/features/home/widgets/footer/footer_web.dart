@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/body/body.dart';
 
@@ -27,9 +28,11 @@ class FooterWeb extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const RichTextShort(textAlign: TextAlign.start),
+                    const RichTextShort(
+                      textAlign: TextAlign.start,
+                    ),
                     SelectableText(
-                      'Um projeto Flutter OpenSource.',
+                      AppTexts.flutterProjectOpenSource,
                       style: AppTextStyles.phraseWhite,
                     ),
                   ],
@@ -40,12 +43,12 @@ class FooterWeb extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: const [
                   TextWithLink(
-                    'Veja no GitHub.',
-                    'github.com/felipecastrosales/site',
+                    text: AppTexts.seeInGitHub,
+                    link: AppUrls.gitHubProject,
                   ),
                   TextWithLink(
-                    'Veja no Figma.',
-                    'figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade',
+                    text: AppTexts.seeInFigma,
+                    link: AppUrls.figmaProject,
                   ),
                 ],
               ),

@@ -39,12 +39,12 @@ class ContactMobile extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: 'Contato',
+                  title: AppTexts.contact,
                 ),
                 const SectionText(
                   paddingTop: 0,
                   paddingBottom: 45,
-                  title: 'Vamos bater um papo, me chame:',
+                  title: AppTexts.letsChatCallMe,
                 ),
                 widget,
               ],

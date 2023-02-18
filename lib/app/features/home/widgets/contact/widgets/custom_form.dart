@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/shared/app_texts.dart';
 
 import 'package:site/app/utils/contact_validators.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
@@ -35,7 +36,7 @@ class CustomForm extends StatelessWidget {
           children: [
             CustomTextFormField(
               controller: nameController,
-              hintText: 'Nome',
+              hintText: AppTexts.name,
               prefixIcon: Icons.account_circle,
               validator: (value) => ContactValitadors.name(value),
               onChanged: (value) {},
@@ -43,7 +44,7 @@ class CustomForm extends StatelessWidget {
             const SizedBox(height: 16),
             CustomTextFormField(
               controller: emailController,
-              hintText: 'E-mail',
+              hintText: AppTexts.email,
               validator: (value) => ContactValitadors.email(value),
               onChanged: (value) {},
               prefixIcon: Icons.mail,
@@ -52,7 +53,7 @@ class CustomForm extends StatelessWidget {
             const SizedBox(height: 16),
             CustomTextFormField(
               controller: subjectController,
-              hintText: 'Título',
+              hintText: AppTexts.title,
               prefixIcon: Icons.subject,
               validator: (value) => ContactValitadors.subject(value),
               onChanged: (value) {},
@@ -60,7 +61,7 @@ class CustomForm extends StatelessWidget {
             const SizedBox(height: 16),
             CustomTextFormField(
               controller: messageController,
-              hintText: 'Texto',
+              hintText: AppTexts.text,
               prefixIcon: Icons.comment,
               validator: (value) => ContactValitadors.message(value),
               onChanged: (value) {},
@@ -71,7 +72,7 @@ class CustomForm extends StatelessWidget {
             ),
             Center(
               child: CustomTextButton(
-                text: 'ENVIAR E-MAIL',
+                text: AppTexts.sendEmailUpper,
                 onPressed: onPressed,
               ),
             ),

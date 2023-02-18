@@ -50,7 +50,7 @@ class ExperienceWeb extends StatelessWidget {
                   isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: 'Experiência',
+                  title: AppTexts.experience,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -75,7 +75,7 @@ class ExperienceWeb extends StatelessWidget {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
-                        SectionCustomTexts(),
+                        SectionExperienceTexts(),
                       ],
                     ),
                   ],

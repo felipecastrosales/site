@@ -38,7 +38,7 @@ class PresentationWeb extends StatelessWidget {
                   isWeb: true,
                   paddingTop: 50,
                   paddingBottom: 12,
-                  title: 'Olá, sou Felipe Sales',
+                  title: AppTexts.hiIAmFelipeSales,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +50,7 @@ class PresentationWeb extends StatelessWidget {
                           SectionSubtitle(
                             paddingTop: 0,
                             paddingBottom: 32,
-                            title: '> Desenvolvedor de Apps',
+                            title: AppTexts.appsDeveloper,
                           ),
                           SizedBox(
                             width: 400,
@@ -61,8 +61,7 @@ class PresentationWeb extends StatelessWidget {
                               child: SectionText(
                                 paddingTop: 32,
                                 paddingBottom: 32,
-                                title:
-                                    'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.',
+                                title: AppTexts.developerFocused,
                               ),
                             ),
                           ),

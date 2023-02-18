@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
 import 'package:site/app/utils/utils.dart';
@@ -33,14 +34,13 @@ class ProjectsMobile extends StatelessWidget {
                 const SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: 'Projetos',
+                  title: AppTexts.projects,
                 ),
                 const Center(
                   child: SectionText(
                     paddingTop: 0,
                     paddingBottom: 24,
-                    title:
-                        'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente gratuita.',
+                    title: AppTexts.projectAreInMyGitHub,
                   ),
                 ),
                 const CustomTextButtonWidget(),

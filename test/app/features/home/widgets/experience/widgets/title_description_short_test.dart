@@ -19,8 +19,8 @@ Future<void> _createWidget({
   await tester.pumpWidget(
     const MaterialApp(
       home: TitleDescriptionShort(
-        '• title',
-        '    — description',
+        title: '• title',
+        description: '    — description',
       ),
     ),
   );
