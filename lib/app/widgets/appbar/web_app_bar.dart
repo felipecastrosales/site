@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'components/components.dart';
+import 'widgets/widgets.dart';
 
 class WebAppBar extends StatelessWidget {
   const WebAppBar({super.key});
