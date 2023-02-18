@@ -22,14 +22,14 @@ class ContactMobile extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.contactVerticalTexture,
+            AppAssets.contactVerticalTexture,
             width: context.width,
           ),
         ),
         Positioned(
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.contactBottomGradient,
+            AppAssets.contactBottomGradient,
             width: context.width,
           ),
         ),

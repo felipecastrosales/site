@@ -22,14 +22,14 @@ class ExperienceMobile extends StatelessWidget {
               top: -25,
               right: 0,
               child: ImageAssetUtil(
-                AppImages.abstractRight,
+                AppAssets.abstractRight,
               ),
             ),
             Positioned.fill(
               child: Align(
                 alignment: Alignment.center,
                 child: ImageAssetUtil(
-                  AppImages.champGradient,
+                  AppAssets.champGradient,
                   width: context.width,
                   height: context.height,
                 ),
@@ -47,7 +47,7 @@ class ExperienceMobile extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),
                   child: const ImageAssetUtil(
-                    AppImages.champ,
+                    AppAssets.champ,
                     height: 185,
                   ),
                 ),

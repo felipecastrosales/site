@@ -16,7 +16,7 @@ class SocialWeb extends StatelessWidget {
         Positioned(
           bottom: 4,
           child: ImageAssetUtil(
-            AppImages.socialAbstractLarge,
+            AppAssets.socialAbstractLarge,
             alignment: Alignment.topCenter,
             width: context.width,
             height: 495,
@@ -26,7 +26,7 @@ class SocialWeb extends StatelessWidget {
           child: Align(
             alignment: Alignment.center,
             child: ImageAssetUtil(
-              AppImages.socialGradientCenter,
+              AppAssets.socialGradientCenter,
               width: context.width,
               height: context.height,
             ),

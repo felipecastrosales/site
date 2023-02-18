@@ -20,13 +20,13 @@ class PresentationWeb extends StatelessWidget {
           child: Align(
             alignment: Alignment.centerRight,
             child: ImageAssetUtil(
-              AppImages.presentationGradientWeb,
+              AppAssets.presentationGradientWeb,
             ),
           ),
         ),
         Positioned.fill(
           child: ImageAssetUtil(
-            AppImages.presentationTextureLarge,
+            AppAssets.presentationTextureLarge,
             height: context.height,
             width: context.width,
           ),
@@ -77,7 +77,7 @@ class PresentationWeb extends StatelessWidget {
                         alignment: Alignment.center,
                         padding: const EdgeInsets.only(top: 24),
                         child: const ImageAssetUtil(
-                          AppImages.presentationWeb,
+                          AppAssets.presentationWeb,
                         ),
                       ),
                     ),

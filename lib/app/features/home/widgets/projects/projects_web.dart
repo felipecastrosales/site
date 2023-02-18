@@ -21,7 +21,7 @@ class ProjectsWeb extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: ImageAssetUtil(
-              AppImages.abstractLarge,
+              AppAssets.abstractLarge,
               alignment: Alignment.topCenter,
               height: 305.7,
               width: context.width,
@@ -65,7 +65,7 @@ class ProjectsWeb extends StatelessWidget {
                           Container(
                             alignment: Alignment.center,
                             child: const ImageAssetUtil(
-                              AppImages.mockup,
+                              AppAssets.mockup,
                               width: 460,
                             ),
                           ),

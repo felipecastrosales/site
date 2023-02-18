@@ -16,7 +16,7 @@ class DrawerFooter extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             const ImageAssetUtil(
-              AppImages.developer,
+              AppAssets.developer,
               height: 24,
             ),
             const SizedBox(width: 16),

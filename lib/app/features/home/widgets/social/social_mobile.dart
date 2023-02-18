@@ -16,7 +16,7 @@ class SocialMobile extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.socialAbstract,
+            AppAssets.socialAbstract,
             width: context.width,
           ),
         ),
@@ -24,7 +24,7 @@ class SocialMobile extends StatelessWidget {
           bottom: 0,
           child: Align(
             child: ImageAssetUtil(
-              AppImages.socialGradientCenter,
+              AppAssets.socialGradientCenter,
               height: context.height,
             ),
           ),

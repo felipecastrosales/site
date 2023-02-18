@@ -21,7 +21,7 @@ class ExperienceWeb extends StatelessWidget {
           child: Align(
             alignment: Alignment.centerRight,
             child: ImageAssetUtil(
-              AppImages.abstractRight,
+              AppAssets.abstractRight,
               height: context.height,
             ),
           ),
@@ -30,13 +30,13 @@ class ExperienceWeb extends StatelessWidget {
           left: 10,
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.champCircle,
+            AppAssets.champCircle,
             height: context.height,
           ),
         ),
         Positioned.fill(
           child: ImageAssetUtil(
-            AppImages.presentationTextureLarge,
+            AppAssets.presentationTextureLarge,
             alignment: Alignment.topCenter,
             height: context.height,
             width: context.width,
@@ -63,7 +63,7 @@ class ExperienceWeb extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.only(top: 24, left: 40),
                             child: const ImageAssetUtil(
-                              AppImages.champ,
+                              AppAssets.champ,
                               width: 300,
                             ),
                           ),

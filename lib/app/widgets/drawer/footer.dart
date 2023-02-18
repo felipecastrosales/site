@@ -22,7 +22,7 @@ class Footer extends StatelessWidget {
           ),
           const SizedBox(width: 2),
           const ImageAssetUtil(
-            AppImages.developer,
+            AppAssets.developer,
             height: 16,
           ),
         ],

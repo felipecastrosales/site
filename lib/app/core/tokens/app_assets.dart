@@ -1,4 +1,4 @@
-class AppImages {
+class AppAssets {
   static const developer = 'assets/developer.png';
   static const profile = 'assets/profile.png';
   static const mouse = 'assets/components/mouse-down.json';

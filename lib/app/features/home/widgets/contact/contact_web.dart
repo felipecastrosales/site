@@ -22,7 +22,7 @@ class ContactWeb extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.contactHorizontalTexture,
+            AppAssets.contactHorizontalTexture,
             height: context.height,
           ),
         ),
@@ -31,7 +31,7 @@ class ContactWeb extends StatelessWidget {
           child: Align(
             alignment: Alignment.centerLeft,
             child: ImageAssetUtil(
-              AppImages.contactGradientLeft,
+              AppAssets.contactGradientLeft,
               height: context.height,
             ),
           ),
@@ -41,7 +41,7 @@ class ContactWeb extends StatelessWidget {
           child: Align(
             alignment: Alignment.centerRight,
             child: ImageAssetUtil(
-              AppImages.contactGradientRight,
+              AppAssets.contactGradientRight,
               height: context.height,
             ),
           ),

@@ -23,7 +23,7 @@ class ProjectsMobile extends StatelessWidget {
               child: Stack(
                 children: [
                   ImageAssetUtil(
-                    AppImages.abstractFit,
+                    AppAssets.abstractFit,
                     width: context.width,
                   ),
                 ],
@@ -49,7 +49,7 @@ class ProjectsMobile extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24, bottom: 16),
                   child: const ImageAssetUtil(
-                    AppImages.mockup,
+                    AppAssets.mockup,
                     width: 324,
                   ),
                 ),

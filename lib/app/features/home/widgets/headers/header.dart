@@ -28,7 +28,7 @@ class Header extends StatelessWidget {
                     padding: EdgeInsets.all(4),
                     child: ClipOval(
                       child: ImageAssetUtil(
-                        AppImages.profile,
+                        AppAssets.profile,
                       ),
                     ),
                   ),

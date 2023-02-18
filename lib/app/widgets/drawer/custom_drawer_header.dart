@@ -25,7 +25,7 @@ class CustomDrawerHeader extends StatelessWidget {
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage(AppImages.profile),
+                image: AssetImage(AppAssets.profile),
               ),
             ),
           ),

@@ -21,7 +21,7 @@ class PresentationMobile extends StatelessWidget {
           child: Align(
             alignment: Alignment.center,
             child: ImageAssetUtil(
-              AppImages.presentationGradientImage,
+              AppAssets.presentationGradientImage,
               width: context.width,
               height: context.height,
             ),
@@ -30,7 +30,7 @@ class PresentationMobile extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.presentationGradientBottom,
+            AppAssets.presentationGradientBottom,
             width: context.width,
             height: context.height,
           ),
@@ -38,7 +38,7 @@ class PresentationMobile extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: ImageAssetUtil(
-            AppImages.presentationTextureBackground,
+            AppAssets.presentationTextureBackground,
             width: context.width,
             height: context.height,
           ),
@@ -71,7 +71,7 @@ class PresentationMobile extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),
                   child: const ImageAssetUtil(
-                    AppImages.presentationMobile,
+                    AppAssets.presentationMobile,
                   ),
                 ),
                 const Center(
