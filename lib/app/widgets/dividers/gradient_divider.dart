@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 class GradientDivider extends StatelessWidget {
   const GradientDivider({super.key});

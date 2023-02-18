@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 class SectionDivider extends StatelessWidget {
   const SectionDivider({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 import 'dividers.dart';
 

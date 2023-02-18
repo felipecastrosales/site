@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/app_customs/app_customs.dart';
-import 'package:site/app/widgets/custom_borders.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
@@ -25,7 +24,7 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const customBorder = CustomBorders.primaryBorder;
+    const customBorder = AppBorders.primaryBorder;
 
     return SizedBox(
       width: 300,

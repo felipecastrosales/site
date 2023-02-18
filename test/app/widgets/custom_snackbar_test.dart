@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/widgets.dart';
 
 const String snackBarText = 'E-mail enviado com sucesso!';
@@ -25,7 +25,7 @@ void main() {
       findsNothing,
     );
 
-    await tester.pump();  
+    await tester.pump();
 
     expect(
       find.text(snackBarText),

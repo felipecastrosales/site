@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:site/app/core/app_customs/app_customs.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 import 'card_glassmorphism.dart';
 
