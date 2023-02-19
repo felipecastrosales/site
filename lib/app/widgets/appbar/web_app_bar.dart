@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 
 import 'widgets/widgets.dart';
 
 class WebAppBar extends StatelessWidget {
-  const WebAppBar({super.key});
+  const WebAppBar(
+    this.itemScrollController, {
+    super.key,
+  });
+
+  final ItemScrollController itemScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -12,30 +20,35 @@ class WebAppBar extends StatelessWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: const [
+        children: [
           WebAppBarTitle(
-            AppTexts.home,
-            0,
+            title: AppTexts.home,
+            index: 0,
+            itemScrollController: itemScrollController,
           ),
-          AppBarDivider(),
+          const AppBarDivider(),
           WebAppBarTitle(
-            AppTexts.projects,
-            1,
+            title: AppTexts.projects,
+            index: 1,
+            itemScrollController: itemScrollController,
           ),
-          AppBarDivider(),
+          const AppBarDivider(),
           WebAppBarTitle(
-            AppTexts.experience,
-            2,
+            title: AppTexts.experience,
+            index: 2,
+            itemScrollController: itemScrollController,
           ),
-          AppBarDivider(),
+          const AppBarDivider(),
           WebAppBarTitle(
-            AppTexts.socialLinks,
-            3,
+            title: AppTexts.socialLinks,
+            index: 3,
+            itemScrollController: itemScrollController,
           ),
-          AppBarDivider(),
+          const AppBarDivider(),
           WebAppBarTitle(
-            AppTexts.contact,
-            4,
+            title: AppTexts.contact,
+            index: 4,
+            itemScrollController: itemScrollController,
           ),
         ],
       ),

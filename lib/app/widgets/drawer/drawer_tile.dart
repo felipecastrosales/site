@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 
@@ -7,14 +8,14 @@ class DrawerTile extends StatelessWidget {
     super.key,
     required this.title,
     required this.leading,
-    required this.page,
-    required this.controller,
+    required this.index,
+    required this.itemScrollController,
   });
 
   final String title;
   final IconData leading;
-  final int page;
-  final PageController controller;
+  final int index;
+  final ItemScrollController itemScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -27,10 +28,11 @@ class DrawerTile extends StatelessWidget {
       child: InkWell(
         splashColor: AppColors.blackOpacity,
         onTap: () {
-          controller.animateToPage(
-            page,
+          itemScrollController.scrollTo(
+            index: index,
+            alignment: 0,
+            curve: Curves.easeInOutCubic,
             duration: const Duration(seconds: 2),
-            curve: Curves.fastOutSlowIn,
           );
         },
         child: Padding(
@@ -38,7 +40,7 @@ class DrawerTile extends StatelessWidget {
           child: ListTile(
             title: Transform.translate(
               offset: const Offset(-12, 0),
-              child: SelectableText(
+              child: Text(
                 title,
                 style: AppTextStyles.socialTitle,
               ),

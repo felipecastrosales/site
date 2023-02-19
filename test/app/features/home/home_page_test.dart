@@ -45,7 +45,7 @@ Future<void> _createWidget({
   required WidgetTester tester,
 }) async {
   await tester.pumpWidget(
-    MaterialApp(
+    const MaterialApp(
       home: HomePage(),
     ),
   );

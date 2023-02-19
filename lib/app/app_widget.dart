@@ -14,7 +14,7 @@ class AppWidget extends StatelessWidget {
       title: AppTexts.projectTitle,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

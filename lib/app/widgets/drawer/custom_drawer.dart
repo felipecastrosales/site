@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 
@@ -7,11 +9,11 @@ import 'drawer.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer(
-    this.pageController, {
+    this.itemScrollController, {
     super.key,
   });
 
-  final PageController pageController;
+  final ItemScrollController itemScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class CustomDrawer extends StatelessWidget {
             children: [
               const CustomDrawerHeader(),
               const CustomDivider(.5, AppColors.primaryDark),
-              DrawerItems(pageController: pageController),
+              DrawerItems(itemScrollController),
               const Spacer(),
               const DrawerFooter(),
               const Footer(),

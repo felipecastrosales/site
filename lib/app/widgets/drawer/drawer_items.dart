@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 
 import 'drawer.dart';
 
 class DrawerItems extends StatelessWidget {
-  const DrawerItems({
+  const DrawerItems(
+    this.itemScrollController, {
     super.key,
-    required this.pageController,
   });
 
-  final PageController pageController;
+  final ItemScrollController itemScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -18,32 +21,32 @@ class DrawerItems extends StatelessWidget {
         DrawerTile(
           title: AppTexts.home,
           leading: Icons.home,
-          page: 1,
-          controller: pageController,
+          index: 0,
+          itemScrollController: itemScrollController,
         ),
         DrawerTile(
           title: AppTexts.projects,
           leading: Icons.tips_and_updates,
-          page: 2,
-          controller: pageController,
+          index: 1,
+          itemScrollController: itemScrollController,
         ),
         DrawerTile(
           title: AppTexts.experience,
           leading: Icons.receipt_long,
-          page: 3,
-          controller: pageController,
+          index: 2,
+          itemScrollController: itemScrollController,
         ),
         DrawerTile(
           title: AppTexts.socialLinks,
           leading: Icons.link,
-          page: 4,
-          controller: pageController,
+          index: 3,
+          itemScrollController: itemScrollController,
         ),
         DrawerTile(
           title: AppTexts.contact,
           leading: Icons.contact_mail,
-          page: 5,
-          controller: pageController,
+          index: 4,
+          itemScrollController: itemScrollController,
         ),
       ],
     );
