@@ -13,7 +13,7 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       title: AppTexts.projectTitle,
       debugShowCheckedModeBanner: false,
-      theme: SiteTheme.theme,
+      theme: AppTheme.theme,
       home: HomePage(),
     );
   }

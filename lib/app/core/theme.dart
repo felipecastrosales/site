@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 
-class SiteTheme {
-  SiteTheme._();
+class AppTheme {
+  AppTheme._();
   static ThemeData get theme => ThemeData(
         scaffoldBackgroundColor: AppColors.background,
         textSelectionTheme: const TextSelectionThemeData(
