@@ -32,6 +32,8 @@
 
   <title>Felipe Sales | Social Links</title>
   <link rel="manifest" href="manifest.json">
+
+  <script src="flutter.js" defer></script>
 </head>
 <body>
 
@@ -54,20 +56,24 @@
   </script>
 
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      let useHtml = true;
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: async function(engineInitializer) {
+          let config = {
+            renderer: useHtml ? "html" : "canvaskit",
+          }
+          // Initialize the Flutter engine
+          let appRunner = await engineInitializer.initializeEngine(config);
+          // Run the app
+          await appRunner.runApp();
+        }
       });
-    }
-  </script>
-
-  <script type="text/javascript">
-    let useHtml = true;
-    if (useHtml) {
-      window.flutterWebRenderer = "html";
-    } else {
-      window.flutterWebRenderer = "canvaskit";
-    }
+    });
   </script>
 
   <script src="main.dart.js" type="application/javascript"></script>
