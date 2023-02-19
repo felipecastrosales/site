@@ -26,13 +26,13 @@ class HomePage extends StatelessWidget {
           drawer: constraints.maxWidth < Breakpoints.appBar
               ? CustomDrawer(pageController)
               : null,
+          appBar: const CustomAppBar(),
           body: Align(
             alignment: Alignment.topCenter,
             // child: ConstrainedBox(
             // constraints: const BoxConstraints(maxWidth: 600),
             child: ListView(
               children: const [
-                CustomAppBar(),
                 Presentation(),
                 Projects(),
                 Experience(),
