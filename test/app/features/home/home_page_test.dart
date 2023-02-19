@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:site/app/features/home/home_page.dart';
 
 void main() {
@@ -20,21 +21,8 @@ void main() {
 
     expect(
       find.byWidgetPredicate(
-        (widget) => widget is Scaffold && widget.body is Align,
-      ),
-      findsOneWidget,
-    );
-
-    expect(
-      find.byWidgetPredicate(
-        (widget) => widget is Align && widget.child is ListView,
-      ),
-      findsOneWidget,
-    );
-
-    expect(
-      find.byWidgetPredicate(
-        (widget) => widget is ListView,
+        (widget) =>
+            widget is Scaffold && widget.body is ScrollablePositionedList,
       ),
       findsOneWidget,
     );
