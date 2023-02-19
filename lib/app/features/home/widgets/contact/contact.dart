@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:site/app/core/shared/shared.dart';
 
-import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/features/home/widgets/contact/controller/contact_controller.dart';
 import 'package:site/app/widgets/widgets.dart';
+import 'package:site/data/models/models.dart' as models;
 import 'package:site/data/repositories/contact/contact.dart';
 import 'package:site/data/services/contact/contact.dart';
-import 'package:site/data/models/models.dart' as models;
 
-import 'widgets/widgets.dart';
 import 'contact_mobile.dart';
 import 'contact_web.dart';
+import 'widgets/widgets.dart';
 
 class Contact extends StatelessWidget {
   const Contact({super.key});

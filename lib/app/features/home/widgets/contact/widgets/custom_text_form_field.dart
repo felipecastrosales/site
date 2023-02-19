@@ -30,6 +30,7 @@ class CustomTextFormField extends StatelessWidget {
       width: 300,
       child: Material(
         borderRadius: BorderRadius.circular(16),
+        color: AppColors.transparent,
         child: TextFormField(
           controller: controller,
           validator: validator,

@@ -11,6 +11,7 @@ class AppTheme {
         ),
         colorScheme: ThemeData().colorScheme.copyWith(
               primary: AppColors.primary,
+              secondary: AppColors.primary,
             ),
         appBarTheme: const AppBarTheme(
           backgroundColor: AppColors.black,
