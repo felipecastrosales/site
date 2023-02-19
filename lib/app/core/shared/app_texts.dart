@@ -1,6 +1,8 @@
 class AppTexts {
   /// Project
   static const projectTitle = 'Felipe Sales | Social Links';
+  static const felipeSales = 'Felipe Sales';
+  static const flutterDeveloperInstructor = 'Flutter Developer Instructor';
 
   /// Presentation
   static const hiIAmFelipeSales = 'Olá, sou Felipe Sales';
@@ -61,4 +63,6 @@ class AppTexts {
   static const flutterProjectOpenSource = 'Um projeto Flutter OpenSource.';
   static const seeInGitHub = 'Veja no GitHub';
   static const seeInFigma = 'Veja no Figma';
+  static const deepCode = 'Deep Code.';
+  static const createdByFelipeCastroSales = 'Criado por @felipecastrosales™';
 }

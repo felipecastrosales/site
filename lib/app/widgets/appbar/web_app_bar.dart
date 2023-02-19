@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/shared/shared.dart';
 
 import 'widgets/widgets.dart';
 
@@ -12,15 +13,30 @@ class WebAppBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: const [
-          WebAppBarTitle('Home', 0),
+          WebAppBarTitle(
+            AppTexts.home,
+            0,
+          ),
           AppBarDivider(),
-          WebAppBarTitle('Projetos', 1),
+          WebAppBarTitle(
+            AppTexts.projects,
+            1,
+          ),
           AppBarDivider(),
-          WebAppBarTitle('Experiência', 2),
+          WebAppBarTitle(
+            AppTexts.experience,
+            2,
+          ),
           AppBarDivider(),
-          WebAppBarTitle('Social Links', 3),
+          WebAppBarTitle(
+            AppTexts.socialLinks,
+            3,
+          ),
           AppBarDivider(),
-          WebAppBarTitle('Contato', 4),
+          WebAppBarTitle(
+            AppTexts.contact,
+            4,
+          ),
         ],
       ),
     );

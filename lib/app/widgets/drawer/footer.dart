@@ -17,7 +17,7 @@ class Footer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SelectableText(
-            'Criado por @felipecastrosales™',
+            AppTexts.createdByFelipeCastroSales,
             style: AppTextStyles.footer,
           ),
           const SizedBox(width: 2),
