@@ -23,14 +23,10 @@ class CardGlassmorphism extends StatelessWidget {
           width: 278,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
+            gradient: AppGradients.glassmorphic,
             border: Border.all(
               width: 1,
               color: AppColors.white.withOpacity(.25),
-            ),
-            gradient: LinearGradient(
-              colors: AppGradients.glassmorphic,
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
             ),
           ),
           child: child,

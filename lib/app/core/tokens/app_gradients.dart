@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'tokens.dart';
 
 class AppGradients {
-  static final glassmorphic = [
-    AppColors.shadowLightSocial.withOpacity(.05),
-    AppColors.shadowLightSocial.withOpacity(.15),
-    AppColors.shadowLightSocial.withOpacity(.3),
-  ];
-
   static const stories = LinearGradient(
     begin: Alignment.bottomLeft,
     end: Alignment.topRight,
     stops: [.0, .5, .9],
-    colors: AppListColor.stories,
+    colors: AppListColors.stories,
   );
 
   static const divider = LinearGradient(
-    colors: AppListColor.divider,
+    colors: AppListColors.divider,
+  );
+
+  static final glassmorphic = LinearGradient(
+    colors: AppListColors.glassmorphic,
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
   );
 }

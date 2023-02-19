@@ -1,6 +1,6 @@
 import 'tokens.dart';
 
-class AppListColor {
+class AppListColors {
   static const linear = [
     AppColors.primaryDark,
     AppColors.primary,
@@ -20,5 +20,11 @@ class AppListColor {
   static const divider = [
     AppColors.orange,
     AppColors.primary,
+  ];
+
+  static final glassmorphic = [
+    AppColors.shadowLightSocial.withOpacity(.05),
+    AppColors.shadowLightSocial.withOpacity(.15),
+    AppColors.shadowLightSocial.withOpacity(.3),
   ];
 }
