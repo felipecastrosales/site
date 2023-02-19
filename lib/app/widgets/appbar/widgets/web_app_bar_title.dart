@@ -16,7 +16,7 @@ class WebAppBarTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: Material(
-        color: Colors.transparent,
+        color: AppColors.transparent,
         borderRadius: BorderRadius.circular(8),
         child: InkWell(
           splashColor: AppColors.primary,

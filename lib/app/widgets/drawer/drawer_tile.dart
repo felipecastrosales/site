@@ -20,7 +20,12 @@ class DrawerTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: AppColors.background,
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
       child: InkWell(
+        splashColor: AppColors.blackOpacity,
         onTap: () {
           controller.animateToPage(
             page,
@@ -40,6 +45,7 @@ class DrawerTile extends StatelessWidget {
             ),
             leading: Icon(
               leading,
+              size: 24,
               color: AppColors.primary,
             ),
           ),

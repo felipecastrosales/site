@@ -50,7 +50,7 @@ class ContactValitadors {
     if (!regexLenght.hasMatch(value)) {
       return 'Insira um assunto maior.';
     }
-    final regex = RegExp(r'^[a-zA-ZÀ-ú ]+$');
+    final regex = RegExp('[a-zA-Z]');
     if (regex.hasMatch(value)) {
       return null;
     }

@@ -20,14 +20,14 @@ class SocialItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.transparent,
+      color: AppColors.transparent,
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
         onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
         customBorder: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
-        borderRadius: BorderRadius.circular(16),
         child: CardGlassmorphism(
           child: Row(
             children: [

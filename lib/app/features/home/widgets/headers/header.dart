@@ -18,9 +18,8 @@ class Header extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 50),
-              const SizedBox(
-                height: 127,
-                width: 127,
+              const SizedBox.square(
+                dimension: 127,
                 child: CircleAvatar(
                   radius: 50,
                   backgroundColor: AppColors.primary,

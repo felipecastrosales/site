@@ -8,6 +8,8 @@ class MobileAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      scrolledUnderElevation: 0,
+      surfaceTintColor: AppColors.transparent,
       actions: [
         Container(
           alignment: Alignment.center,

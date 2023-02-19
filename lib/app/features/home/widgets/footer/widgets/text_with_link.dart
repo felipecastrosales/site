@@ -15,7 +15,7 @@ class TextWithLink extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.transparent,
+      color: AppColors.transparent,
       child: InkWell(
         onTap: () => LaunchUrls.launchURL(link),
         child: Text(

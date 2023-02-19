@@ -21,6 +21,7 @@ class CustomDrawer extends StatelessWidget {
       ),
       child: Drawer(
         backgroundColor: AppColors.background,
+        surfaceTintColor: AppColors.transparent,
         child: SafeArea(
           child: Column(
             mainAxisSize: MainAxisSize.max,
