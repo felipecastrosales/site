@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
+import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
-class DrawerTile extends StatelessWidget {
+class DrawerTile extends StatelessWidget with ScrollToMixin {
   const DrawerTile({
     super.key,
     required this.title,
@@ -27,14 +29,7 @@ class DrawerTile extends StatelessWidget {
       ),
       child: InkWell(
         splashColor: AppColors.blackOpacity,
-        onTap: () {
-          itemScrollController.scrollTo(
-            index: index,
-            alignment: 0,
-            curve: Curves.easeInOutCubic,
-            duration: const Duration(seconds: 2),
-          );
-        },
+        onTap: () => scrollTo(index, itemScrollController),
         child: Padding(
           padding: const EdgeInsets.only(left: 8),
           child: ListTile(

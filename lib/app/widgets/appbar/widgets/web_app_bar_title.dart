@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
+import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
-class WebAppBarTitle extends StatelessWidget {
+class WebAppBarTitle extends StatelessWidget with ScrollToMixin {
   const WebAppBarTitle({
     super.key,
     required this.index,
@@ -26,14 +28,7 @@ class WebAppBarTitle extends StatelessWidget {
           overlayColor: MaterialStateProperty.all(
             AppColors.primary.withOpacity(0.16),
           ),
-          onTap: () {
-            itemScrollController.scrollTo(
-              index: index,
-              alignment: 0,
-              curve: Curves.easeInOutCubic,
-              duration: const Duration(seconds: 2),
-            );
-          },
+          onTap: () => scrollTo(index, itemScrollController),
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: AppTextStyles.appBar(title),
