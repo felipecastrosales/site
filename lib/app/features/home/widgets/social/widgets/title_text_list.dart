@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/widgets/section/section.dart';
 
-import 'components.dart';
+import 'widgets.dart';
 
 class TitleTextList extends StatelessWidget {
   const TitleTextList({

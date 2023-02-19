@@ -3,7 +3,7 @@ import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
 import 'package:site/app/utils/utils.dart';
 
-import 'widgets/components.dart';
+import 'widgets/widgets.dart';
 
 class SocialWeb extends StatelessWidget {
   const SocialWeb({super.key});

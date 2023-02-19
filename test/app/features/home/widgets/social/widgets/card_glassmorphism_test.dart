@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:site/app/features/home/widgets/social/widgets/components.dart';
+import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
 
 void main() {
   testWidgets('Should renders CardGlassmorphism', (tester) async {
