@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:site/app/core/injections/injections.dart';
 
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/core/shared/shared.dart';
@@ -10,7 +11,6 @@ import 'package:site/app/features/home/widgets/contact/widgets/widgets.dart';
 import 'package:site/app/widgets/widgets.dart';
 import 'package:site/data/models/models.dart' as models;
 import 'package:site/data/repositories/contact/contact.dart';
-import 'package:site/data/services/contact/contact.dart';
 
 class Contact extends StatelessWidget {
   const Contact({super.key});
@@ -18,8 +18,9 @@ class Contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final contactController = ContactController(
-      contactService: ContactServiceImpl(
-        contactRepository: ContactRepositoryImpl(),
+      contactRepository: ContactRepositoryImpl(
+        firebaseRemoteConfig: getIt(),
+        client: getIt(),
       ),
     );
 

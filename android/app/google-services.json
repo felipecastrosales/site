@@ -29,6 +29,13 @@
             {
               "client_id": "884743546828-9ea2sk2c4p812dkp6nfqh8nmrljho9t6.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.felipecastrosales.site"
+              }
             }
           ]
         }

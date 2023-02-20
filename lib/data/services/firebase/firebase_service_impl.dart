@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'dart:developer' as developer;
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
@@ -21,13 +21,20 @@ class FirebaseServiceImpl implements FirebaseService {
     final remoteConfigKeys = FirebaseSetDefaults().getRemoteConfigKeys();
     final remoteConfigSettings = FirebaseSettings().setSettings;
     try {
-      await remoteConfig.fetchAndActivate();
       await remoteConfig.setDefaults(remoteConfigKeys);
       await remoteConfig.setConfigSettings(remoteConfigSettings);
       await remoteConfig.fetchAndActivate();
     } catch (e, s) {
-      debugPrint('Error: $e');
-      debugPrint('StackTrace: $s');
+      developer.log(
+        'setUpRemoteConfig',
+        name: 'FirebaseServiceImpl',
+        error: e,
+        stackTrace: s,
+      );
     }
   }
+
+  @override
+  Future<FirebaseRemoteConfig> get instance async =>
+      FirebaseRemoteConfig.instance;
 }
