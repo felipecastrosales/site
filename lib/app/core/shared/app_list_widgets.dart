@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:site/app/features/home/widgets/contact/contact.dart';
+import 'package:site/app/features/home/widgets/contact/contact_widget.dart';
 import 'package:site/app/features/home/widgets/contact/controller/contact_controller.dart';
 import 'package:site/app/features/home/widgets/experience/experience.dart';
 import 'package:site/app/features/home/widgets/footer/footer.dart';
@@ -38,7 +38,7 @@ class AppListWidgets {
       const Projects(),
       const Experience(),
       const Social(),
-      Contact(
+      ContactWidget(
         contactController: ContactController(
           contactRepository: ContactRepositoryImpl(
             firebaseRemoteConfig: firebaseRemoteConfig,

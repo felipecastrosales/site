@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:site/app/features/home/widgets/contact/contact.dart';
+import 'package:site/app/features/home/widgets/contact/contact_widget.dart';
 import 'package:site/app/features/home/widgets/contact/controller/contact_controller.dart';
 
 import '../../../../../utils/utils.dart';
@@ -21,7 +21,7 @@ void main() {
     );
 
     expect(
-      find.byType(Contact),
+      find.byType(ContactWidget),
       findsOneWidget,
     );
   });
@@ -33,7 +33,7 @@ Future<void> _createWidget({
 }) async {
   await tester.pumpWidget(
     MaterialApp(
-      home: Contact(
+      home: ContactWidget(
         contactController: contactController,
       ),
     ),

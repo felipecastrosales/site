@@ -12,8 +12,8 @@ import 'package:site/app/widgets/widgets.dart';
 import 'package:site/data/models/models.dart' as models;
 import 'package:site/data/repositories/contact/contact.dart';
 
-class Contact extends StatelessWidget {
-  Contact({
+class ContactWidget extends StatelessWidget {
+  ContactWidget({
     super.key,
     ContactController? contactController,
   }) : _contactController = contactController ??
@@ -28,16 +28,6 @@ class Contact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final contactController =
-    // ContactController(
-    //   contactRepository: ContactRepositoryImpl(
-    //     firebaseRemoteConfig: getIt(),
-    //     httpClient: getIt(),
-    //   ),
-    // );
-    // final contactController =
-    // );
-
     final formKey = GlobalKey<FormState>();
     final nameController = TextEditingController();
     final emailController = TextEditingController();
