@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
-import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 import 'widgets/phrase.dart';
 
@@ -20,7 +20,7 @@ class PresentationMobile extends StatelessWidget {
         Positioned.fill(
           child: Align(
             alignment: Alignment.center,
-            child: ImageAssetUtil(
+            child: ImageAssetWidget(
               AppAssets.presentationGradientImage,
               width: context.width,
               height: context.height,
@@ -29,7 +29,7 @@ class PresentationMobile extends StatelessWidget {
         ),
         Positioned(
           bottom: 0,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.presentationGradientBottom,
             width: context.width,
             height: context.height,
@@ -37,7 +37,7 @@ class PresentationMobile extends StatelessWidget {
         ),
         Positioned(
           bottom: 0,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.presentationTextureBackground,
             width: context.width,
             height: context.height,
@@ -70,7 +70,7 @@ class PresentationMobile extends StatelessWidget {
                 Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 24),
-                  child: const ImageAssetUtil(
+                  child: const ImageAssetWidget(
                     AppAssets.presentationMobile,
                   ),
                 ),

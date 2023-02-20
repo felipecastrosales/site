@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
-import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 import 'widgets/widgets.dart';
 
@@ -20,7 +20,7 @@ class ExperienceWeb extends StatelessWidget {
           right: 0,
           child: Align(
             alignment: Alignment.centerRight,
-            child: ImageAssetUtil(
+            child: ImageAssetWidget(
               AppAssets.abstractRight,
               height: context.height,
             ),
@@ -29,13 +29,13 @@ class ExperienceWeb extends StatelessWidget {
         Positioned.fill(
           left: 10,
           bottom: 0,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.champCircle,
             height: context.height,
           ),
         ),
         Positioned.fill(
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.presentationTextureLarge,
             alignment: Alignment.topCenter,
             height: context.height,
@@ -62,7 +62,7 @@ class ExperienceWeb extends StatelessWidget {
                         children: [
                           Container(
                             padding: const EdgeInsets.only(top: 24, left: 40),
-                            child: const ImageAssetUtil(
+                            child: const ImageAssetWidget(
                               AppAssets.champ,
                               width: 300,
                             ),

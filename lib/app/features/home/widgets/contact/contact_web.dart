@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
-import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 class ContactWeb extends StatelessWidget {
   const ContactWeb(
@@ -21,16 +21,17 @@ class ContactWeb extends StatelessWidget {
       children: [
         Positioned(
           bottom: 0,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.contactHorizontalTexture,
             height: context.height,
+            width: context.width,
           ),
         ),
         Positioned.fill(
           left: 0,
           child: Align(
             alignment: Alignment.centerLeft,
-            child: ImageAssetUtil(
+            child: ImageAssetWidget(
               AppAssets.contactGradientLeft,
               height: context.height,
             ),
@@ -40,7 +41,7 @@ class ContactWeb extends StatelessWidget {
           right: 0,
           child: Align(
             alignment: Alignment.centerRight,
-            child: ImageAssetUtil(
+            child: ImageAssetWidget(
               AppAssets.contactGradientRight,
               height: context.height,
             ),

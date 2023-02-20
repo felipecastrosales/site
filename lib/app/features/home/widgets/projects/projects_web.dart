@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
-import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 import 'widgets/custom_text_button_widget.dart';
 
@@ -19,7 +20,7 @@ class ProjectsWeb extends StatelessWidget {
           bottom: 4,
           child: Align(
             alignment: Alignment.bottomCenter,
-            child: ImageAssetUtil(
+            child: ImageAssetWidget(
               AppAssets.abstractLarge,
               alignment: Alignment.topCenter,
               height: 305.7,
@@ -62,7 +63,7 @@ class ProjectsWeb extends StatelessWidget {
                         children: [
                           Container(
                             alignment: Alignment.center,
-                            child: const ImageAssetUtil(
+                            child: const ImageAssetWidget(
                               AppAssets.mockup,
                               width: 460,
                             ),

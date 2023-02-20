@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
-import 'package:site/app/utils/utils.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -26,7 +27,7 @@ class Header extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(4),
                     child: ClipOval(
-                      child: ImageAssetUtil(
+                      child: ImageAssetWidget(
                         AppAssets.profile,
                       ),
                     ),

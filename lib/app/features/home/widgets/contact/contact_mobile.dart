@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
-import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 class ContactMobile extends StatelessWidget {
   const ContactMobile(
@@ -20,7 +21,7 @@ class ContactMobile extends StatelessWidget {
       children: [
         Positioned(
           bottom: 0,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.contactVerticalTexture,
             height: context.height,
             width: context.width,
@@ -28,7 +29,7 @@ class ContactMobile extends StatelessWidget {
         ),
         Positioned(
           bottom: 0,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.contactBottomGradient,
             width: context.width,
           ),

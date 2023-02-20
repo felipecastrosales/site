@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
-import 'package:site/app/utils/utils.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -21,7 +22,7 @@ class Footer extends StatelessWidget {
             style: AppTextStyles.footer,
           ),
           const SizedBox(width: 2),
-          const ImageAssetUtil(
+          const ImageAssetWidget(
             AppAssets.developer,
             height: 16,
           ),

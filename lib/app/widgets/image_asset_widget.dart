@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ImageAssetUtil extends StatelessWidget {
-  const ImageAssetUtil(
+class ImageAssetWidget extends StatelessWidget {
+  const ImageAssetWidget(
     this.image, {
     super.key,
     this.fit = BoxFit.cover,

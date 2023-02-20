@@ -29,7 +29,10 @@ class DrawerTile extends StatelessWidget with ScrollToMixin {
       ),
       child: InkWell(
         splashColor: AppColors.blackOpacity,
-        onTap: () => scrollTo(index, itemScrollController),
+        onTap: () {
+          scrollTo(index, itemScrollController);
+          Navigator.pop(context);
+        },
         child: Padding(
           padding: const EdgeInsets.only(left: 8),
           child: ListTile(

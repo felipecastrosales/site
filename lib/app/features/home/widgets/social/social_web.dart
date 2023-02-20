@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/context_ext.dart';
-import 'package:site/app/utils/utils.dart';
+import 'package:site/app/widgets/widgets.dart';
 
 import 'widgets/widgets.dart';
 
@@ -14,7 +15,7 @@ class SocialWeb extends StatelessWidget {
       children: [
         Positioned(
           bottom: 4,
-          child: ImageAssetUtil(
+          child: ImageAssetWidget(
             AppAssets.socialAbstractLarge,
             alignment: Alignment.topCenter,
             width: context.width,
@@ -24,10 +25,10 @@ class SocialWeb extends StatelessWidget {
         Positioned.fill(
           child: Align(
             alignment: Alignment.center,
-            child: ImageAssetUtil(
+            child: ImageAssetWidget(
               AppAssets.socialGradientCenter,
               width: context.width,
-              height: context.height,
+              height: double.infinity,
             ),
           ),
         ),
