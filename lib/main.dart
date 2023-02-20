@@ -7,10 +7,10 @@ import 'package:site/app/core/injections/injections.dart';
 import 'package:site/data/services/firebase/firebase.dart';
 
 Future<void> main() async {
-  setPathUrlStrategy();
-  configureDependencies();
   WidgetsFlutterBinding.ensureInitialized();
   await FirebaseServiceImpl().setUpInitialization();
+  setPathUrlStrategy();
+  configureDependencies();
   runApp(
     const AppWidget(),
   );
