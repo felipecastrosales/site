@@ -4,14 +4,14 @@ import 'package:auto_size_text/auto_size_text.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 
-appShowSnackBar(
+ScaffoldFeatureController appShowSnackBar(
   BuildContext context, {
   required String text,
   required IconData icon,
   required Color color,
   required double width,
 }) {
-  ScaffoldMessenger.of(context).showSnackBar(
+  return ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
       elevation: 8,
       width: width,

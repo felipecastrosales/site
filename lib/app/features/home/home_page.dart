@@ -6,7 +6,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/core/shared/shared.dart';
-import 'package:site/app/widgets/appbar/appbar.dart';
+import 'package:site/app/widgets/appbar/app_bar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 
 class HomePage extends StatefulWidget {

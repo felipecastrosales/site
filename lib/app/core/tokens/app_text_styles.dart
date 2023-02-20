@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 class AppTextStyles {
-  static appBar(text) => Text(
+  static Text appBar(text) => Text(
         text,
         style: GoogleFonts.montserrat(
           fontSize: 16,

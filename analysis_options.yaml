@@ -2,14 +2,19 @@ include: package:flutter_lints/flutter.yaml
 
 linter:
   rules:
+    - always_declare_return_types
     - always_use_package_imports
+    - avoid_dynamic_calls
     - avoid_relative_lib_imports
     - implementation_imports
     - require_trailing_commas
-    - sort_constructors_first
+    - sized_box_for_whitespace
+    - sized_box_shrink_expand
     - sort_child_properties_last
-    - prefer_single_quotes
+    - sort_constructors_first
     - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
     - prefer_const_literals_to_create_immutables
     - prefer_const_declarations
     - prefer_final_fields
+    - prefer_single_quotes

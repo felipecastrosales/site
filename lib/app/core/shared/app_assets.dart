@@ -33,7 +33,7 @@ class AppAssets {
       'assets/components/experience/abstract-right.png';
 
   /// Social
-  static socialLogo(image) => 'assets/components/social/$image';
+  static String socialLogo(image) => 'assets/components/social/$image';
   static const socialAbstract = 'assets/components/social/abstract.png';
   static const socialAbstractLarge =
       'assets/components/social/abstract-large.png';
