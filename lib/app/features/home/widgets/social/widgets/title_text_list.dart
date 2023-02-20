@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
 import 'package:site/app/widgets/section/section.dart';
-
-import 'widgets.dart';
 
 class TitleTextList extends StatelessWidget {
   const TitleTextList({

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/responsive/breakpoints.dart';
-
-import 'social_mobile.dart';
-import 'social_web.dart';
+import 'package:site/app/features/home/widgets/social/social_mobile.dart';
+import 'package:site/app/features/home/widgets/social/social_web.dart';
 
 class Social extends StatelessWidget {
   const Social({super.key});

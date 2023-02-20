@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-import 'tokens.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 class AppTextStyles {
   static appBar(text) => Text(

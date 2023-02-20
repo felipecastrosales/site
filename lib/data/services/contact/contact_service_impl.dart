@@ -1,7 +1,6 @@
 import 'package:site/data/models/models.dart';
 import 'package:site/data/repositories/contact/contact.dart';
-
-import 'contact.dart';
+import 'package:site/data/services/contact/contact.dart';
 
 class ContactServiceImpl implements ContactService {
   const ContactServiceImpl({

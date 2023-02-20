@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
-
-import 'widgets/rich_text_short.dart';
+import 'package:site/app/features/home/widgets/footer/widgets/rich_text_short.dart';
 
 class FooterMobile extends StatelessWidget {
   const FooterMobile({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:site/app/core/shared/shared.dart';
 
-import 'widgets.dart';
+import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
 
 class SectionExperienceTexts extends StatelessWidget {
   const SectionExperienceTexts({super.key});

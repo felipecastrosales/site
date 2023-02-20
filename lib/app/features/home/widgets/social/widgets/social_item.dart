@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
-
-import 'card_glassmorphism.dart';
+import 'package:site/app/features/home/widgets/social/widgets/card_glassmorphism.dart';
 
 class SocialItem extends StatelessWidget {
   const SocialItem({

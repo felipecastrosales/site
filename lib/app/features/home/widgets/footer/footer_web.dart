@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
+import 'package:site/app/features/home/widgets/footer/widgets/widgets.dart';
 import 'package:site/app/widgets/body/body.dart';
-
-import 'widgets/widgets.dart';
 
 class FooterWeb extends StatelessWidget {
   const FooterWeb({super.key});

@@ -1,4 +1,4 @@
-import 'keys_impl.dart';
+import 'package:site/data/keys/keys_impl.dart';
 
 class Keys {
   static const serviceId = KeysImpl.serviceId;

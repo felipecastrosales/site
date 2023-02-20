@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/shared/shared.dart';
-
-import 'widgets/widgets.dart';
+import 'package:site/app/core/tokens/tokens.dart';
+import 'package:site/app/widgets/appbar/widgets/widgets.dart';
 
 class WebAppBar extends StatelessWidget {
   const WebAppBar(
@@ -17,6 +17,8 @@ class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      scrolledUnderElevation: 0,
+      surfaceTintColor: AppColors.transparent,
       title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

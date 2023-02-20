@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:site/app/core/shared/shared.dart';
-
+import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
 import 'package:site/app/utils/utils.dart';
-
-import 'widgets.dart';
 
 class SocialList extends StatelessWidget {
   const SocialList({super.key});

@@ -4,8 +4,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
-
-import 'drawer.dart';
+import 'package:site/app/widgets/drawer/drawer.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer(

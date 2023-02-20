@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'tokens.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 class AppGradients {
   static const stories = LinearGradient(

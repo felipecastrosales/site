@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
 import 'package:site/app/utils/context_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
-
-import 'widgets/phrase.dart';
 
 class PresentationWeb extends StatelessWidget {
   const PresentationWeb({super.key});

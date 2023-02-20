@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/responsive/breakpoints.dart';
-
-import 'appbar.dart';
+import 'package:site/app/widgets/appbar/appbar.dart';
 
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   const CustomAppBar(

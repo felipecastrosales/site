@@ -1,4 +1,4 @@
-import 'tokens.dart';
+import 'package:site/app/core/tokens/tokens.dart';
 
 class AppListColors {
   static const linear = [

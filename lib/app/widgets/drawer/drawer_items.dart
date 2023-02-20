@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/shared/shared.dart';
-
-import 'drawer.dart';
+import 'package:site/app/widgets/drawer/drawer.dart';
 
 class DrawerItems extends StatelessWidget {
   const DrawerItems(

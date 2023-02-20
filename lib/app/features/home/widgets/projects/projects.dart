@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/responsive/breakpoints.dart';
-
-import 'projects_mobile.dart';
-import 'projects_web.dart';
+import 'package:site/app/features/home/widgets/projects/projects_mobile.dart';
+import 'package:site/app/features/home/widgets/projects/projects_web.dart';
 
 class Projects extends StatelessWidget {
   const Projects({super.key});
