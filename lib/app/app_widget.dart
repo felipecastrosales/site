@@ -13,7 +13,7 @@ class AppWidget extends StatelessWidget {
       title: AppTexts.projectTitle,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }

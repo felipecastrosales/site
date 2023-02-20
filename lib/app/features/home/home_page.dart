@@ -2,15 +2,26 @@ import 'dart:developer' as developer;
 
 import 'package:flutter/material.dart';
 
+import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:http/http.dart' as http;
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
+import 'package:site/app/core/injections/injections.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/widgets/appbar/app_bar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  HomePage({
+    super.key,
+    FirebaseRemoteConfig? firebaseRemoteConfig,
+    http.Client? httpClient,
+  })  : _firebaseRemoteConfig = firebaseRemoteConfig ?? getIt(),
+        _httpClient = httpClient ?? getIt();
+
+  final FirebaseRemoteConfig _firebaseRemoteConfig;
+  final http.Client _httpClient;
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -24,7 +35,10 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    items = AppListWidgets.homePageWidgetList;
+    items = AppListWidgets().homePageWidgetList(
+      widget._firebaseRemoteConfig,
+      widget._httpClient,
+    );
   }
 
   @override

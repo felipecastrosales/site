@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:site/app/core/injections/injections.dart';
 
+import 'package:site/app/core/injections/injections.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
@@ -13,16 +13,30 @@ import 'package:site/data/models/models.dart' as models;
 import 'package:site/data/repositories/contact/contact.dart';
 
 class Contact extends StatelessWidget {
-  const Contact({super.key});
+  Contact({
+    super.key,
+    ContactController? contactController,
+  }) : _contactController = contactController ??
+            ContactController(
+              contactRepository: ContactRepositoryImpl(
+                firebaseRemoteConfig: getIt(),
+                httpClient: getIt(),
+              ),
+            );
+
+  final ContactController? _contactController;
 
   @override
   Widget build(BuildContext context) {
-    final contactController = ContactController(
-      contactRepository: ContactRepositoryImpl(
-        firebaseRemoteConfig: getIt(),
-        client: getIt(),
-      ),
-    );
+    // final contactController =
+    // ContactController(
+    //   contactRepository: ContactRepositoryImpl(
+    //     firebaseRemoteConfig: getIt(),
+    //     httpClient: getIt(),
+    //   ),
+    // );
+    // final contactController =
+    // );
 
     final formKey = GlobalKey<FormState>();
     final nameController = TextEditingController();
@@ -46,7 +60,7 @@ class Contact extends StatelessWidget {
               color: AppColors.primaryDark,
               width: 300,
             );
-            contactController.sendMail(
+            _contactController?.sendMail(
               contact: models.Contact(
                 name: nameController.text,
                 email: emailController.text,

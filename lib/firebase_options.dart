@@ -67,7 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '884743546828',
     projectId: 'site-96dd0',
     storageBucket: 'site-96dd0.appspot.com',
-    iosClientId: '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
+    iosClientId:
+        '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
     iosBundleId: 'com.felipecastrosales.site',
   );
 
@@ -77,7 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '884743546828',
     projectId: 'site-96dd0',
     storageBucket: 'site-96dd0.appspot.com',
-    iosClientId: '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
+    iosClientId:
+        '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
     iosBundleId: 'com.felipecastrosales.site',
   );
 }

@@ -10,21 +10,23 @@ import 'package:site/data/repositories/contact/contact.dart';
 class ContactRepositoryImpl implements ContactRepository {
   ContactRepositoryImpl({
     required FirebaseRemoteConfig firebaseRemoteConfig,
-    required http.Client client,
+    required http.Client httpClient,
   })  : _firebaseRemoteConfig = firebaseRemoteConfig,
-        _client = client;
+        _httpClient = httpClient;
 
   final FirebaseRemoteConfig _firebaseRemoteConfig;
-  final http.Client _client;
+  final http.Client _httpClient;
 
   @override
-  Future sendMail({required Contact contact}) async {
+  Future sendMail({
+    required Contact contact,
+  }) async {
     final serviceId = _firebaseRemoteConfig.getString('service_id');
     final templateId = _firebaseRemoteConfig.getString('template_id');
     final userId = _firebaseRemoteConfig.getString('user_id');
     final baseUrl = Uri.parse(ConstantsAPI.baseUrl);
 
-    final response = await _client.post(
+    final response = await _httpClient.post(
       baseUrl,
       headers: ConstantsAPI.headers,
       body: json.encode(
