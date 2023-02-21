@@ -36,8 +36,9 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     items = AppListWidgets().homePageWidgetList(
-      widget._firebaseRemoteConfig,
-      widget._httpClient,
+      firebaseRemoteConfig: widget._firebaseRemoteConfig,
+      httpClient: widget._httpClient,
+      itemScrollController: itemScrollController,
     );
   }
 

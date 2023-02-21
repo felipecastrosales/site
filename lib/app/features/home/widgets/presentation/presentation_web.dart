@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
 import 'package:site/app/utils/extensions/media_query_ext.dart';
@@ -9,7 +11,12 @@ import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
 
 class PresentationWeb extends StatelessWidget {
-  const PresentationWeb({super.key});
+  const PresentationWeb(
+    this.itemScrollController, {
+    super.key,
+  });
+
+  final ItemScrollController itemScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +91,7 @@ class PresentationWeb extends StatelessWidget {
                 const SizedBox(height: 60),
               ],
             ),
-            const PresentationDivider(),
+            PresentationDivider(itemScrollController),
           ],
         ),
       ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
@@ -10,7 +12,12 @@ import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
 
 class PresentationMobile extends StatelessWidget {
-  const PresentationMobile({super.key});
+  const PresentationMobile(
+    this.itemScrollController, {
+    super.key,
+  });
+
+  final ItemScrollController itemScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +96,7 @@ class PresentationMobile extends StatelessWidget {
                 ),
               ],
             ),
-            const PresentationDivider(),
+            PresentationDivider(itemScrollController),
           ],
         ),
       ],
