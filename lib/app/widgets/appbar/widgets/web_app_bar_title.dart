@@ -22,7 +22,8 @@ class WebAppBarTitle extends StatelessWidget with ScrollToMixin {
     return Flexible(
       child: Material(
         color: AppColors.transparent,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(16),
+        clipBehavior: Clip.antiAlias,
         child: InkWell(
           splashColor: AppColors.primary,
           overlayColor: MaterialStateProperty.all(

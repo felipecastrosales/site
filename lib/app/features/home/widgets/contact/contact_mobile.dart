@@ -27,11 +27,29 @@ class ContactMobile extends StatelessWidget {
             width: context.width,
           ),
         ),
+        // TODO:
+        // Positioned(
+        //   bottom: 0,
+        //   child:
+        // ImageAssetWidget(
+        //     AppAssets.contactBottomGradient,
+        //     width: context.width,
+        //   ),
+        // ),
+
         Positioned(
           bottom: 0,
-          child: ImageAssetWidget(
-            AppAssets.contactBottomGradient,
+          child: Container(
+            height: 400,
+            clipBehavior: Clip.antiAlias,
             width: context.width,
+            decoration: const BoxDecoration(
+              gradient: RadialGradient(
+                colors: [Color(0xff4a3aff), Colors.transparent],
+                center: Alignment.bottomCenter,
+                radius: 0.8,
+              ),
+            ),
           ),
         ),
         Column(
