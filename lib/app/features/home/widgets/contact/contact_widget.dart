@@ -69,11 +69,11 @@ class ContactWidget extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.contact) {
-          return ContactMobile(contactForm());
-        } else {
-          return ContactWeb(contactForm());
-        }
+        final form = contactForm();
+
+        return constraints.maxWidth < Breakpoints.contact
+            ? ContactMobile(form)
+            : ContactWeb(form);
       },
     );
   }

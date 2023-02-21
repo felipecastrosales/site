@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
-import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';

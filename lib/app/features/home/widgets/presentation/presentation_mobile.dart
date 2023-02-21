@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/responsive/breakpoints.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
-import 'package:site/app/utils/context_ext.dart';
+import 'package:site/app/utils/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -53,16 +53,14 @@ class PresentationMobile extends StatelessWidget {
                 ),
                 LayoutBuilder(
                   builder: (context, constraints) {
-                    if (constraints.maxWidth <
-                        Breakpoints.presentationMobileSubtitle) {
-                      return const SizedBox.shrink();
-                    } else {
-                      return const SectionSubtitle(
-                        paddingTop: 8,
-                        paddingBottom: 8,
-                        title: AppTexts.applicationsDeveloper,
-                      );
-                    }
+                    return constraints.maxWidth <
+                            Breakpoints.presentationMobileSubtitle
+                        ? const SizedBox.shrink()
+                        : const SectionSubtitle(
+                            paddingTop: 8,
+                            paddingBottom: 8,
+                            title: AppTexts.applicationsDeveloper,
+                          );
                   },
                 ),
                 const GradientDivider(),

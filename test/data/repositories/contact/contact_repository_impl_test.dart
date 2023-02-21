@@ -11,7 +11,7 @@ void main() {
   late MockHttpClient mockHttpClient;
   late ContactRepositoryImpl contactRepository;
 
-  setUp(() async {
+  setUp(() {
     mockFirebaseRemoteConfig = MockFirebaseRemoteConfig();
     mockHttpClient = MockHttpClient();
 
@@ -46,7 +46,7 @@ void main() {
     );
   });
 
-  setUpAll(() async {
+  setUpAll(() {
     registerFallbackValue(UriFake());
   });
 

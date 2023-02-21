@@ -11,11 +11,9 @@ class Presentation extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.presentation) {
-          return const PresentationMobile();
-        } else {
-          return const PresentationWeb();
-        }
+        return constraints.maxWidth < Breakpoints.presentation
+            ? const PresentationMobile()
+            : const PresentationWeb();
       },
     );
   }

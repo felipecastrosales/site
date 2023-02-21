@@ -11,11 +11,9 @@ class Projects extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.projects) {
-          return const ProjectsMobile();
-        } else {
-          return const ProjectsWeb();
-        }
+        return constraints.maxWidth < Breakpoints.projects
+            ? const ProjectsMobile()
+            : const ProjectsWeb();
       },
     );
   }

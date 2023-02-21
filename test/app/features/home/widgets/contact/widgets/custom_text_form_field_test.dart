@@ -26,8 +26,10 @@ Future<void> _createWidget({
         controller: TextEditingController(),
         hintText: AppTexts.name,
         prefixIcon: Icons.account_circle,
-        validator: (value) => ContactValitadors.name(value),
-        onChanged: (value) {},
+        validator: (value) => ContactValidators.name(value),
+        onChanged: (value) {
+          debugPrint('onChanged');
+        },
         keyboardType: TextInputType.text,
         maxLines: 1,
       ),

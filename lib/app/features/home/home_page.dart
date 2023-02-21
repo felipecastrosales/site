@@ -47,6 +47,7 @@ class _HomePageState extends State<HomePage> {
       builder: (context, constraints) {
         final isToShowDrawer = constraints.maxWidth < Breakpoints.appBar;
         developer.log('Constraints: $constraints');
+
         return Scaffold(
           appBar: CustomAppBar(itemScrollController),
           drawer: isToShowDrawer ? CustomDrawer(itemScrollController) : null,

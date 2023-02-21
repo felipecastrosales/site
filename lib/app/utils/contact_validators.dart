@@ -1,4 +1,4 @@
-class ContactValitadors {
+class ContactValidators {
   static String? name(String? value) {
     if (value!.isEmpty) {
       return 'Insira um nome válido.';
@@ -11,6 +11,7 @@ class ContactValitadors {
     if (regex.hasMatch(value)) {
       return null;
     }
+
     return 'Esse nome não é válido.';
   }
 
@@ -24,6 +25,7 @@ class ContactValitadors {
     if (regex.hasMatch(value)) {
       return null;
     }
+
     return 'Esse e-mail não é válido.';
   }
 
@@ -39,6 +41,7 @@ class ContactValitadors {
     if (regex.hasMatch(value)) {
       return null;
     }
+
     return 'Essa mensagem não é válida.';
   }
 
@@ -54,6 +57,7 @@ class ContactValitadors {
     if (regex.hasMatch(value)) {
       return null;
     }
+
     return 'Esse assunto não é válido.';
   }
 }

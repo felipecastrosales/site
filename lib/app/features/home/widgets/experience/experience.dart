@@ -11,11 +11,9 @@ class Experience extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.experience) {
-          return const ExperienceMobile();
-        } else {
-          return const ExperienceWeb();
-        }
+        return constraints.maxWidth < Breakpoints.experience
+            ? const ExperienceMobile()
+            : const ExperienceWeb();
       },
     );
   }

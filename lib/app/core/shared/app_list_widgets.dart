@@ -13,22 +13,6 @@ import 'package:site/app/features/home/widgets/social/social.dart';
 import 'package:site/data/repositories/contact/contact.dart';
 
 class AppListWidgets {
-  // static final homePageWidgetList = <Widget>[
-  //   const Presentation(),
-  //   const Projects(),
-  //   const Experience(),
-  //   const Social(),
-  //   Contact(
-  //     contactController: ContactController(
-  //       contactRepository: ContactRepositoryImpl(
-  //         firebaseRemoteConfig: getIt(),
-  //         httpClient: getIt(),
-  //       ),
-  //     ),
-  //   ),
-  //   const CustomFooter(),
-  // ];
-
   List<Widget> homePageWidgetList(
     FirebaseRemoteConfig firebaseRemoteConfig,
     http.Client httpClient,

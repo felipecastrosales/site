@@ -9,7 +9,7 @@ class CustomTextFormField extends StatelessWidget {
     required this.prefixIcon,
     required this.controller,
     required this.validator,
-    required this.onChanged,
+    this.onChanged,
     this.keyboardType = TextInputType.text,
     this.maxLines = 1,
   });

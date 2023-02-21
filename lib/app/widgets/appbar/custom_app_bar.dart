@@ -20,11 +20,9 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.appBar) {
-          return const MobileAppBar();
-        } else {
-          return WebAppBar(itemScrollController);
-        }
+        return constraints.maxWidth < Breakpoints.appBar
+            ? const MobileAppBar()
+            : WebAppBar(itemScrollController);
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/utils.dart';
 import 'package:site/app/widgets/widgets.dart';
 
@@ -21,9 +22,7 @@ Future<void> _createWidget({
     MaterialApp(
       home: CustomTextButton(
         text: 'VER PROJETOS',
-        onPressed: () async => LaunchUrls.launchURL(
-          'github.com/felipecastrosales',
-        ),
+        onPressed: () => LaunchUrls.launchURL(AppUrls.gitHub),
       ),
     ),
   );

@@ -40,10 +40,11 @@ class ContactRepositoryImpl implements ContactRepository {
             'user_subject': contact.email,
             'user_message': contact.message,
             'to_email': 'soufeliposales@gmail.com',
-          }
+          },
         },
       ),
     );
+
     return response;
   }
 }

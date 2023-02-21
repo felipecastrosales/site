@@ -11,11 +11,9 @@ class Social extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.social) {
-          return const SocialMobile();
-        } else {
-          return const SocialWeb();
-        }
+        return constraints.maxWidth < Breakpoints.social
+            ? const SocialMobile()
+            : const SocialWeb();
       },
     );
   }

@@ -10,11 +10,9 @@ class CustomFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < Breakpoints.footer) {
-          return const FooterMobile();
-        } else {
-          return const FooterWeb();
-        }
+        return constraints.maxWidth < Breakpoints.footer
+            ? const FooterMobile()
+            : const FooterWeb();
       },
     );
   }

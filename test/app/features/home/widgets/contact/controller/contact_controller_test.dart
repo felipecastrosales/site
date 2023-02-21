@@ -18,7 +18,7 @@ void main() {
   late ContactRepositoryImpl contactRepository;
   late ContactController contactController;
 
-  setUp(() async {
+  setUp(() {
     mockFirebaseRemoteConfig = MockFirebaseRemoteConfig();
     mockHttpClient = MockHttpClient();
     contactRepository = ContactRepositoryImpl(
@@ -48,10 +48,7 @@ void main() {
         body: any(named: 'body'),
       ),
     ).thenAnswer(
-      (_) async => http.Response(
-        '',
-        200,
-      ),
+      (_) async => http.Response('', 200),
     );
   });
 
@@ -60,7 +57,7 @@ void main() {
     registerFallbackValue(UriFake());
   });
 
-  test('ContactController', () async {
+  test('ContactController', () {
     expect(
       contactController,
       isInstanceOf<ChangeNotifier>(),

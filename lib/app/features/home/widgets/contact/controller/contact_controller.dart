@@ -11,9 +11,9 @@ class ContactController extends ChangeNotifier {
 
   final ContactRepositoryImpl _contactRepository;
 
-  void sendMail({
+  Future<void> sendMail({
     required Contact contact,
-  }) async {
+  }) {
     return _contactRepository.sendMail(
       contact: contact,
     );
