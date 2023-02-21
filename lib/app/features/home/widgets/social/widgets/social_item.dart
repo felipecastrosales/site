@@ -42,7 +42,7 @@ class SocialItem extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               Flexible(
-                child: SelectableText(
+                child: Text(
                   title,
                   style: AppTextStyles.socialTitle,
                 ),
