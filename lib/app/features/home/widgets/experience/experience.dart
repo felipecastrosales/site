@@ -13,7 +13,7 @@ class Experience extends StatelessWidget {
       builder: (context, constraints) {
         return constraints.maxWidth < Breakpoints.experience
             ? const ExperienceMobile()
-            : ExperienceWeb(constraints: constraints);
+            : const ExperienceWeb();
       },
     );
   }

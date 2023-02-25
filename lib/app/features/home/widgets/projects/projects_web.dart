@@ -14,86 +14,90 @@ class ProjectsWeb extends StatelessWidget with ResponsivePositionMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Positioned.fill(
-          bottom: 4,
-          child: Align(
-            alignment: Alignment.bottomCenter,
-            child: ImageAssetWidget(
-              AppAssets.abstractLarge,
-              alignment: Alignment.topCenter,
-              height: 305.7,
-              width: context.width,
-            ),
-          ),
-        ),
-        Positioned.fill(
-          child: GradientWidget(
-            opacity: 0.8,
-            radius: 0.75,
-            width: context.width,
-            height: context.height,
-            alignment: Alignment(
-              -gradientExperienceAndProjectsSectionWidthAlignment(
-                context.width,
-              ),
-              0.18,
-            ),
-          ),
-        ),
-        Column(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return Stack(
           children: [
-            WebBody(
-              children: [
-                const SectionTitle(
-                  isWeb: true,
-                  paddingTop: 50,
-                  paddingBottom: 8,
-                  title: AppTexts.projects,
+            Positioned.fill(
+              bottom: 4,
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: ImageAssetWidget(
+                  AppAssets.abstractLarge,
+                  alignment: Alignment.topCenter,
+                  height: 305.7,
+                  width: context.width,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              ),
+            ),
+            Positioned.fill(
+              child: GradientWidget(
+                opacity: 0.8,
+                radius: 0.75,
+                width: context.width,
+                height: context.height,
+                alignment: Alignment(
+                  -gradientExperienceAndProjectsSectionWidthAlignment(
+                    constraints.maxWidth,
+                  ),
+                  0.18,
+                ),
+              ),
+            ),
+            Column(
+              children: [
+                WebBody(
                   children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          SizedBox(
-                            width: 400,
-                            child: SectionText(
-                              paddingTop: 42,
-                              paddingBottom: 36,
-                              title: AppTexts.projectAreInMyGitHub,
-                            ),
-                          ),
-                          CustomTextButtonWidget(),
-                        ],
-                      ),
+                    const SectionTitle(
+                      isWeb: true,
+                      paddingTop: 50,
+                      paddingBottom: 8,
+                      title: AppTexts.projects,
                     ),
-                    Expanded(
-                      child: Column(
-                        children: [
-                          Container(
-                            alignment: Alignment.center,
-                            child: const ImageAssetWidget(
-                              AppAssets.mockup,
-                              width: 460,
-                            ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SizedBox(
+                                width: 400,
+                                child: SectionText(
+                                  paddingTop: 42,
+                                  paddingBottom: 36,
+                                  title: AppTexts.projectAreInMyGitHub,
+                                ),
+                              ),
+                              CustomTextButtonWidget(),
+                            ],
                           ),
-                          const SizedBox(height: 60),
-                        ],
-                      ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Container(
+                                alignment: Alignment.center,
+                                child: const ImageAssetWidget(
+                                  AppAssets.mockup,
+                                  width: 460,
+                                ),
+                              ),
+                              const SizedBox(height: 60),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
+                const SectionDivider(),
               ],
             ),
-            const SectionDivider(),
           ],
-        ),
-      ],
+        );
+      },
     );
   }
 }

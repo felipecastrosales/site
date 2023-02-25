@@ -20,10 +20,7 @@ class Presentation extends StatelessWidget {
       builder: (context, constraints) {
         return constraints.maxWidth < Breakpoints.presentation
             ? PresentationMobile(itemScrollController)
-            : PresentationWeb(
-                itemScrollController: itemScrollController,
-                constraints: constraints,
-              );
+            : PresentationWeb(itemScrollController);
       },
     );
   }

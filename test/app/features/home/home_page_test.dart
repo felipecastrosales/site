@@ -34,7 +34,7 @@ void main() {
       find.byWidgetPredicate(
         (widget) => widget is LayoutBuilder,
       ),
-      findsNWidgets(4),
+      findsNWidgets(5),
     );
 
     expect(

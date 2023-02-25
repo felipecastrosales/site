@@ -12,96 +12,97 @@ import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
 
 class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
-  const PresentationWeb({
+  const PresentationWeb(
+    this.itemScrollController, {
     super.key,
-    required this.itemScrollController,
-    required this.constraints,
   });
 
   final ItemScrollController itemScrollController;
-  // TODO: Put LayoutBuilder in a widget
-  final BoxConstraints constraints;
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Positioned.fill(
-          child: GradientWidget(
-            radius: 0.7,
-            height: context.height,
-            width: context.width,
-            alignment: Alignment(
-              gradientPresentationWidthAlignment(constraints.maxWidth),
-              0,
-            ),
-          ),
-        ),
-        Positioned.fill(
-          child: ImageAssetWidget(
-            AppAssets.presentationTextureLarge,
-            height: context.height,
-            width: context.width,
-          ),
-        ),
-        Column(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        return Stack(
           children: [
-            WebBody(
-              children: [
-                const SectionTitle(
-                  isWeb: true,
-                  paddingTop: 50,
-                  paddingBottom: 12,
-                  title: AppTexts.hiIAmFelipeSales,
+            Positioned.fill(
+              child: GradientWidget(
+                radius: 0.7,
+                height: context.height,
+                width: context.width,
+                alignment: Alignment(
+                  gradientPresentationWidthAlignment(constraints.maxWidth),
+                  0,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              ),
+            ),
+            Positioned.fill(
+              child: ImageAssetWidget(
+                AppAssets.presentationTextureLarge,
+                height: context.height,
+                width: context.width,
+              ),
+            ),
+            Column(
+              children: [
+                WebBody(
                   children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          SectionSubtitle(
-                            paddingTop: 0,
-                            paddingBottom: 32,
-                            title: AppTexts.appsDeveloper,
-                          ),
-                          SizedBox(
-                            width: 400,
-                            child: GradientDivider(),
-                          ),
-                          SizedBox(
-                            child: Center(
-                              child: SectionText(
-                                paddingTop: 32,
+                    const SectionTitle(
+                      isWeb: true,
+                      paddingTop: 50,
+                      paddingBottom: 12,
+                      title: AppTexts.hiIAmFelipeSales,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SectionSubtitle(
+                                paddingTop: 0,
                                 paddingBottom: 32,
-                                title: AppTexts.developerFocused,
+                                title: AppTexts.appsDeveloper,
                               ),
+                              SizedBox(
+                                width: 400,
+                                child: GradientDivider(),
+                              ),
+                              SizedBox(
+                                child: Center(
+                                  child: SectionText(
+                                    paddingTop: 32,
+                                    paddingBottom: 32,
+                                    title: AppTexts.developerFocused,
+                                  ),
+                                ),
+                              ),
+                              Phrase(),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 24),
+                        Expanded(
+                          child: Container(
+                            alignment: Alignment.center,
+                            padding: const EdgeInsets.only(top: 24),
+                            child: const ImageAssetWidget(
+                              AppAssets.presentationWeb,
                             ),
                           ),
-                          Phrase(),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(width: 24),
-                    Expanded(
-                      child: Container(
-                        alignment: Alignment.center,
-                        padding: const EdgeInsets.only(top: 24),
-                        child: const ImageAssetWidget(
-                          AppAssets.presentationWeb,
                         ),
-                      ),
+                      ],
                     ),
+                    const SizedBox(height: 60),
                   ],
                 ),
-                const SizedBox(height: 60),
+                PresentationDivider(itemScrollController),
               ],
             ),
-            PresentationDivider(itemScrollController),
           ],
-        ),
-      ],
+        );
+      },
     );
   }
 }
