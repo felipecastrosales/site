@@ -27,14 +27,14 @@ class AppTexts {
 
   /// Experience
   static const experience = 'Experiência';
-  static const workSuaMusica = 'Sua Música | 2022 - Currently';
+  static const workSuaMusica = 'Sua Música | 2022 - Atualmente';
   static const workRocketseat = 'Rocketseat | 2021 - 2022';
   static const workUdemy = 'Udemy | 2020 - 2021';
-  static const workPersonalProjects = 'Personal Projects | 2020 - Ever';
-  static const flutterDeveloper = 'Flutter Developer';
-  static const developerInstructor = 'Developer Instructor';
-  static const teachingAssistent = 'Teaching Assistent';
-  static const payngPriceEveryday = 'Payng price everyday';
+  static const workPersonalProjects = 'Projetos Pessoais | Desde 2020';
+  static const flutterDeveloper = 'Desenvolvedor Flutter';
+  static const developerInstructor = 'Desenvolvedor Instrutor';
+  static const teachingAssistent = 'Auxiliar de Ensino';
+  static const payngPriceEveryday = 'Pagando o preço todos os dias';
 
   /// Social
   static const socialLinks = 'Social Links';

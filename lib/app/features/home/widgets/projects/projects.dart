@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/core/responsive/responsive.dart';
 import 'package:site/app/features/home/widgets/projects/projects_mobile.dart';
 import 'package:site/app/features/home/widgets/projects/projects_web.dart';
 

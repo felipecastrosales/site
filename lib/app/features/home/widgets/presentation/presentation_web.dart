@@ -1,32 +1,39 @@
 import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'package:site/app/core/mixins/mixins.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
 
-class PresentationWeb extends StatelessWidget {
-  const PresentationWeb(
-    this.itemScrollController, {
+class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
+  const PresentationWeb({
     super.key,
+    required this.itemScrollController,
+    required this.constraints,
   });
 
   final ItemScrollController itemScrollController;
+  // TODO: Put LayoutBuilder in a widget
+  final BoxConstraints constraints;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        const Positioned.fill(
-          child: Align(
-            alignment: Alignment.centerRight,
-            child: ImageAssetWidget(
-              AppAssets.presentationGradientWeb,
+        Positioned.fill(
+          child: GradientWidget(
+            radius: 0.7,
+            height: context.height,
+            width: context.width,
+            alignment: Alignment(
+              gradientPresentationWidthAlignment(constraints.maxWidth),
+              0,
             ),
           ),
         ),

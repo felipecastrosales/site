@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/core/responsive/responsive.dart';
 import 'package:site/app/features/home/widgets/footer/footer.dart';
 
 class CustomFooter extends StatelessWidget {

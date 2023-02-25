@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/projects/widgets/custom_text_button_widget.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -26,6 +26,14 @@ class ProjectsMobile extends StatelessWidget {
                     width: context.width,
                   ),
                 ],
+              ),
+            ),
+            Positioned.fill(
+              child: GradientWidget(
+                radius: 0.6,
+                width: context.width,
+                height: context.height,
+                alignment: const Alignment(0.0, 0.5),
               ),
             ),
             MobileBody(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -29,22 +29,18 @@ class ContactWeb extends StatelessWidget {
         ),
         Positioned.fill(
           left: 0,
-          child: Align(
+          child: GradientWidget(
+            opacity: 0.5,
+            height: context.height,
             alignment: Alignment.centerLeft,
-            child: ImageAssetWidget(
-              AppAssets.contactGradientLeft,
-              height: context.height,
-            ),
           ),
         ),
         Positioned.fill(
           right: 0,
-          child: Align(
+          child: GradientWidget(
+            opacity: 0.5,
+            height: context.height,
             alignment: Alignment.centerRight,
-            child: ImageAssetWidget(
-              AppAssets.contactGradientRight,
-              height: context.height,
-            ),
           ),
         ),
         Column(

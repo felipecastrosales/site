@@ -16,11 +16,20 @@ class TextWithLink extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: AppColors.transparent,
+      borderRadius: BorderRadius.circular(8),
+      clipBehavior: Clip.antiAlias,
       child: InkWell(
+        splashColor: AppColors.primary,
+        overlayColor: MaterialStateProperty.all(
+          AppColors.primary.withOpacity(0.25),
+        ),
         onTap: () => LaunchUrls.launchURL(link),
-        child: Text(
-          text,
-          style: AppTextStyles.footerLink,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Text(
+            text,
+            style: AppTextStyles.footerLink,
+          ),
         ),
       ),
     );

@@ -106,7 +106,6 @@ class AppTextStyles {
   static final footerLink = GoogleFonts.montserrat(
     color: AppColors.light,
     fontSize: 20,
-    decoration: TextDecoration.underline,
   );
 
   static final experienceTitle = GoogleFonts.montserrat(

@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
 
-class ExperienceWeb extends StatelessWidget {
-  const ExperienceWeb({super.key});
+class ExperienceWeb extends StatelessWidget with ResponsivePositionMixin {
+  const ExperienceWeb({
+    super.key,
+    required this.constraints,
+  });
+
+  final BoxConstraints constraints;
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +32,16 @@ class ExperienceWeb extends StatelessWidget {
           ),
         ),
         Positioned.fill(
-          left: 10,
-          bottom: 0,
-          child: ImageAssetWidget(
-            AppAssets.champCircle,
+          child: GradientWidget(
+            radius: 0.5,
+            width: context.width,
             height: context.height,
+            alignment: Alignment(
+              gradientExperienceAndProjectsSectionWidthAlignment(
+                constraints.maxWidth,
+              ),
+              0.18,
+            ),
           ),
         ),
         Positioned.fill(

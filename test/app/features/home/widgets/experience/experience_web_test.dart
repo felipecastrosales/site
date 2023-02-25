@@ -18,7 +18,12 @@ Future<void> _createWidget({
 }) async {
   await tester.pumpWidget(
     const MaterialApp(
-      home: ExperienceWeb(),
+      home: ExperienceWeb(
+        constraints: BoxConstraints(
+          maxWidth: 1000,
+          maxHeight: 1000,
+        ),
+      ),
     ),
   );
 }

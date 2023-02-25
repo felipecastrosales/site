@@ -14,7 +14,7 @@ import 'package:site/app/features/home/widgets/social/social.dart';
 import 'package:site/data/repositories/contact/contact.dart';
 
 class AppListWidgets {
-  List<Widget> homePageWidgetList({
+  static List<Widget> homePageWidgetList({
     required FirebaseRemoteConfig firebaseRemoteConfig,
     required http.Client httpClient,
     required ItemScrollController itemScrollController,

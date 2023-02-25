@@ -24,7 +24,7 @@ class CustomTextButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
         decoration: BoxDecoration(
-          gradient: AppGradients.divider,
+          gradient: AppGradients.button,
           borderRadius: BorderRadius.circular(8),
         ),
         child: Text(

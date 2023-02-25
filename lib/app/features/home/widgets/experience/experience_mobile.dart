@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -25,13 +25,11 @@ class ExperienceMobile extends StatelessWidget {
               ),
             ),
             Positioned.fill(
-              child: Align(
-                alignment: Alignment.center,
-                child: ImageAssetWidget(
-                  AppAssets.champGradient,
-                  width: context.width,
-                  height: context.height,
-                ),
+              child: GradientWidget(
+                opacity: 0.7,
+                height: context.height,
+                width: context.width,
+                alignment: Alignment.bottomCenter,
               ),
             ),
             MobileBody(

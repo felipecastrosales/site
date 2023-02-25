@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/widgets.dart';
 
 class SocialMobile extends StatelessWidget {
@@ -20,11 +20,12 @@ class SocialMobile extends StatelessWidget {
           ),
         ),
         Positioned.fill(
-          bottom: 0,
-          child: Align(
-            child: ImageAssetWidget(
-              AppAssets.socialGradientCenter,
-              height: context.height,
+          child: Opacity(
+            opacity: 0.7,
+            child: GradientWidget(
+              height: 350,
+              width: context.width,
+              radius: 0.7,
             ),
           ),
         ),

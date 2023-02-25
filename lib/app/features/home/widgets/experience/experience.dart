@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/core/responsive/responsive.dart';
 import 'package:site/app/features/home/widgets/experience/experience_mobile.dart';
 import 'package:site/app/features/home/widgets/experience/experience_web.dart';
 
@@ -13,7 +13,7 @@ class Experience extends StatelessWidget {
       builder: (context, constraints) {
         return constraints.maxWidth < Breakpoints.experience
             ? const ExperienceMobile()
-            : const ExperienceWeb();
+            : ExperienceWeb(constraints: constraints);
       },
     );
   }

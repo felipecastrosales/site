@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -27,29 +27,13 @@ class ContactMobile extends StatelessWidget {
             width: context.width,
           ),
         ),
-        // TODO:
-        // Positioned(
-        //   bottom: 0,
-        //   child:
-        // ImageAssetWidget(
-        //     AppAssets.contactBottomGradient,
-        //     width: context.width,
-        //   ),
-        // ),
-
-        Positioned(
-          bottom: 0,
-          child: Container(
+        Positioned.fill(
+          child: GradientWidget(
+            radius: 1,
+            opacity: 0.6,
             height: 400,
-            clipBehavior: Clip.antiAlias,
             width: context.width,
-            decoration: const BoxDecoration(
-              gradient: RadialGradient(
-                colors: [Color(0xff4a3aff), Colors.transparent],
-                center: Alignment.bottomCenter,
-                radius: 0.8,
-              ),
-            ),
+            alignment: Alignment.bottomCenter,
           ),
         ),
         Column(

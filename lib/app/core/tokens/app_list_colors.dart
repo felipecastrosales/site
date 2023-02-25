@@ -17,9 +17,19 @@ class AppListColors {
     AppColors.primaryDark,
   ];
 
-  static const divider = [
-    AppColors.orange,
+  static const button = [
     AppColors.primary,
+    AppColors.mayaBlue,
+  ];
+
+  static const gradientWidget = [
+    AppColors.primary,
+    AppColors.transparent,
+  ];
+
+  static const divider = [
+    AppColors.primary,
+    AppColors.primaryLight,
   ];
 
   static final glassmorphic = [

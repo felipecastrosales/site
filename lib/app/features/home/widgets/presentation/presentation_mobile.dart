@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:site/app/core/responsive/breakpoints.dart';
+import 'package:site/app/core/responsive/responsive.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -24,21 +24,20 @@ class PresentationMobile extends StatelessWidget {
     return Stack(
       children: [
         Positioned.fill(
-          child: Align(
+          child: GradientWidget(
+            radius: 0.9,
+            height: context.height,
+            width: context.width,
             alignment: Alignment.center,
-            child: ImageAssetWidget(
-              AppAssets.presentationGradientImage,
-              width: context.width,
-              height: context.height,
-            ),
           ),
         ),
-        Positioned(
-          bottom: 0,
-          child: ImageAssetWidget(
-            AppAssets.presentationGradientBottom,
-            width: context.width,
+        Positioned.fill(
+          child: GradientWidget(
+            opacity: 0.75,
+            radius: 1,
             height: context.height,
+            width: context.width,
+            alignment: Alignment.bottomCenter,
           ),
         ),
         Positioned(

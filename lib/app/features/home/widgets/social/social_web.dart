@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/widgets.dart';
 
 class SocialWeb extends StatelessWidget {
@@ -22,12 +22,12 @@ class SocialWeb extends StatelessWidget {
           ),
         ),
         Positioned.fill(
-          child: Align(
-            alignment: Alignment.center,
-            child: ImageAssetWidget(
-              AppAssets.socialGradientCenter,
+          child: Opacity(
+            opacity: 0.75,
+            child: GradientWidget(
+              height: 400,
               width: context.width,
-              height: double.infinity,
+              radius: 0.75,
             ),
           ),
         ),

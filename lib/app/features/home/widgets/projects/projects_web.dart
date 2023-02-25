@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/projects/widgets/custom_text_button_widget.dart';
-import 'package:site/app/utils/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
 import 'package:site/app/widgets/widgets.dart';
 
-class ProjectsWeb extends StatelessWidget {
+class ProjectsWeb extends StatelessWidget with ResponsivePositionMixin {
   const ProjectsWeb({super.key});
 
   @override
@@ -24,6 +25,20 @@ class ProjectsWeb extends StatelessWidget {
               alignment: Alignment.topCenter,
               height: 305.7,
               width: context.width,
+            ),
+          ),
+        ),
+        Positioned.fill(
+          child: GradientWidget(
+            opacity: 0.8,
+            radius: 0.75,
+            width: context.width,
+            height: context.height,
+            alignment: Alignment(
+              -gradientExperienceAndProjectsSectionWidthAlignment(
+                context.width,
+              ),
+              0.18,
             ),
           ),
         ),

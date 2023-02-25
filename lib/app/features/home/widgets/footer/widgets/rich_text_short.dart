@@ -16,12 +16,9 @@ class RichTextShort extends StatelessWidget {
   Widget build(BuildContext context) {
     var year = DateTimeUtils.getYear(DateTime.now());
 
-    //   return SelectableText.rich( // bug
-    // textAlign: textAlign,
-    // TextSpan(
-    return RichText(
+    return SelectableText.rich(
       textAlign: textAlign,
-      text: TextSpan(
+      TextSpan(
         children: [
           TextSpan(
             text: '$year${AppTexts.hyphen}',
