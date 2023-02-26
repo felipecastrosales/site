@@ -1,23 +1,26 @@
+import 'package:flutter/cupertino.dart';
+import 'package:site/app/core/l10n/l10n.dart';
+
 class ContactValidators {
-  static String? name(String? value) {
+  static String? name(String? value, [BuildContext? context]) {
     if (value!.isEmpty) {
-      return 'Insira um nome válido.';
+      return AppTexts.get(context!).insertValidName;
     }
     final regexLenght = RegExp(r'^.{3,}$');
     if (!regexLenght.hasMatch(value)) {
-      return 'Insira um nome maior.';
+      return AppTexts.get(context!).insertABiggerName;
     }
     final regex = RegExp('[a-zA-Z]');
     if (regex.hasMatch(value)) {
       return null;
     }
 
-    return 'Esse nome não é válido.';
+    return AppTexts.get(context!).thisNameIsNotValid;
   }
 
-  static String? email(String? value) {
+  static String? email(String? value, [BuildContext? context]) {
     if (value!.isEmpty) {
-      return 'Insira um usuário/e-mail válido.';
+      return AppTexts.get(context!).insertValidEmail;
     }
     final regex = RegExp(
       r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+",
@@ -26,38 +29,38 @@ class ContactValidators {
       return null;
     }
 
-    return 'Esse e-mail não é válido.';
+    return AppTexts.get(context!).thisEmailIsNotValid;
   }
 
-  static String? message(String? value) {
+  static String? message(String? value, [BuildContext? context]) {
     if (value!.isEmpty) {
-      return 'Insira uma mensagem válida.';
+      return AppTexts.get(context!).insertValidMessage;
     }
     final regexLenght = RegExp(r'^.{10,}$');
     if (!regexLenght.hasMatch(value)) {
-      return 'Insira uma mensagem maior.';
+      return AppTexts.get(context!).insertABiggerMessage;
     }
     final regex = RegExp('[a-zA-Z]');
     if (regex.hasMatch(value)) {
       return null;
     }
 
-    return 'Essa mensagem não é válida.';
+    return AppTexts.get(context!).thisMessageIsNotValid;
   }
 
-  static String? subject(String? value) {
+  static String? subject(String? value, [BuildContext? context]) {
     if (value!.isEmpty) {
-      return 'Insira um assunto válido.';
+      return AppTexts.get(context!).insertValidSubject;
     }
     final regexLenght = RegExp(r'^.{5,}$');
     if (!regexLenght.hasMatch(value)) {
-      return 'Insira um assunto maior.';
+      return AppTexts.get(context!).insertABiggerSubject;
     }
     final regex = RegExp('[a-zA-Z]');
     if (regex.hasMatch(value)) {
       return null;
     }
 
-    return 'Esse assunto não é válido.';
+    return AppTexts.get(context!).thisSubjectIsNotValid;
   }
 }

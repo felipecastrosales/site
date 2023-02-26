@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/app_texts.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/features/home/widgets/contact/widgets/widgets.dart';
 import 'package:site/app/utils/contact_validators.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
@@ -35,31 +35,31 @@ class CustomForm extends StatelessWidget {
           children: [
             CustomTextFormField(
               controller: nameController,
-              hintText: AppTexts.name,
+              hintText: AppTexts.get(context).name,
               prefixIcon: Icons.account_circle,
-              validator: (value) => ContactValidators.name(value),
+              validator: (value) => ContactValidators.name(value, context),
             ),
             const SizedBox(height: 16),
             CustomTextFormField(
               controller: emailController,
-              hintText: AppTexts.email,
-              validator: (value) => ContactValidators.email(value),
+              hintText: AppTexts.get(context).email,
+              validator: (value) => ContactValidators.email(value, context),
               prefixIcon: Icons.mail,
               keyboardType: TextInputType.emailAddress,
             ),
             const SizedBox(height: 16),
             CustomTextFormField(
               controller: subjectController,
-              hintText: AppTexts.title,
+              hintText: AppTexts.get(context).title,
               prefixIcon: Icons.subject,
-              validator: (value) => ContactValidators.subject(value),
+              validator: (value) => ContactValidators.subject(value, context),
             ),
             const SizedBox(height: 16),
             CustomTextFormField(
               controller: messageController,
-              hintText: AppTexts.text,
+              hintText: AppTexts.get(context).text,
               prefixIcon: Icons.comment,
-              validator: (value) => ContactValidators.message(value),
+              validator: (value) => ContactValidators.message(value, context),
               maxLines: 2,
             ),
             const Center(
@@ -67,7 +67,7 @@ class CustomForm extends StatelessWidget {
             ),
             Center(
               child: CustomTextButton(
-                text: AppTexts.sendEmailUpper,
+                text: AppTexts.get(context).sendEmailUpper,
                 onPressed: onPressed,
               ),
             ),

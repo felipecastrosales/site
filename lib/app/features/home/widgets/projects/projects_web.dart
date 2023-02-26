@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/projects/widgets/custom_text_button_widget.dart';
@@ -48,11 +49,11 @@ class ProjectsWeb extends StatelessWidget with ResponsivePositionMixin {
               children: [
                 WebBody(
                   children: [
-                    const SectionTitle(
+                    SectionTitle(
                       isWeb: true,
                       paddingTop: 50,
                       paddingBottom: 8,
-                      title: AppTexts.projects,
+                      title: AppTexts.get(context).projects,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,16 +62,17 @@ class ProjectsWeb extends StatelessWidget with ResponsivePositionMixin {
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
+                            children: [
                               SizedBox(
                                 width: 400,
                                 child: SectionText(
                                   paddingTop: 42,
                                   paddingBottom: 36,
-                                  title: AppTexts.projectAreInMyGitHub,
+                                  title: AppTexts.get(context)
+                                      .projectAreInMyGitHub,
                                 ),
                               ),
-                              CustomTextButtonWidget(),
+                              const CustomTextButtonWidget(),
                             ],
                           ),
                         ),

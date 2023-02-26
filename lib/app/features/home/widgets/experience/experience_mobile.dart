@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
-import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -34,10 +35,10 @@ class ExperienceMobile extends StatelessWidget {
             ),
             MobileBody(
               children: [
-                const SectionTitle(
+                SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: AppTexts.experience,
+                  title: AppTexts.get(context).experience,
                 ),
                 const SectionExperienceTexts(),
                 Container(

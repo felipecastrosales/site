@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
 
 class SectionExperienceTexts extends StatelessWidget {
@@ -10,22 +10,22 @@ class SectionExperienceTexts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         TitleDescriptionShort(
-          title: AppTexts.workSuaMusica,
-          description: AppTexts.flutterDeveloper,
+          title: AppTexts.get(context).workSuaMusica,
+          description: AppTexts.get(context).flutterDeveloper,
         ),
         TitleDescriptionShort(
-          title: AppTexts.workRocketseat,
-          description: AppTexts.developerInstructor,
+          title: AppTexts.get(context).workRocketseat,
+          description: AppTexts.get(context).developerInstructor,
         ),
         TitleDescriptionShort(
-          title: AppTexts.workUdemy,
-          description: AppTexts.teachingAssistent,
+          title: AppTexts.get(context).workUdemy,
+          description: AppTexts.get(context).teachingAssistent,
         ),
         TitleDescriptionShort(
-          title: AppTexts.workPersonalProjects,
-          description: AppTexts.payngPriceEveryday,
+          title: AppTexts.get(context).workPersonalProjects,
+          description: AppTexts.get(context).payngPriceEveryday,
         ),
       ],
     );

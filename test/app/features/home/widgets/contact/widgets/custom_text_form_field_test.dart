@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/contact/widgets/widgets.dart';
 import 'package:site/app/utils/utils.dart';
 
@@ -24,7 +23,7 @@ Future<void> _createWidget({
     MaterialApp(
       home: CustomTextFormField(
         controller: TextEditingController(),
-        hintText: AppTexts.name,
+        hintText: 'hintText',
         prefixIcon: Icons.account_circle,
         validator: (value) => ContactValidators.name(value),
         onChanged: (value) {

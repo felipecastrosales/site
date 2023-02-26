@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/widgets.dart';
@@ -36,12 +37,12 @@ class Header extends StatelessWidget {
               ),
               const SizedBox(height: 25),
               SelectableText(
-                AppTexts.felipeSales,
+                AppTexts.get(context).felipeSales,
                 style: AppTextStyles.name,
               ),
               const SizedBox(height: 4),
               SelectableText(
-                AppTexts.flutterDeveloperInstructor,
+                AppTexts.get(context).flutterDeveloperInstructor,
                 style: AppTextStyles.office,
               ),
               const SizedBox(height: 25),

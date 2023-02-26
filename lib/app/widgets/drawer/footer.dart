@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/widgets.dart';
@@ -18,7 +19,7 @@ class Footer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SelectableText(
-            AppTexts.createdByFelipeCastroSales,
+            AppTexts.get(context).createdByFelipeCastroSales,
             style: AppTextStyles.footer,
           ),
           const SizedBox(width: 2),

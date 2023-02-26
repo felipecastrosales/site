@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
@@ -53,11 +54,11 @@ class ExperienceWeb extends StatelessWidget with ResponsivePositionMixin {
               children: [
                 WebBody(
                   children: [
-                    const SectionTitle(
+                    SectionTitle(
                       isWeb: true,
                       paddingTop: 50,
                       paddingBottom: 20,
-                      title: AppTexts.experience,
+                      title: AppLocalizations.of(context)!.experience,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -245,26 +245,26 @@ packages:
     dependency: "direct main"
     description:
       name: firebase_remote_config
-      sha256: f564386fdf95be5925fa7cfd14c84cc51f2ee27fb65884e355f537329dfe3aab
+      sha256: "1309deefd5ff29ea719fa3c48441f492204822c258c001751f762d8bbec1a222"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.12"
+    version: "3.0.13"
   firebase_remote_config_platform_interface:
     dependency: transitive
     description:
       name: firebase_remote_config_platform_interface
-      sha256: c2b8b0facd17c9837c1c65320c6d3697dc8702fc03f182153f19c30ccf5137ce
+      sha256: "3e20fa1d937d10a52b8e9b3c955161890d30d0924e18438280797b960d2799a4"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.32"
+    version: "1.1.33"
   firebase_remote_config_web:
     dependency: transitive
     description:
       name: firebase_remote_config_web
-      sha256: "9698cfb1ab381870eb8f9409bef0e9fe8fe10572c6e7001feeb3a044fe991864"
+      sha256: f79573f237fe84c5927a7d2d5cee5ee6529a70bfe430c63ef0d2aa257eac4c96
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.21"
+    version: "1.1.22"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -278,6 +278,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -360,6 +365,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  intl:
+    dependency: "direct main"
+    description:
+      name: intl
+      sha256: "910f85bce16fb5c6f614e117efa303e85a1731bb0081edf3604a2ae6e9a3cc91"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.17.0"
   io:
     dependency: transitive
     description:

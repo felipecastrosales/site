@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
 import 'package:site/app/widgets/section/section.dart';
 
@@ -22,12 +22,12 @@ class TitleTextList extends StatelessWidget {
           isWeb: isWeb,
           paddingTop: 50,
           paddingBottom: 20,
-          title: AppTexts.socialLinks,
+          title: AppTexts.get(context).socialLinks,
         ),
-        const SectionText(
+        SectionText(
           paddingTop: 0,
           paddingBottom: 24,
-          title: AppTexts.followMeOnMySocialNetworks,
+          title: AppTexts.get(context).followMeOnMySocialNetworks,
         ),
         const Center(
           child: SocialList(),

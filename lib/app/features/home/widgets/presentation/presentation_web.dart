@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:site/app/core/mixins/mixins.dart';
 
+import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
+import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
-import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -47,11 +48,11 @@ class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
               children: [
                 WebBody(
                   children: [
-                    const SectionTitle(
+                    SectionTitle(
                       isWeb: true,
                       paddingTop: 50,
                       paddingBottom: 12,
-                      title: AppTexts.hiIAmFelipeSales,
+                      title: AppTexts.get(context).hiIAmFelipeSales,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,13 +60,13 @@ class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
+                            children: [
                               SectionSubtitle(
                                 paddingTop: 0,
                                 paddingBottom: 32,
-                                title: AppTexts.appsDeveloper,
+                                title: AppTexts.get(context).appsDeveloper,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 400,
                                 child: GradientDivider(),
                               ),
@@ -74,11 +75,12 @@ class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
                                   child: SectionText(
                                     paddingTop: 32,
                                     paddingBottom: 32,
-                                    title: AppTexts.developerFocused,
+                                    title:
+                                        AppTexts.get(context).developerFocused,
                                   ),
                                 ),
                               ),
-                              Phrase(),
+                              const Phrase(),
                             ],
                           ),
                         ),

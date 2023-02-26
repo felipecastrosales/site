@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/app_theme.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/features/home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -10,9 +10,11 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppTexts.projectTitle,
+      onGenerateTitle: (context) => AppTexts.get(context).projectTitle,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: HomePage(),
     );
   }

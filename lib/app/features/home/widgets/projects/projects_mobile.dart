@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/projects/widgets/custom_text_button_widget.dart';
 import 'package:site/app/widgets/body/body.dart';
@@ -38,16 +39,16 @@ class ProjectsMobile extends StatelessWidget {
             ),
             MobileBody(
               children: [
-                const SectionTitle(
+                SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: AppTexts.projects,
+                  title: AppTexts.get(context).projects,
                 ),
-                const Center(
+                Center(
                   child: SectionText(
                     paddingTop: 0,
                     paddingBottom: 24,
-                    title: AppTexts.projectAreInMyGitHub,
+                    title: AppTexts.get(context).projectAreInMyGitHub,
                   ),
                 ),
                 const CustomTextButtonWidget(),

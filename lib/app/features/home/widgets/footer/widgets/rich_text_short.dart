@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:site/app/core/shared/shared.dart';
 
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/utils/utils.dart';
 
@@ -21,15 +21,15 @@ class RichTextShort extends StatelessWidget {
       TextSpan(
         children: [
           TextSpan(
-            text: '$year${AppTexts.hyphen}',
+            text: '$year${AppTexts.get(context).hyphen}',
             style: AppTextStyles.phraseWhite,
           ),
           TextSpan(
-            text: AppTexts.username,
+            text: AppTexts.get(context).username,
             style: AppTextStyles.phrasePrimary,
           ),
           TextSpan(
-            text: AppTexts.dot,
+            text: AppTexts.get(context).dot,
             style: AppTextStyles.phraseWhite,
           ),
         ],

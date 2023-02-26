@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
+import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/responsive/responsive.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
-import 'package:site/app/core/extensions/media_query_ext.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -52,20 +53,20 @@ class PresentationMobile extends StatelessWidget {
           children: [
             MobileBody(
               children: [
-                const SectionTitle(
+                SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 16,
-                  title: AppTexts.hiIAmFelipeSales,
+                  title: AppTexts.get(context).hiIAmFelipeSales,
                 ),
                 LayoutBuilder(
                   builder: (context, constraints) {
                     return constraints.maxWidth <
                             Breakpoints.presentationMobileSubtitle
                         ? const SizedBox.shrink()
-                        : const SectionSubtitle(
+                        : SectionSubtitle(
                             paddingTop: 8,
                             paddingBottom: 8,
-                            title: AppTexts.applicationsDeveloper,
+                            title: AppTexts.get(context).applicationsDeveloper,
                           );
                   },
                 ),
@@ -77,14 +78,14 @@ class PresentationMobile extends StatelessWidget {
                     AppAssets.presentationMobile,
                   ),
                 ),
-                const Center(
+                Center(
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 24),
+                    padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: SectionText(
                       paddingTop: 24,
                       paddingBottom: 8,
                       isCentered: true,
-                      title: AppTexts.developerFocused,
+                      title: AppTexts.get(context).developerFocused,
                     ),
                   ),
                 ),

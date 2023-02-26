@@ -1,4 +1,4 @@
-class AppTexts {
+class AppTexts2 {
   /// Project
   static const projectTitle = 'Felipe Sales | Social Links';
   static const felipeSales = 'Felipe Sales';
@@ -17,7 +17,6 @@ class AppTexts {
   static const deep = 'Deep ';
   static const code = 'Code. ';
   static const way = 'Way ';
-  static const code2 = 'Code.';
 
   /// Projects
   static const projects = 'Projetos';

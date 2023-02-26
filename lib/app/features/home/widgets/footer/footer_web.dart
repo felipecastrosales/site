@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/features/home/widgets/footer/widgets/widgets.dart';
@@ -30,7 +31,7 @@ class FooterWeb extends StatelessWidget {
                       textAlign: TextAlign.start,
                     ),
                     SelectableText(
-                      AppTexts.flutterProjectOpenSource,
+                      AppTexts.get(context).flutterProjectOpenSource,
                       style: AppTextStyles.phraseWhite,
                     ),
                   ],
@@ -39,13 +40,13 @@ class FooterWeb extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
-                children: const [
+                children: [
                   TextWithLink(
-                    text: AppTexts.seeInGitHub,
+                    text: AppTexts.get(context).seeInGitHub,
                     link: AppUrls.gitHubProject,
                   ),
                   TextWithLink(
-                    text: AppTexts.seeInFigma,
+                    text: AppTexts.get(context).seeInFigma,
                     link: AppUrls.figmaProject,
                   ),
                 ],

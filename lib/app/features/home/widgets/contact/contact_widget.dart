@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/injections/injections.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/responsive/responsive.dart';
-import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/features/home/widgets/contact/contact_mobile.dart';
 import 'package:site/app/features/home/widgets/contact/contact_web.dart';
@@ -45,7 +45,7 @@ class ContactWidget extends StatelessWidget {
           if (formKey.currentState?.validate() ?? false) {
             appShowSnackBar(
               context,
-              text: AppTexts.emailSendedWithSuccess,
+              text: AppTexts.get(context).emailSendedWithSuccess,
               icon: Icons.check,
               color: AppColors.primaryDark,
               width: 300,

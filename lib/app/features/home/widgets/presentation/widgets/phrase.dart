@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 class Phrase extends StatelessWidget {
@@ -11,26 +11,26 @@ class Phrase extends StatelessWidget {
     return Stack(
       children: [
         SelectableText(
-          AppTexts.deepCodeWayCode,
+          AppTexts.get(context).deepCodeWayCode,
           style: AppTextStyles.phrase,
         ),
         SelectableText.rich(
           TextSpan(
             children: [
               TextSpan(
-                text: AppTexts.deep,
+                text: AppTexts.get(context).deep,
                 style: AppTextStyles.phrasePrimary,
               ),
               TextSpan(
-                text: AppTexts.code,
+                text: AppTexts.get(context).code,
                 style: AppTextStyles.phraseWhite,
               ),
               TextSpan(
-                text: AppTexts.way,
+                text: AppTexts.get(context).way,
                 style: AppTextStyles.phrasePrimary,
               ),
               TextSpan(
-                text: AppTexts.code,
+                text: AppTexts.get(context).code,
                 style: AppTextStyles.phraseWhite,
               ),
             ],

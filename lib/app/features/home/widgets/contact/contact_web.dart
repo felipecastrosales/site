@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/l10n/l10n.dart';
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
 import 'package:site/app/widgets/section/section.dart';
@@ -47,15 +48,15 @@ class ContactWeb extends StatelessWidget {
           children: [
             WebBody(
               children: [
-                const SectionTitle(
+                SectionTitle(
                   paddingTop: 50,
                   paddingBottom: 20,
-                  title: AppTexts.contact,
+                  title: AppTexts.get(context).contact,
                 ),
-                const SectionText(
+                SectionText(
                   paddingTop: 0,
                   paddingBottom: 45,
-                  title: AppTexts.letsChatCallMe,
+                  title: AppTexts.get(context).letsChatCallMe,
                 ),
                 widget,
               ],

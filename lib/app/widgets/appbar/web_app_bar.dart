@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/appbar/widgets/widgets.dart';
 
@@ -24,31 +24,31 @@ class WebAppBar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           WebAppBarTitle(
-            title: AppTexts.home,
+            title: AppTexts.get(context).home,
             index: 0,
             itemScrollController: itemScrollController,
           ),
           const AppBarDivider(),
           WebAppBarTitle(
-            title: AppTexts.projects,
+            title: AppTexts.get(context).projects,
             index: 1,
             itemScrollController: itemScrollController,
           ),
           const AppBarDivider(),
           WebAppBarTitle(
-            title: AppTexts.experience,
+            title: AppTexts.get(context).experience,
             index: 2,
             itemScrollController: itemScrollController,
           ),
           const AppBarDivider(),
           WebAppBarTitle(
-            title: AppTexts.socialLinks,
+            title: AppTexts.get(context).socialLinks,
             index: 3,
             itemScrollController: itemScrollController,
           ),
           const AppBarDivider(),
           WebAppBarTitle(
-            title: AppTexts.contact,
+            title: AppTexts.get(context).contact,
             index: 4,
             itemScrollController: itemScrollController,
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/widgets.dart';
@@ -22,7 +23,7 @@ class DrawerFooter extends StatelessWidget {
             ),
             const SizedBox(width: 16),
             SelectableText(
-              AppTexts.deepCode,
+              AppTexts.get(context).deepCode,
               textAlign: TextAlign.center,
               style: AppTextStyles.socialTitle,
             ),
