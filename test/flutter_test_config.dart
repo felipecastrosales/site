@@ -20,5 +20,4 @@ Future<void> appWidgetTest({
       home: widget,
     ),
   );
-  await tester.pumpAndSettle();
 }

@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
-
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:site/app/features/home/widgets/contact/contact_widget.dart';
 import 'package:site/app/features/home/widgets/contact/controller/contact_controller.dart';
 
+import '../../../../../flutter_test_config.dart';
 import '../../../../../utils/utils.dart';
 
 void main() {
@@ -15,9 +14,11 @@ void main() {
   });
 
   testWidgets('Should renders Contact', (tester) async {
-    await _createWidget(
+    await appWidgetTest(
       tester: tester,
-      contactController: contactController,
+      widget: ContactWidget(
+        contactController: contactController,
+      ),
     );
 
     expect(
@@ -25,17 +26,4 @@ void main() {
       findsOneWidget,
     );
   });
-}
-
-Future<void> _createWidget({
-  required WidgetTester tester,
-  required ContactController contactController,
-}) async {
-  await tester.pumpWidget(
-    MaterialApp(
-      home: ContactWidget(
-        contactController: contactController,
-      ),
-    ),
-  );
 }

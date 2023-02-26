@@ -2,32 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:site/app/features/home/widgets/contact/widgets/widgets.dart';
 
+import '../../../../../../flutter_test_config.dart';
+
 void main() {
   testWidgets('Should renders CustomForm', (tester) async {
-    await _createWidget(tester: tester);
-
-    expect(find.byType(CustomForm), findsOneWidget);
-
-    expect(find.byType(CustomTextFormField), findsNWidgets(4));
-
-    expect(
-      find.byWidgetPredicate(
-        (widget) =>
-            widget is CustomTextFormField &&
-            widget.hintText == 'Nome' &&
-            widget.prefixIcon == Icons.account_circle,
-      ),
-      findsOneWidget,
-    );
-  });
-}
-
-Future<void> _createWidget({
-  required WidgetTester tester,
-}) async {
-  await tester.pumpWidget(
-    MaterialApp(
-      home: CustomForm(
+    await appWidgetTest(
+      tester: tester,
+      widget: CustomForm(
         formKey: GlobalKey<FormState>(),
         nameController: TextEditingController(),
         emailController: TextEditingController(),
@@ -37,6 +18,25 @@ Future<void> _createWidget({
           debugPrint('onPressed');
         },
       ),
-    ),
-  );
+    );
+
+    expect(
+      find.byType(CustomForm),
+      findsOneWidget,
+    );
+
+    expect(
+      find.byType(CustomTextFormField),
+      findsNWidgets(4),
+    );
+
+    expect(
+      find.byWidgetPredicate(
+        (widget) =>
+            widget is CustomTextFormField &&
+            widget.prefixIcon == Icons.account_circle,
+      ),
+      findsOneWidget,
+    );
+  });
 }

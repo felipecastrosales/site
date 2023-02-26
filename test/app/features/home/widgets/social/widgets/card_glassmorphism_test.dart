@@ -1,26 +1,23 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_test/flutter_test.dart';
+
 import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
+
+import '../../../../../../flutter_test_config.dart';
 
 void main() {
   testWidgets('Should renders CardGlassmorphism', (tester) async {
-    await _createWidget(tester: tester);
+    await appWidgetTest(
+      tester: tester,
+      widget: const CardGlassmorphism(
+        child: SizedBox(),
+      ),
+    );
 
     expect(
       find.byType(CardGlassmorphism),
       findsOneWidget,
     );
   });
-}
-
-Future<void> _createWidget({
-  required WidgetTester tester,
-}) async {
-  await tester.pumpWidget(
-    const MaterialApp(
-      home: CardGlassmorphism(
-        child: SizedBox(),
-      ),
-    ),
-  );
 }
