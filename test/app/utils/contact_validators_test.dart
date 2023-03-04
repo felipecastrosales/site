@@ -6,7 +6,7 @@ void main() {
     var name = ContactValidators.name('Felipe');
     expect(() => name, isNotNull);
 
-    var email = ContactValidators.email('soufeliposales@gmail.com');
+    var email = ContactValidators.email('fakeemail@gmail.com');
     expect(() => email, isNotNull);
 
     var message = ContactValidators.message('Hello, World!');
