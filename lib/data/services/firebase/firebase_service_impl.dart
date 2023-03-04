@@ -33,8 +33,4 @@ class FirebaseServiceImpl implements FirebaseService {
       );
     }
   }
-
-  @override
-  Future<FirebaseRemoteConfig> get instance async =>
-      FirebaseRemoteConfig.instance;
 }
