@@ -1,7 +1,8 @@
 class FirebaseSetDefaults {
   Map<String, dynamic> getRemoteConfigKeys() => {
-        'service_id': 'service_1',
-        'template_id': 'template_1',
-        'user_id': 'user_1',
+        'service_id': 'service',
+        'template_id': 'template',
+        'user_id': 'user',
+        'to_email': 'to_email',
       };
 }

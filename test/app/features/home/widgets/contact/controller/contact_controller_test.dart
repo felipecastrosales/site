@@ -42,6 +42,10 @@ void main() {
     ).thenReturn('user_id');
 
     when(
+      () => mockFirebaseRemoteConfig.getString('to_email'),
+    ).thenReturn('to_email');
+
+    when(
       () => mockHttpClient.post(
         any(),
         headers: any(named: 'headers'),

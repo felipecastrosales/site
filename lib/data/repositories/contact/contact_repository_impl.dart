@@ -24,6 +24,7 @@ class ContactRepositoryImpl implements ContactRepository {
     final serviceId = _firebaseRemoteConfig.getString('service_id');
     final templateId = _firebaseRemoteConfig.getString('template_id');
     final userId = _firebaseRemoteConfig.getString('user_id');
+    final toEmail = _firebaseRemoteConfig.getString('to_email');
     final baseUrl = Uri.parse(ConstantsAPI.baseUrl);
 
     final response = await _httpClient.post(
@@ -39,7 +40,7 @@ class ContactRepositoryImpl implements ContactRepository {
             'user_email': contact.email,
             'user_subject': contact.email,
             'user_message': contact.message,
-            'to_email': 'soufeliposales@gmail.com',
+            'to_email': toEmail,
           },
         },
       ),
