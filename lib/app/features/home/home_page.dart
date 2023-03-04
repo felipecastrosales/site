@@ -8,9 +8,17 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/injections/injections.dart';
 import 'package:site/app/core/responsive/responsive.dart';
-import 'package:site/app/core/shared/shared.dart';
+import 'package:site/app/features/home/widgets/footer/footer.dart';
 import 'package:site/app/widgets/appbar/app_bar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
+import 'package:site/data/repositories/contact/contact.dart';
+
+import 'package:site/app/features/home/widgets/contact/contact_widget.dart';
+import 'package:site/app/features/home/widgets/contact/controller/contact_controller.dart';
+import 'package:site/app/features/home/widgets/experience/experience.dart';
+import 'package:site/app/features/home/widgets/presentation/presentation.dart';
+import 'package:site/app/features/home/widgets/projects/projects.dart';
+import 'package:site/app/features/home/widgets/social/social.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({
@@ -29,17 +37,28 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   late List<Widget> items;
+
   final itemScrollController = ItemScrollController();
   final itemPositionsListener = ItemPositionsListener.create();
 
   @override
   void initState() {
     super.initState();
-    items = AppListWidgets.homePageWidgetList(
-      firebaseRemoteConfig: widget._firebaseRemoteConfig,
-      httpClient: widget._httpClient,
-      itemScrollController: itemScrollController,
-    );
+    items = [
+      Presentation(itemScrollController),
+      const Projects(),
+      const Experience(),
+      const Social(),
+      ContactWidget(
+        contactController: ContactController(
+          contactRepository: ContactRepositoryImpl(
+            firebaseRemoteConfig: widget._firebaseRemoteConfig,
+            httpClient: widget._httpClient,
+          ),
+        ),
+      ),
+      const CustomFooter(),
+    ];
   }
 
   @override
