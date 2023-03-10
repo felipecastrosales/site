@@ -11,15 +11,17 @@ class MobileAppBar extends StatelessWidget {
       scrolledUnderElevation: 0,
       surfaceTintColor: AppColors.transparent,
       actions: [
-        Container(
-          alignment: Alignment.center,
-          padding: const EdgeInsets.only(right: 16),
-          child: const SelectableText(
-            'FS',
-            style: TextStyle(
-              letterSpacing: 1.5,
-              color: AppColors.primary,
-              fontWeight: FontWeight.bold,
+        Flexible(
+          child: Container(
+            alignment: Alignment.center,
+            padding: const EdgeInsets.only(right: 16),
+            child: const SelectableText(
+              'FS',
+              style: TextStyle(
+                letterSpacing: 1.5,
+                color: AppColors.primary,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),

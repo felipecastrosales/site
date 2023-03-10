@@ -11,7 +11,6 @@ import '../../../../../flutter_test_config.dart';
 
 void main() {
   group('Presentation Widget Renders', () {
-
     testWidgets('Find Presentation', (tester) async {
       await appWidgetTest(
         tester: tester,
@@ -21,7 +20,6 @@ void main() {
       final presentation = find.byType(Presentation);
       expect(presentation, findsOneWidget);
     });
-
 
     testWidgets(
         'PresentationMobile when constraints is less than Breakpoints.presentation',
@@ -65,6 +63,8 @@ void main() {
 
       final presentationWeb = find.byType(PresentationWeb);
       expect(presentationWeb, findsOneWidget);
+
+      addTearDown(tester.binding.window.clearPhysicalSizeTestValue);
     });
   });
 }
