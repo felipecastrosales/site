@@ -21,50 +21,49 @@ void main() {
       expect(presentation, findsOneWidget);
     });
 
-    testWidgets(
-        'PresentationMobile when constraints is less than Breakpoints.presentation',
-        (tester) async {
-      final widthSmallSize =
-          tester.binding.window.physicalSizeTestValue = const Size(400, 400);
-
-      await appWidgetTest(
-        tester: tester,
-        widget: MediaQuery(
-          data: MediaQueryData(size: widthSmallSize),
-          child: Presentation(ItemScrollController()),
-        ),
-      );
-
+    group('LayoutBuilder widget Should renders', () {
       final presentationMobile = find.byType(PresentationMobile);
-      expect(presentationMobile, findsOneWidget);
-
       final presentationWeb = find.byType(PresentationWeb);
-      expect(presentationWeb, findsNothing);
 
-      addTearDown(tester.binding.window.clearPhysicalSizeTestValue);
-    });
+      testWidgets(
+          'PresentationMobile when constraints is less than Breakpoints.presentation',
+          (tester) async {
+        final widthSmallSize =
+            tester.binding.window.physicalSizeTestValue = const Size(400, 400);
 
-    testWidgets(
-        'PresentationWeb when constraints is greater than Breakpoints.presentation',
-        (tester) async {
-      final widthLargeSize =
-          tester.binding.window.physicalSizeTestValue = const Size(2000, 1000);
+        await appWidgetTest(
+          tester: tester,
+          widget: MediaQuery(
+            data: MediaQueryData(size: widthSmallSize),
+            child: Presentation(ItemScrollController()),
+          ),
+        );
 
-      await appWidgetTest(
-        tester: tester,
-        widget: MediaQuery(
-          data: MediaQueryData(size: widthLargeSize),
-          child: Presentation(ItemScrollController()),
-        ),
-      );
+        expect(presentationMobile, findsOneWidget);
+        expect(presentationWeb, findsNothing);
 
-      final presentationMobile = find.byType(PresentationMobile);
-      expect(presentationMobile, findsNothing);
+        addTearDown(tester.binding.window.clearPhysicalSizeTestValue);
+      });
 
-      final presentationWeb = find.byType(PresentationWeb);
-      expect(presentationWeb, findsOneWidget);
+      testWidgets(
+          'PresentationWeb when constraints is greater than Breakpoints.presentation',
+          (tester) async {
+        final widthLargeSize = tester.binding.window.physicalSizeTestValue =
+            const Size(2000, 1000);
 
-      addTearDown(tester.binding.window.clearPhysicalSizeTestValue);
+        await appWidgetTest(
+          tester: tester,
+          widget: MediaQuery(
+            data: MediaQueryData(size: widthLargeSize),
+            child: Presentation(ItemScrollController()),
+          ),
+        );
+
+        expect(presentationMobile, findsNothing);
+        expect(presentationWeb, findsOneWidget);
+
+        addTearDown(tester.binding.window.clearPhysicalSizeTestValue);
+      });
     });
   });
 }
