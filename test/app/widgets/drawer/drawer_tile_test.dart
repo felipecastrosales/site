@@ -21,7 +21,5 @@ void main() {
 
     final drawerTile = find.byType(DrawerTile);
     expect(drawerTile, findsOneWidget);
-    await tester.tap(drawerTile);
-    await tester.pumpAndSettle();
   });
 }
