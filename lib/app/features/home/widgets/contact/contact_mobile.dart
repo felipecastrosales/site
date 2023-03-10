@@ -37,25 +37,28 @@ class ContactMobile extends StatelessWidget {
             alignment: Alignment.bottomCenter,
           ),
         ),
-        Column(
-          children: [
-            MobileBody(
-              children: [
-                SectionTitle(
-                  paddingTop: 50,
-                  paddingBottom: 20,
-                  title: AppTexts.get(context).contact,
-                ),
-                SectionText(
-                  paddingTop: 0,
-                  paddingBottom: 45,
-                  title: AppTexts.get(context).letsChatCallMe,
-                ),
-                widget,
-              ],
-            ),
-            const SectionDivider(),
-          ],
+        SingleChildScrollView(
+          physics: const NeverScrollableScrollPhysics(),
+          child: Column(
+            children: [
+              MobileBody(
+                children: [
+                  SectionTitle(
+                    paddingTop: 50,
+                    paddingBottom: 20,
+                    title: AppTexts.get(context).contact,
+                  ),
+                  SectionText(
+                    paddingTop: 0,
+                    paddingBottom: 45,
+                    title: AppTexts.get(context).letsChatCallMe,
+                  ),
+                  widget,
+                ],
+              ),
+              const SectionDivider(),
+            ],
+          ),
         ),
       ],
     );
