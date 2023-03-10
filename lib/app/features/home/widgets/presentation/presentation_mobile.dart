@@ -49,55 +49,59 @@ class PresentationMobile extends StatelessWidget {
             height: context.height,
           ),
         ),
-        Column(
-          children: [
-            MobileBody(
-              children: [
-                SectionTitle(
-                  paddingTop: 50,
-                  paddingBottom: 16,
-                  title: AppTexts.get(context).hiIAmFelipeSales,
-                ),
-                LayoutBuilder(
-                  builder: (context, constraints) {
-                    return constraints.maxWidth <
-                            Breakpoints.presentationMobileSubtitle
-                        ? const SizedBox.shrink()
-                        : SectionSubtitle(
-                            paddingTop: 8,
-                            paddingBottom: 8,
-                            title: AppTexts.get(context).applicationsDeveloper,
-                          );
-                  },
-                ),
-                const GradientDivider(),
-                Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.only(top: 24),
-                  child: const ImageAssetWidget(
-                    AppAssets.presentationMobile,
+        SingleChildScrollView(
+          physics: const NeverScrollableScrollPhysics(),
+          child: Column(
+            children: [
+              MobileBody(
+                children: [
+                  SectionTitle(
+                    paddingTop: 50,
+                    paddingBottom: 16,
+                    title: AppTexts.get(context).hiIAmFelipeSales,
                   ),
-                ),
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
-                    child: SectionText(
-                      paddingTop: 24,
-                      paddingBottom: 8,
-                      isCentered: true,
-                      title: AppTexts.get(context).developerFocused,
+                  LayoutBuilder(
+                    builder: (context, constraints) {
+                      return constraints.maxWidth <
+                              Breakpoints.presentationMobileSubtitle
+                          ? const SizedBox.shrink()
+                          : SectionSubtitle(
+                              paddingTop: 8,
+                              paddingBottom: 8,
+                              title:
+                                  AppTexts.get(context).applicationsDeveloper,
+                            );
+                    },
+                  ),
+                  const GradientDivider(),
+                  Container(
+                    alignment: Alignment.center,
+                    padding: const EdgeInsets.only(top: 24),
+                    child: const ImageAssetWidget(
+                      AppAssets.presentationMobile,
                     ),
                   ),
-                ),
-                Container(
-                  padding: const EdgeInsets.only(top: 8, bottom: 35),
-                  alignment: Alignment.center,
-                  child: const Phrase(),
-                ),
-              ],
-            ),
-            PresentationDivider(itemScrollController),
-          ],
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: SectionText(
+                        paddingTop: 24,
+                        paddingBottom: 8,
+                        isCentered: true,
+                        title: AppTexts.get(context).developerFocused,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(top: 8, bottom: 35),
+                    alignment: Alignment.center,
+                    child: const Phrase(),
+                  ),
+                ],
+              ),
+              PresentationDivider(itemScrollController),
+            ],
+          ),
         ),
       ],
     );

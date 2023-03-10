@@ -44,63 +44,66 @@ class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
                 width: context.width,
               ),
             ),
-            Column(
-              children: [
-                WebBody(
-                  children: [
-                    SectionTitle(
-                      isWeb: true,
-                      paddingTop: 50,
-                      paddingBottom: 12,
-                      title: AppTexts.get(context).hiIAmFelipeSales,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              SectionSubtitle(
-                                paddingTop: 0,
-                                paddingBottom: 32,
-                                title: AppTexts.get(context).appsDeveloper,
-                              ),
-                              const SizedBox(
-                                width: 400,
-                                child: GradientDivider(),
-                              ),
-                              SizedBox(
-                                child: Center(
-                                  child: SectionText(
-                                    paddingTop: 32,
-                                    paddingBottom: 32,
-                                    title:
-                                        AppTexts.get(context).developerFocused,
+            SingleChildScrollView(
+              physics: const NeverScrollableScrollPhysics(),
+              child: Column(
+                children: [
+                  WebBody(
+                    children: [
+                      SectionTitle(
+                        isWeb: true,
+                        paddingTop: 50,
+                        paddingBottom: 12,
+                        title: AppTexts.get(context).hiIAmFelipeSales,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SectionSubtitle(
+                                  paddingTop: 0,
+                                  paddingBottom: 32,
+                                  title: AppTexts.get(context).appsDeveloper,
+                                ),
+                                const SizedBox(
+                                  width: 400,
+                                  child: GradientDivider(),
+                                ),
+                                SizedBox(
+                                  child: Center(
+                                    child: SectionText(
+                                      paddingTop: 32,
+                                      paddingBottom: 32,
+                                      title: AppTexts.get(context)
+                                          .developerFocused,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              const Phrase(),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(width: 24),
-                        Expanded(
-                          child: Container(
-                            alignment: Alignment.center,
-                            padding: const EdgeInsets.only(top: 24),
-                            child: const ImageAssetWidget(
-                              AppAssets.presentationWeb,
+                                const Phrase(),
+                              ],
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 60),
-                  ],
-                ),
-                PresentationDivider(itemScrollController),
-              ],
+                          const SizedBox(width: 24),
+                          Expanded(
+                            child: Container(
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.only(top: 24),
+                              child: const ImageAssetWidget(
+                                AppAssets.presentationWeb,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 60),
+                    ],
+                  ),
+                  PresentationDivider(itemScrollController),
+                ],
+              ),
             ),
           ],
         );
