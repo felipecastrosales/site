@@ -44,8 +44,7 @@ class ContactWeb extends StatelessWidget {
             alignment: Alignment.centerRight,
           ),
         ),
-        SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
+        SingleChildScrollViewWithoutScroll(
           child: Column(
             children: [
               WebBody(

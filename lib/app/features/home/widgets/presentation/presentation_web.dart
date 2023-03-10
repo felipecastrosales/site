@@ -44,8 +44,7 @@ class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
                 width: context.width,
               ),
             ),
-            SingleChildScrollView(
-              physics: const NeverScrollableScrollPhysics(),
+            SingleChildScrollViewWithoutScroll(
               child: Column(
                 children: [
                   WebBody(

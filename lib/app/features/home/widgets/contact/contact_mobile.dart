@@ -37,8 +37,7 @@ class ContactMobile extends StatelessWidget {
             alignment: Alignment.bottomCenter,
           ),
         ),
-        SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
+        SingleChildScrollViewWithoutScroll(
           child: Column(
             children: [
               MobileBody(

@@ -49,8 +49,7 @@ class PresentationMobile extends StatelessWidget {
             height: context.height,
           ),
         ),
-        SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
+        SingleChildScrollViewWithoutScroll(
           child: Column(
             children: [
               MobileBody(
