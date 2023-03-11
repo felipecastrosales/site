@@ -13,7 +13,7 @@ class MobileAppBar extends StatelessWidget {
       actions: [
         Flexible(
           child: Container(
-            alignment: Alignment.center,
+            alignment: Alignment.centerRight,
             padding: const EdgeInsets.only(right: 16),
             child: const SelectableText(
               'FS',
