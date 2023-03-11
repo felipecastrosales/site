@@ -8,6 +8,8 @@ class Phrase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final codeText = AppTexts.get(context).code;
+
     return Stack(
       children: [
         SelectableText(
@@ -22,7 +24,7 @@ class Phrase extends StatelessWidget {
                 style: AppTextStyles.phrasePrimary,
               ),
               TextSpan(
-                text: AppTexts.get(context).code,
+                text: codeText,
                 style: AppTextStyles.phraseWhite,
               ),
               TextSpan(
@@ -30,7 +32,7 @@ class Phrase extends StatelessWidget {
                 style: AppTextStyles.phrasePrimary,
               ),
               TextSpan(
-                text: AppTexts.get(context).code,
+                text: codeText,
                 style: AppTextStyles.phraseWhite,
               ),
             ],
