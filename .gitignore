@@ -13,7 +13,6 @@
 .pub/
 build/
 coverage/
-lib/generated_plugin_registrant.dart
 .metadata
 site.iml
 # For library packages, don’t commit the pubspec.lock file.
