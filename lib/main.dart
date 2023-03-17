@@ -12,6 +12,6 @@ Future<void> main() async {
   setPathUrlStrategy();
   configureDependencies();
   runApp(
-    const AppWidget(),
+    AppWidget(),
   );
 }
