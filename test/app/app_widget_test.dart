@@ -30,4 +30,5 @@ void main() {
       find.byType(AppWidget),
       findsOneWidget,
     );
+  });
 }
