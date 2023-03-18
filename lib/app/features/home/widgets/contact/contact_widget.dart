@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/injections/injections.dart';
+import 'package:site/app/core/keys/app_keys.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/responsive/responsive.dart';
 import 'package:site/app/core/tokens/tokens.dart';
@@ -68,6 +69,7 @@ class ContactWidget extends StatelessWidget {
     }
 
     return LayoutBuilder(
+      key: AppKeys.contact,
       builder: (context, constraints) {
         final form = contactForm();
 
