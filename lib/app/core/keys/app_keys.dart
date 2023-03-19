@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 class AppKeys {
   static const presentation = Key('presentation');
+  static const projects = Key('projects');
   static const experience = Key('experience');
   static const social = Key('social');
   static const contact = Key('contact');

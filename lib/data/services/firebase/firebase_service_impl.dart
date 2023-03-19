@@ -9,9 +9,13 @@ import 'package:site/firebase_options.dart';
 class FirebaseServiceImpl implements FirebaseService {
   @override
   Future<void> setUpInitialization() async {
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+    } else {
+      Firebase.app();
+    }
     await setUpRemoteConfig();
   }
 

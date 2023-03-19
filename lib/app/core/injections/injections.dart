@@ -8,13 +8,27 @@ import 'package:site/data/services/firebase/firebase.dart';
 final getIt = GetIt.I;
 
 void configureDependencies() {
-  getIt.registerSingleton<http.Client>(http.Client());
-  getIt.registerSingleton<FirebaseRemoteConfig>(FirebaseRemoteConfig.instance);
-  getIt.registerSingleton<FirebaseService>(FirebaseServiceImpl());
-  getIt.registerFactory<ContactRepository>(
-    () => ContactRepositoryImpl(
-      firebaseRemoteConfig: getIt(),
-      httpClient: getIt(),
-    ),
-  );
+  if (!getIt.isRegistered<http.Client>()) {
+    getIt.registerSingleton<http.Client>(
+      http.Client(),
+    );
+  }
+  if (!getIt.isRegistered<FirebaseRemoteConfig>()) {
+    getIt.registerSingleton<FirebaseRemoteConfig>(
+      FirebaseRemoteConfig.instance,
+    );
+  }
+  if (!getIt.isRegistered<FirebaseService>()) {
+    getIt.registerSingleton<FirebaseService>(
+      FirebaseServiceImpl(),
+    );
+  }
+  if (!getIt.isRegistered<ContactRepository>()) {
+    getIt.registerSingleton<ContactRepository>(
+      ContactRepositoryImpl(
+        firebaseRemoteConfig: getIt(),
+        httpClient: getIt(),
+      ),
+    );
+  }
 }

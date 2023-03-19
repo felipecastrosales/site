@@ -57,7 +57,7 @@ void main() {
   });
 
   setUpAll(() async {
-    await Firebase.initializeApp();
+    if (Firebase.apps.isEmpty) await Firebase.initializeApp();
     registerFallbackValue(UriFake());
   });
 
