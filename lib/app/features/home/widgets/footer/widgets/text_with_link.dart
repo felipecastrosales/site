@@ -23,7 +23,7 @@ class TextWithLink extends StatelessWidget {
         overlayColor: MaterialStateProperty.all(
           AppColors.primary.withOpacity(0.25),
         ),
-        onTap: () => LaunchUrls.launchURL(link),
+        onTap: () => LaunchUrls().launchURL(link),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: Text(

@@ -11,9 +11,11 @@ void main() {
       widget: const AppTextButtonWidget(),
     );
 
-    expect(
-      find.byType(AppTextButtonWidget),
-      findsOneWidget,
-    );
+    final appTextButtonWidgetFinder = find.byType(AppTextButtonWidget);
+
+    await tester.tap(appTextButtonWidgetFinder);
+    await tester.pumpAndSettle();
+
+    expect(appTextButtonWidgetFinder, findsOneWidget);
   });
 }

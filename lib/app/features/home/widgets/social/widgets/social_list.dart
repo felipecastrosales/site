@@ -10,41 +10,47 @@ class SocialList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const launch = LaunchUrls.launchURL;
+    final launch = LaunchUrls().launchURL;
 
     return Column(
       children: [
         SocialItem(
+          key: AppKeys.socialItemGitHub,
           title: AppTexts.get(context).gitHub,
           image: AppAssets.gitHub,
           onTap: () => launch(AppUrls.gitHub),
         ),
         const SizedBox(height: 14),
         SocialItem(
+          key: AppKeys.socialItemLinkedIn,
           title: AppTexts.get(context).linkedIn,
           image: AppAssets.linkedIn,
           onTap: () => launch(AppUrls.linkedIn),
         ),
         const SizedBox(height: 14),
         SocialItem(
+          key: AppKeys.socialItemStackOverFlow,
           title: AppTexts.get(context).stackOverFlow,
           image: AppAssets.stackOverFlow,
           onTap: () => launch(AppUrls.stackOverFlow),
         ),
         const SizedBox(height: 14),
         SocialItem(
+          key: AppKeys.socialItemDiscord,
           title: AppTexts.get(context).discord,
           image: AppAssets.discord,
           onTap: () => launch(AppUrls.discord),
         ),
         const SizedBox(height: 14),
         SocialItem(
+          key: AppKeys.socialItemUdemy,
           title: AppTexts.get(context).udemy,
           image: AppAssets.udemy,
           onTap: () => launch(AppUrls.udemy),
         ),
         const SizedBox(height: 14),
         SocialItem(
+          key: AppKeys.socialItemInstagram,
           title: AppTexts.get(context).instagram,
           image: AppAssets.instagram,
           onTap: () => launch(AppUrls.instagram),

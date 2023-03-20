@@ -6,7 +6,7 @@ import 'package:site/app/utils/utils.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   test('LaunchUrls launch Url', () {
-    var url = LaunchUrls.launchURL(AppUrls.gitHub);
+    var url = LaunchUrls().launchURL(AppUrls.gitHub);
     expect(
       () => url,
       isNotNull,

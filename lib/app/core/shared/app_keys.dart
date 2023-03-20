@@ -11,6 +11,14 @@ class AppKeys {
   static const contact = Key('contact');
   static const customFooter = Key('custom_footer');
 
+  /// Social
+  static const socialItemGitHub = Key('social_list_git_hub');
+  static const socialItemLinkedIn = Key('social_list_linked_in');
+  static const socialItemStackOverFlow = Key('social_list_stack_over_flow');
+  static const socialItemDiscord = Key('social_list_discord');
+  static const socialItemUdemy = Key('social_list_udemy');
+  static const socialItemInstagram = Key('social_list_instagram');
+
   /// Testing keys
   static const snackBarKey = Key('tap_snack_bar');
 }

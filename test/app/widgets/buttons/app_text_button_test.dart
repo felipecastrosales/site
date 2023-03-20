@@ -12,7 +12,7 @@ void main() {
       tester: tester,
       widget: AppTextButton(
         text: 'VER PROJETOS',
-        onPressed: () => LaunchUrls.launchURL(AppUrls.gitHub),
+        onPressed: () => LaunchUrls().launchURL(AppUrls.gitHub),
       ),
     );
 

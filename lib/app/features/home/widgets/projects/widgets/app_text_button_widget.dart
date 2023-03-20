@@ -12,7 +12,7 @@ class AppTextButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppTextButton(
       text: AppTexts.get(context).seeProjectsUpper,
-      onPressed: () => LaunchUrls.launchURL(AppUrls.gitHub),
+      onPressed: () => LaunchUrls().launchURL(AppUrls.gitHub),
     );
   }
 }
