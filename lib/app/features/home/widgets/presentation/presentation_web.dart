@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
-import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/extensions.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
-import 'package:site/app/features/home/widgets/presentation/widgets/phrase.dart';
+import 'package:site/app/features/home/widgets/presentation/widgets/widgets.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
+import 'package:site/app/widgets/gradients/gradients.dart';
+import 'package:site/app/widgets/images/images.dart';
 import 'package:site/app/widgets/section/section.dart';
-import 'package:site/app/widgets/widgets.dart';
+import 'package:site/app/widgets/utils_widgets/utils_widgets.dart';
 
 class PresentationWeb extends StatelessWidget with ResponsivePositionMixin {
   const PresentationWeb(

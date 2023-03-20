@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/extensions/extensions.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/social/widgets/widgets.dart';
-import 'package:site/app/core/extensions/media_query_ext.dart';
-import 'package:site/app/widgets/widgets.dart';
+import 'package:site/app/widgets/gradients/gradients.dart';
+import 'package:site/app/widgets/images/images.dart';
 
 class SocialWeb extends StatelessWidget {
   const SocialWeb({super.key});

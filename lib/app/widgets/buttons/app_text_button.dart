@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 
-class CustomTextButton extends StatelessWidget {
-  const CustomTextButton({
+class AppTextButton extends StatelessWidget {
+  const AppTextButton({
     super.key,
     required this.onPressed,
     required this.text,

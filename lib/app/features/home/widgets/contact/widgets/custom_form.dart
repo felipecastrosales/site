@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/features/home/widgets/contact/widgets/widgets.dart';
 import 'package:site/app/utils/contact_validators.dart';
+import 'package:site/app/widgets/buttons/buttons.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
-import 'package:site/app/widgets/widgets.dart';
 
 class CustomForm extends StatelessWidget {
   const CustomForm({
@@ -66,7 +66,7 @@ class CustomForm extends StatelessWidget {
               child: ContactDivider(),
             ),
             Center(
-              child: CustomTextButton(
+              child: AppTextButton(
                 text: AppTexts.get(context).sendEmailUpper,
                 onPressed: onPressed,
               ),

@@ -1,16 +1,16 @@
 include: package:flutter_lints/flutter.yaml
 
-analyzer:
-  plugins:
-    - dart_code_metrics
-  exclude:
-    - lib/generated_plugin_registrant.dart
-    - test/**
-    - lib/app/core/l10n/localizations/app_localizations.dart # Generated file
-    - lib/data/services/firebase/firebase_set_defaults.dart # To use dynamic type (because really need it)
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
+# analyzer:
+#   plugins:
+#     - dart_code_metrics
+#   exclude:
+#     - lib/generated_plugin_registrant.dart
+#     - test/**
+#     - lib/app/core/l10n/localizations/app_localizations.dart # Generated file
+#     - lib/data/services/firebase/firebase_set_defaults.dart # To use dynamic type (because really need it)
+#   strong-mode:
+#     implicit-casts: false
+#     implicit-dynamic: false
 
 linter:
   rules:

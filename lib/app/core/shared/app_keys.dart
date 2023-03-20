@@ -10,4 +10,7 @@ class AppKeys {
   static const social = Key('social');
   static const contact = Key('contact');
   static const customFooter = Key('custom_footer');
+
+  /// Testing keys
+  static const snackBarKey = Key('tap_snack_bar');
 }

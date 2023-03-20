@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-import 'package:site/app/core/extensions/media_query_ext.dart';
+import 'package:site/app/core/extensions/extensions.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/mixins/mixins.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/features/home/widgets/experience/widgets/widgets.dart';
 import 'package:site/app/widgets/body/body.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
+import 'package:site/app/widgets/gradients/gradients.dart';
+import 'package:site/app/widgets/images/images.dart';
 import 'package:site/app/widgets/section/section.dart';
-import 'package:site/app/widgets/widgets.dart';
 
 class ExperienceWeb extends StatelessWidget with ResponsivePositionMixin {
   const ExperienceWeb({super.key});
@@ -69,8 +70,10 @@ class ExperienceWeb extends StatelessWidget with ResponsivePositionMixin {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                padding:
-                                    const EdgeInsets.only(top: 24, left: 40),
+                                padding: const EdgeInsets.only(
+                                  top: 24,
+                                  left: 40,
+                                ),
                                 child: const ImageAssetWidget(
                                   AppAssets.champ,
                                   width: 300,

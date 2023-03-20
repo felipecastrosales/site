@@ -15,7 +15,7 @@ import 'package:site/app/features/home/widgets/footer/footer.dart';
 import 'package:site/app/features/home/widgets/presentation/presentation.dart';
 import 'package:site/app/features/home/widgets/projects/projects.dart';
 import 'package:site/app/features/home/widgets/social/social.dart';
-import 'package:site/app/widgets/appbar/app_bar.dart';
+import 'package:site/app/widgets/app_bar/app_bar.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
 import 'package:site/data/repositories/contact/contact.dart';
 

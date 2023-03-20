@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/utils/utils.dart';
-import 'package:site/app/widgets/custom_text_button.dart';
+import 'package:site/app/widgets/buttons/buttons.dart';
 
-class CustomTextButtonWidget extends StatelessWidget {
-  const CustomTextButtonWidget({super.key});
+class AppTextButtonWidget extends StatelessWidget {
+  const AppTextButtonWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return CustomTextButton(
+    return AppTextButton(
       text: AppTexts.get(context).seeProjectsUpper,
       onPressed: () => LaunchUrls.launchURL(AppUrls.gitHub),
     );

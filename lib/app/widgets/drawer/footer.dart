@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
-import 'package:site/app/widgets/widgets.dart';
+import 'package:site/app/widgets/images/images.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});

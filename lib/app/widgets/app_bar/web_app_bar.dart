@@ -4,7 +4,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/core/tokens/tokens.dart';
-import 'package:site/app/widgets/appbar/widgets/widgets.dart';
+import 'package:site/app/widgets/app_bar/widgets/widgets.dart';
 
 class WebAppBar extends StatelessWidget {
   const WebAppBar(
