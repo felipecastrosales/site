@@ -40,7 +40,9 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
 ## 🚀 Technologies and Tools
 - Extremely Responsive Design using [`LayoutBuilder`](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html) and other various strategies;
 - Dependency Injection with [`GetIt`](https://pub.dev/packages/get_it);
-- Firebase EcoSystem:
+- Use of [`scrollable_positioned_list`](https://pub.dev/packages/scrollable_positioned_list) to perform the "scroll to index" feature;
+- Fancy and custom pre-load, using HTML and CSS;
+- Firebase ecosystem:
   - [`firebase_analytics`](https://pub.dev/packages/firebase_analytics);
   - [`firebase_core`](https://pub.dev/packages/firebase_core);
   - [`firebase_remote_config`](https://pub.dev/packages/firebase_remote_config);
@@ -51,7 +53,6 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
   - All of them using [`mocktail`](https://pub.dev/packages/mocktail).
 - Internationalization: 
   - With support to 3 languages: English, Portuguese and Spanish;
-- Use of [`scrollable_positioned_list`](https://pub.dev/packages/scrollable_positioned_list) to perform the "scroll to index" feature;
 - Feature to send an email to the user using [`emailjs API`](https://www.emailjs.com/);
 - Settings:
   - Firebase Hosting;
@@ -84,7 +85,8 @@ This project took me out of my comfort zone, and I'm very happy with the result.
 ## 🤔 How to Use
 
 ```
-First of all, correctly configure the Flutter development environment on your machine, see https://flutter.dev/docs/get-started/install
+First of all, correctly configure the Flutter development environment on your machine, 
+see https://flutter.dev/docs/get-started/install
 
 - Clone this repository:
 $ git clone https://github.com/felipecastrosales/site
@@ -98,7 +100,7 @@ $ code .
 - For install dependencies:
 $ flutter pub get
 
-- Run the app: 
+- Run the app:
 $ flutter run
 ```
 
@@ -114,6 +116,8 @@ $ flutter run
 - Make a pull request, describing the changes you made and await approval.
 - You can also make suggestions by opening an issue, reporting bugs or requesting new features.
 ```
+
+If you plan to contribute even more, see the [Contribution Guide](.github/docs/CONTRIBUTING.md). 😉
 
 ---
 
