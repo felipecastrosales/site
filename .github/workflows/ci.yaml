@@ -37,3 +37,8 @@ jobs:
       - uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
           min_coverage: 70
+      - uses: codecov/codecov-action@v3
+        with:
+          # token: ${{ secrets.CODECOV_TOKEN }} not required for public repos
+          file: ./coverage/lcov.info
+          name: Codecov
