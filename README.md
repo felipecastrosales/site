@@ -2,6 +2,16 @@
 
 ---
 
+
+<div align="center">
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](.github/docs/CONTRIBUTING.md)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![codecov](https://codecov.io/gh/felipecastrosales/site/branch/feature/new_version/graph/badge.svg?token=3T6SS801FW)](https://codecov.io/gh/felipecastrosales/site)
+
+
+</div>
+
 ## 📋 Topics
 
 - [📋 Topics](#-topics)
@@ -32,7 +42,7 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
    </p>
 
    <p align="center">
-      The layout was developed by <a href="https://www.instagram.com/karoldepaulasm/">Karol de Paula</a>, and you can access it on <a href="https://www.figma.com/file/Dgq4C5dLgtWK2sb0KebmEZ/%40felipecastrosales---Portfolio?t=IYDbBm4pBIuuB7f7-1">Figma</a>. 🔥
+      The layout was developed by <a href="https://www.instagram.com/karoldepaulasm/">Karol de Paula</a>, and you can access it on <a href="https://www.figma.com/file/Dgq4C5dLgtWK2sb0KebmEZ/%40felipecastrosales---Portfolio?t=IYDbBm4pBIuuB7f7-1">Figma</a>.
    </p>
 
 ---
@@ -117,25 +127,27 @@ $ flutter run
 - You can also make suggestions by opening an issue, reporting bugs or requesting new features.
 ```
 
-If you plan to contribute even more, see the [Contribution Guide](.github/docs/CONTRIBUTING.md). 😉
+If you plan to contribute even more, see the [Contribution Guide](.github/docs/CONTRIBUTING.md).
+
+If you want to know more about the Contributors section, see the [Contributors](.github/docs/CONTRIBUTORS.md).
 
 ---
 
 ## 📝 License
 
 <p align="center">
-   This repository is under MIT license. You can see the <a href="https://github.com/felipecastrosales/site/blob/master/LICENSE">LICENSE</a> file for more details. 😉
+   This repository is under MIT license. You can see the <a href="https://github.com/felipecastrosales/site/blob/master/LICENSE">LICENSE</a> file for more details.
 </p>
 
 ---
 
 >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with [Karol de Paula](https://www.instagram.com/karoldepaulasm/) and [Daniel Duarte](https://www.linkedin.com/in/daniel2d/). My sincere and true thanks.<br>
-If it helped you, give ⭐, contribute, it will help me too. 😉
+If it helped you, give ⭐, contribute, it will help me too.
 
 ---
 
-   <div align="center">
+<div align="center">
 
-   [![Linkedin Badge](https://img.shields.io/badge/-Felipe%20Sales-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipecastrosales/)](https://www.linkedin.com/in/felipecastrosales/)
+[![Linkedin Badge](https://img.shields.io/badge/-Felipe%20Sales-292929?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/felipecastrosales/)](https://www.linkedin.com/in/felipecastrosales/)
 
-   </div>
+</div>
