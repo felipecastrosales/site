@@ -21,7 +21,6 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.3
   get_it: ^7.2.0
-  google_fonts: ^4.0.3
   http: ^0.13.5
   intl: ^0.17.0
   lottie: ^2.2.0
@@ -47,4 +46,21 @@ flutter:
     - assets/components/presentation/
     - assets/components/projects/
     - assets/components/social/
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
   generate: true

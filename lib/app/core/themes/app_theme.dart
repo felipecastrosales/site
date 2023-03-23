@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 
 class AppTheme {
@@ -18,5 +19,6 @@ class AppTheme {
           elevation: 0,
           iconTheme: IconThemeData(color: AppColors.primary),
         ),
+        fontFamily: AppDatas.montserrat,
       );
 }
