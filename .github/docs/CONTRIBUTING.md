@@ -1,10 +1,20 @@
 ## 🤝 Contribution Guide
 
+## 📋 Topics
+- [🤝 Contribution Guide](#-contribution-guide)
+- [📋 Topics](#-topics)
+- [🎯 About](#-about)
+- [🏆 Important details](#-important-details)
+- [🐛 Issues Reporting](#-issues-reporting)
+- [🙏 Thanks](#-thanks)
+
+## 🎯 About
+
 Hello, I'm glad to see you're interested in contributing to this project. 
 
 Some settings you may have already seen in the README.md file, but it doesn't hurt to repeat them here.
 
-In a simple and *generic* way, you can contribute in this way below: 
+**TL;DR:** In a simple and *generic* way, you can contribute in this way below: 
 
 ```
 - Fork this repository;
@@ -31,8 +41,11 @@ I ask you to follow the following steps:
 - Don't forget to follow [flutter_lints](https://pub.dev/packages/flutter_lints) rules.
 - Be aware of [dart_code_metrics](https://pub.dev/packages/dart_code_metrics) rules.
 - Follow good naming principles, [`Naming Cheatsheet`](https://github.com/kettanaito/naming-cheatsheet), e.g.
-- Tests: 
+- Tests:
   - It's always beautiful to receive testable code and even more beautiful with tests.
+- Make small commits and pull requests, it's easier to review and understand what you did.
+- Read the Code of Conduct before contributing (I like [this](https://github.com/flutter/flutter/blob/master/CODE_OF_CONDUCT.md)).
+- Read recommendations for [Contributing to Flutter](https://github.com/flutter/flutter/blob/master/CONTRIBUTING.md).
 
 ## 🐛 Issues Reporting
 
