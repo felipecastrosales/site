@@ -131,6 +131,8 @@ If you plan to contribute even more, see the [Contribution Guide](.github/docs/C
 
 If you want to know more about the Contributors section, see the [Contributors](.github/docs/CONTRIBUTORS.md).
 
+See [Changelog](.github/docs/CHANGELOG.md).
+
 ---
 
 ## 📝 License
