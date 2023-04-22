@@ -2,13 +2,11 @@
 
 ---
 
-
 <div align="center">
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](.github/docs/CONTRIBUTING.md)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![codecov](https://codecov.io/gh/felipecastrosales/site/branch/feature/new_version/graph/badge.svg?token=3T6SS801FW)](https://codecov.io/gh/felipecastrosales/site)
-
 
 </div>
 
@@ -20,6 +18,7 @@
 - [🚀 Technologies and Tools](#-technologies-and-tools)
 - [🤯 Challenges and Learnings](#-challenges-and-learnings)
 - [🤔 How to Use](#-how-to-use)
+- [🤩 Want to do](#-want-to-do)
 - [🤝 Contributing](#-contributing)
 - [📝 License](#-license)
 
@@ -113,6 +112,12 @@ $ flutter pub get
 - Run the app:
 $ flutter run
 ```
+
+---
+
+## 🤩 Want to do
+
+If you want to do this project with yours informations and datas, see the [Want To Do](.github/docs/WANT_TO_DO.md).
 
 ---
 
