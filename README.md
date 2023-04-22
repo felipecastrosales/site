@@ -117,7 +117,7 @@ $ flutter run
 
 ## 🤩 Want to do
 
-If you want to do this project with yours informations and datas, see the [Want To Do](.github/docs/WANT_TO_DO.md).
+If you want to do this project with yours informations and datas, see the [Want To Do](.github/docs/WANTTODO.md).
 
 ---
 
