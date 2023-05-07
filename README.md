@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://felipecastrosales.com">My Website 🔥</a></h1>
+<h1 align="center"><a href="https://felipecastrosales.com">My Portfolio 🔥</a></h1>
 
 ---
 
@@ -26,7 +26,7 @@
 
 ## 📋 About
 
-With a single codebase, you can access this example from mobile, web and even desktop. 
+With a single codebase, you can access this example from mobile, web and even desktop.
 
 I'm sure this will be one of the best examples of the Flutter Web project in a completely open-source way and with the amout of features that exist.
 
@@ -47,6 +47,7 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
 ---
 
 ## 🚀 Technologies and Tools
+
 - Extremely Responsive Design using [`LayoutBuilder`](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html) and other various strategies;
 - Dependency Injection with [`GetIt`](https://pub.dev/packages/get_it);
 - Use of [`scrollable_positioned_list`](https://pub.dev/packages/scrollable_positioned_list) to perform the "scroll to index" feature;
@@ -56,11 +57,11 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
   - [`firebase_core`](https://pub.dev/packages/firebase_core);
   - [`firebase_remote_config`](https://pub.dev/packages/firebase_remote_config);
   - [`firebase_core_platform_interface`](https://pub.dev/packages/firebase_core_platform_interface) - for tests.
-- Tests: 
+- Tests:
   - Unitary, Widgets and Integration Test;
   - The current coverage is 79.5% (PRs are welcome to increase this value);
   - All of them using [`mocktail`](https://pub.dev/packages/mocktail).
-- Internationalization: 
+- Internationalization:
   - With support to 3 languages: English, Portuguese and Spanish;
 - Feature to send an email to the user using [`emailjs API`](https://www.emailjs.com/);
 - Settings:
@@ -68,7 +69,7 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
   - Google Domains;
   - Google Analytics;
   - Firebase Remote Config.
-- Use of good practices in general, such as: 
+- Use of good practices in general, such as:
   - [`Clean Code`](https://www.google.com/search?q=Clean+Code+book&rlz=1C5CHFA_enBR1041BR1041&sxsrf=AJOqlzWiUKnodTrErtwjEw0mr60aKlAQ9A%3A1679360561304&ei=MQIZZICZEpDM1sQPqrSdsAI&ved=0ahUKEwjA9dLN6ev9AhUQppUCHSpaByYQ4dUDCA8&uact=5&oq=Clean+Code+book&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCC4QgAQyBQgAEIAEMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIICAAQBxAeEAoyBggAEAcQHjIGCAAQBxAeOgoIABBHENYEELADOgcIABCwAxBDOg0IABDkAhDWBBCwAxgBOgwILhDIAxCwAxBDGAJKBAhBGABQnQZYnQZg7wdoAXABeACAAaMBiAGjAZIBAzAuMZgBAKABAqABAcgBEcABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz-serp);
   - [`Clean Architecture`](https://www.google.com/search?q=Clean+Architecture+book&rlz=1C5CHFA_enBR1041BR1041&sxsrf=AJOqlzWTbx1VkaRMx9Y0pkUmhUFVrdPbew%3A1679360551842&ei=JwIZZKnyMuLf1sQP0-y2MA&ved=0ahUKEwjpoZHJ6ev9AhXir5UCHVO2DQYQ4dUDCA8&uact=5&oq=Clean+Architecture+book&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCC4QgAQyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgoIABBHENYEELADOgcIABCwAxBDOgUIABCABEoECEEYAFC5BVi2CmC4DGgCcAF4AIABnwGIAeAEkgEDMC40mAEAoAEByAEJwAEB&sclient=gws-wiz-serp);
   - [`SOLID principles`](https://www.google.com/search?q=SOLID+principles&rlz=1C5CHFA_enBR1041BR1041&oq=SOLID+principles&aqs=chrome..69i57j69i60j69i61.152j0j4&sourceid=chrome&ie=UTF-8);
@@ -93,25 +94,22 @@ This project took me out of my comfort zone, and I'm very happy with the result.
 
 ## 🤔 How to Use
 
-```
-First of all, correctly configure the Flutter development environment on your machine, 
-see https://flutter.dev/docs/get-started/install
+First of all, configure the Flutter development environments, see <https://flutter.dev/docs/get-started/install>.
 
 - Clone this repository:
-$ git clone https://github.com/felipecastrosales/site
+`$ git clone https://github.com/felipecastrosales/site`
 
 - Enter in directory:
-$ cd site
+`$ cd site`
 
 - Open in your favorite editor (e.g. VSCode):
-$ code .
+`$ code .`
 
 - For install dependencies:
-$ flutter pub get
+`$ flutter pub get`
 
 - Run the app:
-$ flutter run
-```
+`$ flutter run`
 
 ---
 
@@ -123,14 +121,12 @@ If you want to do this project with yours informations and datas, see the [Want 
 
 ## 🤝 Contributing
 
-```
 - Fork this repository;
 - Create a branch with your feature: git checkout -b my-feature;
 - Commit your changes: git commit -m 'feat: My new feature';
 - Push your branch: git push origin my-feature.
 - Make a pull request, describing the changes you made and await approval.
 - You can also make suggestions by opening an issue, reporting bugs or requesting new features.
-```
 
 If you plan to contribute even more, see the [Contribution Guide](.github/docs/CONTRIBUTING.md).
 
@@ -148,7 +144,8 @@ See [Changelog](.github/docs/CHANGELOG.md).
 
 ---
 
->This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with [Karol de Paula](https://www.instagram.com/karoldepaulasm/) and [Daniel Duarte](https://www.linkedin.com/in/daniel2d/). My sincere and true thanks.<br>
+>This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with [Karol de Paula](https://www.instagram.com/karoldepaulasm/) and [Daniel Duarte](https://www.linkedin.com/in/daniel2d/). My sincere and true thanks.
+
 If it helped you, give ⭐, contribute, it will help me too.
 
 ---

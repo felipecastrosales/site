@@ -1,4 +1,4 @@
-## 🎖️ Contributors
+# 🎖️ Contributors
 
 This is a special area for contributors.
 

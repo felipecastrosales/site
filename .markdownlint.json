@@ -1,0 +1,9 @@
+{
+    "MD033": {
+        "allowed_elements": [
+            "a",
+            "sup",
+            "nobr"
+        ]
+    }
+}
