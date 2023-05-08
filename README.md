@@ -76,6 +76,7 @@ TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
   - [`Naming Cheatsheet`](https://github.com/kettanaito/naming-cheatsheet);
   - [`dart_code_metrics`](https://pub.dev/packages/dart_code_metrics) - for code analysis;
   - [`flutter_lints`](https://pub.dev/packages/flutter_lints) - for linting.
+- CI / CD configurations inside [`workflows` folder](.github/workflows/).
 - Among other various packages and internal resources. 🔥
 
 ---
