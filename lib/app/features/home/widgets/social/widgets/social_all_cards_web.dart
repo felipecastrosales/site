@@ -8,9 +8,9 @@ class SocialAllCardsWeb extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
-        children: const [
+        children: [
           WebBody(
             children: [
               TitleTextList(isWeb: true),

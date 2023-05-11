@@ -8,9 +8,6 @@ analyzer:
     - test/**
     - lib/app/core/l10n/localizations/** # Generated file
     - lib/data/services/firebase/firebase_set_defaults.dart # To use dynamic type (because really need it)
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
 
 linter:
   rules:

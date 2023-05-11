@@ -1,5 +1,3 @@
-import 'dart:developer' as developer;
-
 import 'package:flutter/material.dart';
 
 import 'package:firebase_remote_config/firebase_remote_config.dart';
@@ -65,7 +63,6 @@ class _HomePageState extends State<HomePage> {
     return LayoutBuilder(
       builder: (context, constraints) {
         final isToShowDrawer = constraints.maxWidth < Breakpoints.appBar;
-        developer.log('Constraints: $constraints');
 
         return Scaffold(
           appBar: CustomAppBar(itemScrollController),

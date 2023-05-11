@@ -84,9 +84,9 @@ class ExperienceWeb extends StatelessWidget with ResponsivePositionMixin {
                           ),
                         ),
                         const SizedBox(height: 24),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             SectionExperienceTexts(),
                           ],
                         ),
