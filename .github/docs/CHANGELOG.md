@@ -2,7 +2,11 @@
 
 ## Unreleased
 
-- 2.0.0 version (in progress).
+- None.
+
+## 2.0.0 - 2023-10-08
+
+- 2.0.0 version.
 
 ## 1.0.0 - 2019-02-10
 
