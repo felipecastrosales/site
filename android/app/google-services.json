@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "884743546828",
+    "project_id": "site-96dd0",
+    "storage_bucket": "site-96dd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884743546828:android:ea09ba7ee1ed93aeae9f69",
+        "android_client_info": {
+          "package_name": "com.felipecastrosales.site"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884743546828-9ea2sk2c4p812dkp6nfqh8nmrljho9t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgfqTS-d712MTUDUC0fOXoKSHGuw6CNoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884743546828-9ea2sk2c4p812dkp6nfqh8nmrljho9t6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.felipecastrosales.site"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
