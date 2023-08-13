@@ -48,35 +48,43 @@
     <span></span>
   </div>
 
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app-check.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-functions.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
-  <script src="./firebase-config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+  <!-- <script src="service-worker/firebasejs/7.13.1/firebase/firebase-worker.js"></script> -->
+  <!-- <script src="./firebase-config.js"></script> -->
 
   <script type="module">
+    var firebaseConfig = {
+      apiKey: "AIzaSyDyClpcHXG5M7twFoC06y1A0fXUZI4GgLQ",
+      authDomain: "site-96dd0.firebaseapp.com",
+      projectId: "site-96dd0",
+      storageBucket: "site-96dd0.appspot.com",
+      messagingSenderId: "884743546828",
+      appId: "1:884743546828:web:60fc5493354bb95aae9f69",
+      measurementId: "G-QNS1WC1Y4B"
+    };
+
     // Your web app's Firebase configuration
-    import { firebaseConfig } from './firebase-config.js';
+    // import { firebaseConfig } from './firebase-config.js';
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
   </script>
 
   <script>
+    var serviceWorkerVersion = null;
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
-      let useHtml = true;
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: async function(engineInitializer) {
           let config = {
-            renderer: useHtml ? "html" : "canvaskit",
+            renderer: "html"
           }
           // Initialize the Flutter engine
           let appRunner = await engineInitializer.initializeEngine(config);
