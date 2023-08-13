@@ -34,14 +34,15 @@ I'm sure this will be one of the best examples of the Flutter Web project in a c
 
 ## 🎨 Layout
 
-TODO: ADD DEMO IN APP (iosSimulator) AND IN WEB
+<p align="center">
+      You can access the website at <a href="https://felipecastrosales.com">felipecastrosales.com</a> and see the result of the project; it is adapted for mobiles, tablets and desktops. 
 
    <p align="center">
-      <img alt="Website Demo" title="Website Demo" src=".github/capa.png" />
+      <img alt="Website Demo" title="Website Demo" src=".github/images/cover.png" />
    </p>
 
    <p align="center">
-      The layout was developed by <a href="https://www.instagram.com/karoldepaulasm/">Karol de Paula</a>, and you can access it on <a href="https://www.figma.com/file/Dgq4C5dLgtWK2sb0KebmEZ/%40felipecastrosales---Portfolio?t=IYDbBm4pBIuuB7f7-1">Figma</a>.
+      The layout was developed by <a href="https://www.instagram.com/karoldepaulasm/">Karol de Paula</a> and me, and you can access it on <a href="https://www.figma.com/file/Dgq4C5dLgtWK2sb0KebmEZ/%40felipecastrosales---Portfolio?type=design&node-id=0%3A1&mode=design&t=RTugDZN5S2knn3Nk-1">Figma</a>.
    </p>
 
 ---

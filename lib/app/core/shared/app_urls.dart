@@ -10,5 +10,5 @@ class AppUrls {
   /// Project
   static const gitHubProject = 'https://github.com/felipecastrosales/site';
   static const figmaProject =
-      'https://figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade';
+      'https://www.figma.com/file/Dgq4C5dLgtWK2sb0KebmEZ/%40felipecastrosales---Portfolio?type=design&node-id=0%3A1&mode=design&t=RTugDZN5S2knn3Nk-1';
 }

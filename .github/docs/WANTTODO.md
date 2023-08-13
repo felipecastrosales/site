@@ -6,7 +6,7 @@ First, Follow the [🤔 How to Use](./README.md#-how-to-use) steps.
 
 ## Figma
 
-- See file [here](https://www.figma.com/file/gG2B4ZopeGX2Wt0RTkAxkT/Minha-Identidade?node-id=0-1&t=0s6dYkwbOzUOfxJN-0)
+- See file [here](https://www.figma.com/file/Dgq4C5dLgtWK2sb0KebmEZ/%40felipecastrosales---Portfolio?type=design&node-id=0%3A1&mode=design&t=RTugDZN5S2knn3Nk-1)
 - Open project, and duplicate it.
 - Change all datas to yours (as images), and export files substituting the originals.
 
