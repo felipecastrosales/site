@@ -146,7 +146,7 @@ See [Changelog](.github/docs/CHANGELOG.md).
 
 ---
 
->This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with [Karol de Paula](https://www.instagram.com/karoldepaulasm/) and [Daniel Duarte](https://www.linkedin.com/in/daniel2d/). My sincere and true thanks.
+>This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, with [Karol de Paula](https://www.instagram.com/karoldepaulasm/).
 
 If it helped you, give ⭐, contribute, it will help me too.
 
