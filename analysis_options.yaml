@@ -1,4 +1,55 @@
 include: package:flutter_lints/flutter.yaml
 
+analyzer:
+  plugins:
+    - dart_code_metrics
+  exclude:
+    - lib/generated_plugin_registrant.dart
+    - test/**
+    - lib/app/core/l10n/localizations/** # Generated file
+    - lib/data/services/firebase/firebase_set_defaults.dart # To use dynamic type (because really need it)
+
 linter:
   rules:
+    - always_declare_return_types
+    - always_use_package_imports
+    - avoid_dynamic_calls
+    - avoid_relative_lib_imports
+    - implementation_imports
+    - require_trailing_commas
+    - sized_box_for_whitespace
+    - sized_box_shrink_expand
+    - sort_child_properties_last
+    - sort_constructors_first
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_literals_to_create_immutables
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_single_quotes
+
+dart_code_metrics:
+  metrics:
+    cyclomatic-complexity: 20
+    number-of-parameters: 4
+    maximum-nesting-level: 5
+  metrics-exclude:
+    - test/**
+  rules:
+    - avoid-dynamic
+    - avoid-redundant-async
+    - avoid-passing-async-when-sync-expected
+    - avoid-redundant-async
+    - avoid-unnecessary-type-assertions
+    - avoid-unnecessary-type-casts
+    - avoid-unrelated-type-assertions
+    - avoid-unused-parameters
+    - avoid-nested-conditional-expressions
+    - newline-before-return
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-trailing-comma
+    - prefer-conditional-expressions
+    - no-equal-then-else
+    - prefer-moving-to-variable
+    - prefer-match-file-name
