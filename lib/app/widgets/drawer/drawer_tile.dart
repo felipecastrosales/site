@@ -43,10 +43,14 @@ class DrawerTile extends StatelessWidget with ScrollToMixin {
                 style: AppTextStyles.socialTitle,
               ),
             ),
-            leading: Icon(
-              leading,
-              size: 24,
-              color: AppColors.primary,
+            minLeadingWidth: 24,
+            leading: Padding(
+              padding: const EdgeInsets.only(right: 16),
+              child: Icon(
+                leading,
+                size: 24,
+                color: AppColors.primary,
+              ),
             ),
           ),
         ),
