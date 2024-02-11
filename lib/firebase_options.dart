@@ -14,7 +14,6 @@ import 'package:flutter/foundation.dart'
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
 /// ```
-// ignore: prefer-match-file-name
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -45,7 +44,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDyClpcHXG5M7twFoC06y1A0fXUZI4GgLQ',
+    apiKey: 'AIzaSyAv2vsifGXWqf5qgESjSmVjEGuRer9lwjU',
     appId: '1:884743546828:web:60fc5493354bb95aae9f69',
     messagingSenderId: '884743546828',
     projectId: 'site-96dd0',
@@ -55,7 +54,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAgfqTS-d712MTUDUC0fOXoKSHGuw6CNoM',
+    apiKey: 'AIzaSyBzwjH97px4DndOX50oEv4tIdDf6VC19mM',
     appId: '1:884743546828:android:ea09ba7ee1ed93aeae9f69',
     messagingSenderId: '884743546828',
     projectId: 'site-96dd0',
@@ -63,24 +62,22 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDrl7u3LFGcDrk_o6XR571OHJjLYxHlqN4',
+    apiKey: 'AIzaSyCCMskieV6dxCXJxHTuXohQbR4aTAhXTOM',
     appId: '1:884743546828:ios:f4ddf7bc0168bb74ae9f69',
     messagingSenderId: '884743546828',
     projectId: 'site-96dd0',
     storageBucket: 'site-96dd0.appspot.com',
-    iosClientId:
-        '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
+    iosClientId: '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
     iosBundleId: 'com.felipecastrosales.site',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDrl7u3LFGcDrk_o6XR571OHJjLYxHlqN4',
+    apiKey: 'AIzaSyCCMskieV6dxCXJxHTuXohQbR4aTAhXTOM',
     appId: '1:884743546828:ios:f4ddf7bc0168bb74ae9f69',
     messagingSenderId: '884743546828',
     projectId: 'site-96dd0',
     storageBucket: 'site-96dd0.appspot.com',
-    iosClientId:
-        '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
+    iosClientId: '884743546828-fjfun3totngd3bcog9jeopevkri03lob.apps.googleusercontent.com',
     iosBundleId: 'com.felipecastrosales.site',
   );
 }
