@@ -4,6 +4,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import 'package:site/app/core/l10n/l10n.dart';
 import 'package:site/app/widgets/drawer/drawer.dart';
+import 'package:site/app/widgets/utils_widgets/utils_widgets.dart';
 
 class DrawerItems extends StatelessWidget {
   const DrawerItems(
@@ -15,7 +16,7 @@ class DrawerItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ColumnScrollable(
       children: [
         DrawerTile(
           title: AppTexts.get(context).home,
