@@ -142,6 +142,8 @@ See [Changelog](.github/docs/CHANGELOG.md).
 
 <p align="center">
    This repository is under MIT license. You can see the <a href="https://github.com/felipecastrosales/site/blob/master/LICENSE">LICENSE</a> file for more details.
+
+   Please, avoid any usage from my keys and datas. 🚀
 </p>
 
 ---
