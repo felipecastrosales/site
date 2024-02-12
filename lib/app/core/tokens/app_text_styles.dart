@@ -70,6 +70,12 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static const f24WhiteFW500 = TextStyle(
+    fontSize: 14,
+    color: AppColors.white,
+    fontWeight: FontWeight.w500,
+  );
+
   static const errorForm = TextStyle(
     fontSize: 14,
     color: AppColors.white,

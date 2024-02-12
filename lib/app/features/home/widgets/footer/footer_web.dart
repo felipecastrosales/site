@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:site/app/core/l10n/l10n.dart';
+import 'package:site/app/core/platform_info/widgets/platform_info_widget.dart';
 import 'package:site/app/core/shared/shared.dart';
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/features/home/widgets/footer/widgets/widgets.dart';
@@ -12,7 +13,7 @@ class FooterWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 107,
+      height: 128,
       color: AppColors.black,
       alignment: Alignment.center,
       padding: const EdgeInsets.symmetric(vertical: 24),
@@ -52,6 +53,9 @@ class FooterWeb extends StatelessWidget {
                 ],
               ),
             ],
+          ),
+          const PlatformInfoWidget(
+            padding: EdgeInsets.all(0),
           ),
         ],
       ),
