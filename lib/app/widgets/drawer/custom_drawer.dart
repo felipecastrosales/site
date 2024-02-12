@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
+import 'package:site/app/core/platform_info/widgets/platform_info_widget.dart';
 
 import 'package:site/app/core/tokens/tokens.dart';
 import 'package:site/app/widgets/dividers/dividers.dart';
@@ -25,13 +26,21 @@ class CustomDrawer extends StatelessWidget {
         surfaceTintColor: AppColors.transparent,
         child: SafeArea(
           child: Column(
-            mainAxisSize: MainAxisSize.max,
             children: [
               const CustomDrawerHeader(),
               const CustomDivider(.5, AppColors.primaryDark),
               DrawerItems(itemScrollController),
               const Spacer(),
               const DrawerFooter(),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: PlatformInfoWidget(
+                  padding: EdgeInsets.only(
+                    bottom: 20,
+                    left: 20,
+                  ),
+                ),
+              ),
               const Footer(),
             ],
           ),
