@@ -1,3 +1,5 @@
+library;
+
 /// -> This widget is used to wrap a widget with a SingleChildScrollView without scroll.
 ///
 /// I make this, because in some cases,
