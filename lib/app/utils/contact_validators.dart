@@ -1,3 +1,4 @@
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:site/app/core/l10n/l10n.dart';
 
@@ -19,13 +20,11 @@ class ContactValidators {
   }
 
   static String? email(String? value, [BuildContext? context]) {
-    if (value!.isEmpty) {
+    if (value == null || value.isEmpty) {
       return AppTexts.get(context!).insertValidEmail;
     }
-    final regex = RegExp(
-      r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+",
-    );
-    if (regex.hasMatch(value)) {
+
+    if (EmailValidator.validate(value)) {
       return null;
     }
 
