@@ -29,8 +29,9 @@ class CustomDrawer extends StatelessWidget {
             children: [
               const CustomDrawerHeader(),
               const CustomDivider(.5, AppColors.primaryDark),
-              DrawerItems(itemScrollController),
-              const Spacer(),
+              Expanded(
+                child: DrawerItems(itemScrollController),
+              ),
               const DrawerFooter(),
               const Align(
                 alignment: Alignment.centerLeft,
