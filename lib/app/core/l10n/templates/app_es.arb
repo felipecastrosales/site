@@ -49,13 +49,16 @@
     "createdByFelipeCastroSales": "Creado por @felipecastrosales™",
     "insertValidName": "Ingrese un nombre válido.",
     "insertABiggerName": "Ingrese un nombre más largo.",
+    "insertALittleName": "Ingrese un nombre más corto.",
     "thisNameIsNotValid": "Este nombre no es válido.",
     "insertValidEmail": "Ingrese un email válido.",
     "thisEmailIsNotValid": "Este email no es válido.",
     "insertValidMessage": "Ingrese un mensaje válido.",
     "insertABiggerMessage": "Ingrese un mensaje más largo.",
+    "insertALittleMessage": "Ingrese un mensaje más corto.",
     "thisMessageIsNotValid": "Este mensaje no es válido.",
     "insertValidSubject": "Ingrese un asunto válido.",
     "insertABiggerSubject": "Ingrese un asunto más largo.",
+    "insertALittleSubject": "Ingrese un asunto más corto.",
     "thisSubjectIsNotValid": "Este asunto no es válido."
 }

@@ -1,4 +1,4 @@
-import 'package:site/app/core/l10n/l10n.dart';
+import 'app_localizations.dart';
 
 /// The translations for Spanish Castilian (`es`).
 class AppLocalizationsEs extends AppLocalizations {
@@ -11,15 +11,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get felipeSales => 'Felipe Sales';
 
   @override
-  String get flutterDeveloperInstructor =>
-      'Instructor de Desarrollador Flutter';
+  String get flutterDeveloperInstructor => 'Instructor de Desarrollador Flutter';
 
   @override
   String get hiIAmFelipeSales => 'Hola, soy Felipe Sales';
 
   @override
-  String get developerFocused =>
-      'Desarrollador enfocado en aplicar sus conocimientos en la práctica y construir cosas increíbles a través de líneas de código.';
+  String get developerFocused => 'Desarrollador enfocado en aplicar sus conocimientos en la práctica y construir cosas increíbles a través de líneas de código.';
 
   @override
   String get appsDeveloper => '> Desarrollador de aplicaciones';
@@ -49,8 +47,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get seeProjectsUpper => 'VER PROYECTOS';
 
   @override
-  String get projectAreInMyGitHub =>
-      'La mayoría de los proyectos que he desarrollado son completamente de código abierto en mi GitHub.';
+  String get projectAreInMyGitHub => 'La mayoría de los proyectos que he desarrollado son completamente de código abierto en mi GitHub.';
 
   @override
   String get experience => 'Experiencia';
@@ -137,8 +134,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dot => '.';
 
   @override
-  String get flutterProjectOpenSource =>
-      'Un proyecto Flutter de código abierto.';
+  String get flutterProjectOpenSource => 'Un proyecto Flutter de código abierto.';
 
   @override
   String get seeInGitHub => 'Ver en GitHub';
@@ -159,6 +155,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get insertABiggerName => 'Ingrese un nombre más largo.';
 
   @override
+  String get insertALittleName => 'Ingrese un nombre más corto.';
+
+  @override
   String get thisNameIsNotValid => 'Este nombre no es válido.';
 
   @override
@@ -174,6 +173,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get insertABiggerMessage => 'Ingrese un mensaje más largo.';
 
   @override
+  String get insertALittleMessage => 'Ingrese un mensaje más corto.';
+
+  @override
   String get thisMessageIsNotValid => 'Este mensaje no es válido.';
 
   @override
@@ -181,6 +183,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get insertABiggerSubject => 'Ingrese un asunto más largo.';
+
+  @override
+  String get insertALittleSubject => 'Ingrese un asunto más corto.';
 
   @override
   String get thisSubjectIsNotValid => 'Este asunto no es válido.';

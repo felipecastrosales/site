@@ -1,4 +1,4 @@
-import 'package:site/app/core/l10n/l10n.dart';
+import 'app_localizations.dart';
 
 /// The translations for English (`en`).
 class AppLocalizationsEn extends AppLocalizations {
@@ -17,8 +17,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hiIAmFelipeSales => 'Hi, I\'m Felipe Sales';
 
   @override
-  String get developerFocused =>
-      'Developer focused on applying his knowledge in practice and building amazing things through lines of code.';
+  String get developerFocused => 'Developer focused on applying his knowledge in practice and building amazing things through lines of code.';
 
   @override
   String get appsDeveloper => '> Apps Developer';
@@ -48,8 +47,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get seeProjectsUpper => 'SEE PROJECTS';
 
   @override
-  String get projectAreInMyGitHub =>
-      'Most of the projects I have developed are completely open-source on my GitHub.';
+  String get projectAreInMyGitHub => 'Most of the projects I have developed are completely open-source on my GitHub.';
 
   @override
   String get experience => 'Experience';
@@ -157,6 +155,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get insertABiggerName => 'Please enter a longer name.';
 
   @override
+  String get insertALittleName => 'Please enter a shorter name.';
+
+  @override
   String get thisNameIsNotValid => 'This name is not valid.';
 
   @override
@@ -172,6 +173,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get insertABiggerMessage => 'Please enter a longer message.';
 
   @override
+  String get insertALittleMessage => 'Please enter a shorter message.';
+
+  @override
   String get thisMessageIsNotValid => 'This message is not valid.';
 
   @override
@@ -179,6 +183,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get insertABiggerSubject => 'Please enter a longer subject.';
+
+  @override
+  String get insertALittleSubject => 'Please enter a shorter subject.';
 
   @override
   String get thisSubjectIsNotValid => 'This subject is not valid.';

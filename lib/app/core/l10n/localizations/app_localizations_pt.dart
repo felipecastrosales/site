@@ -1,4 +1,4 @@
-import 'package:site/app/core/l10n/l10n.dart';
+import 'app_localizations.dart';
 
 /// The translations for Portuguese (`pt`).
 class AppLocalizationsPt extends AppLocalizations {
@@ -17,8 +17,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get hiIAmFelipeSales => 'Olá, sou Felipe Sales';
 
   @override
-  String get developerFocused =>
-      'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.';
+  String get developerFocused => 'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.';
 
   @override
   String get appsDeveloper => '> Desenvolvedor de Apps';
@@ -48,8 +47,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get seeProjectsUpper => 'VER PROJETOS';
 
   @override
-  String get projectAreInMyGitHub =>
-      'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente open-source.';
+  String get projectAreInMyGitHub => 'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente open-source.';
 
   @override
   String get experience => 'Experiência';
@@ -157,6 +155,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get insertABiggerName => 'Insira um nome maior.';
 
   @override
+  String get insertALittleName => 'Insira um nome menor.';
+
+  @override
   String get thisNameIsNotValid => 'Este nome não é válido.';
 
   @override
@@ -172,6 +173,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get insertABiggerMessage => 'Insira uma mensagem maior.';
 
   @override
+  String get insertALittleMessage => 'Insira uma mensagem menor.';
+
+  @override
   String get thisMessageIsNotValid => 'Esta mensagem não é válida.';
 
   @override
@@ -179,6 +183,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get insertABiggerSubject => 'Insira um assunto maior.';
+
+  @override
+  String get insertALittleSubject => 'Insira um assunto menor.';
 
   @override
   String get thisSubjectIsNotValid => 'Este assunto não é válido.';

@@ -1,13 +1,14 @@
 name: site
 description: Felipe Sales | Social Links.
 publish_to: 'none'
-version: 2.1.1
+version: 2.1.2
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
   auto_size_text: ^3.0.0
+  email_validator: ^2.1.17
   firebase_analytics: ^10.8.5
   firebase_core: ^2.25.4
   firebase_core_platform_interface: ^5.0.0
@@ -19,16 +20,16 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.9
   get_it: ^7.6.7
-  http: ^1.2.0
-  intl: ^0.18.1
-  lottie: ^2.7.0
+  http: 1.2.0
+  intl: 0.18.1
+  lottie: ^3.0.0
   package_info_plus: ^5.0.1
   scrollable_positioned_list: ^0.3.8
   url_launcher: ^6.2.4
   url_strategy: ^0.2.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.3
+  flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
   integration_test:
