@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -19,7 +21,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get hiIAmFelipeSales => 'Olá, sou Felipe Sales';
 
   @override
-  String get developerFocused => 'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.';
+  String get developerFocused =>
+      'Desenvolvedor focado em aplicar seus conhecimentos em prática e construir coisas incríveis através de linhas de código.';
 
   @override
   String get appsDeveloper => '> Desenvolvedor de Apps';
@@ -49,7 +52,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get seeProjectsUpper => 'VER PROJETOS';
 
   @override
-  String get projectAreInMyGitHub => 'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente open-source.';
+  String get projectAreInMyGitHub =>
+      'Grande parte dos projetos que já desenvolvi estão no meu GitHub de forma completamente open-source.';
 
   @override
   String get experience => 'Experiência';
